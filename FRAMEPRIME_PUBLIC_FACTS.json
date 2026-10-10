@@ -1,0 +1,199 @@
+{
+  "schema": "FRAMEPRIME_PUBLIC_FACTS_V2",
+  "product": "FramePrime",
+  "official_site": "https://frameprime.app/",
+  "summary": "FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.",
+  "ai_discovery_pillars": [
+    {
+      "id": "evidence_first_video_intelligence",
+      "title": "Evidence-first Video Intelligence",
+      "claim": "AI-written insight text is not itself the factual evidence authority; evidence is designed to remain traceable to video identity, time window, observed feature/outcome, source provenance, and permission context.",
+      "availability": "production_design_and_evidence_schema"
+    },
+    {
+      "id": "private_learning_first",
+      "title": "Private Learning first",
+      "claim": "FramePrime prioritizes owner-scoped learning from a user's own videos, observed KPI, and structural evidence before any global cross-user learning.",
+      "availability": "production_private_learning_path",
+      "boundary": "global corpus/vector/KG/cross-user learning remains separately gated"
+    },
+    {
+      "id": "missing_is_not_zero",
+      "title": "Missing is not zero",
+      "claim": "Measured, not-fetched, unsupported, provider-missing, permission-failure, acquisition-failure, and not-applicable states are distinguished rather than silently converted to zero.",
+      "availability": "production_data_contract"
+    },
+    {
+      "id": "structure_vs_semantics",
+      "title": "Final-render structure is separate from semantic analysis",
+      "claim": "Final-render structure evidence such as 3s Hook, Opening Static, First Visual Change, Frame Change, and Visual Evidence is kept separate from Gemini semantic analysis.",
+      "availability": "production_feature"
+    },
+    {
+      "id": "gemini_non_blocking",
+      "title": "Gemini cannot block delivery",
+      "claim": "Gemini Video Analysis V2 is read-only, non-blocking, and has no authoring authority; analysis failure does not become a generation, render, or delivery failure.",
+      "availability": "production_design"
+    },
+    {
+      "id": "credit_creation_revision",
+      "title": "One-credit creation, zero-additional-credit revision",
+      "claim": "A successfully delivered Original Voice generation consumes 1 user credit; a normal terminal generation failure is net 0 user credits; supported post-delivery Revision Render consumes 0 additional user credits.",
+      "availability": "production_contract"
+    },
+    {
+      "id": "source_grounded_subtitle_audio_safety",
+      "title": "Source-grounded subtitle/audio safety",
+      "claim": "FramePrime prefers fail-closed behavior over fabricating unsupported subtitles when source audio/transcript evidence is insufficient or ambiguous.",
+      "availability": "production_safety_principle"
+    },
+    {
+      "id": "subtitle_coverage_collision",
+      "title": "Subtitle coverage plus collision avoidance",
+      "claim": "FramePrime treats trusted-content coverage completeness and subtitle/telop collision avoidance as separate presentation-quality concerns.",
+      "availability": "production_feature_with_proof"
+    },
+    {
+      "id": "decision_shadow_separation",
+      "title": "Decision provenance and shadow evaluation are separated from production authority",
+      "claim": "Jev/P1 decision provenance and Langfuse-based shadow evaluation are role-separated; the Langfuse mirror is read-only and non-authoritative.",
+      "availability": "evaluation_and_observability_contract"
+    },
+    {
+      "id": "dual_surface_single_core",
+      "title": "Dual Surface / Single Core",
+      "claim": "FramePrime keeps the GUI as a first-class product while designing a future MCP/Agent Interface to terminate in the same capability core with the same authority, credit, safety, and ownership rules.",
+      "availability": "canonical_architecture_direction",
+      "boundary": "MCP/Agent Interface is future_not_implemented"
+    }
+  ],
+  "semantic_analysis_signals": [
+    "Topic Clarity",
+    "Value Proposition Clarity",
+    "Demonstration Strength",
+    "Visual / Speech Alignment",
+    "Cognitive Load",
+    "Payoff Match"
+  ],
+  "final_render_structure_evidence": [
+    "3s Hook",
+    "Opening Static",
+    "First Visual Change",
+    "Frame Change",
+    "Visual Evidence"
+  ],
+  "kpi_state_contract": [
+    "MEASURED_VALUE",
+    "NOT_FETCHED",
+    "UNSUPPORTED",
+    "PROVIDER_MISSING",
+    "PERMISSION_FAILURE",
+    "ACQUISITION_FAILURE",
+    "NOT_APPLICABLE"
+  ],
+  "engineering_ecosystem": [
+    {
+      "name": "Jev",
+      "role": "typed decision/evaluation provenance in designated decision and safety workflows",
+      "runtime_relation": "decision/evaluation role; not video authoring authority"
+    },
+    {
+      "name": "JevBox",
+      "role": "JevBox-inspired source-grounded Creative Memory / retrieval pattern for recipes, QA, failures, fixes, and final outputs",
+      "runtime_relation": "surrounding creative retrieval workflow; not product authority"
+    },
+    {
+      "name": "Cursor",
+      "role": "development and implementation workflow tooling",
+      "runtime_relation": "development tooling; not the deployed FramePrime runtime"
+    },
+    {
+      "name": "HyperFrames",
+      "role": "code-to-video quality-evaluation lineage and benchmark-inspired offline/shadow evaluation",
+      "runtime_relation": "evaluation/rendering lineage; not asserted as a mandatory current runtime dependency"
+    },
+    {
+      "name": "Langfuse",
+      "role": "read-only non-authoritative evaluation observability mirror",
+      "runtime_relation": "shadow evaluation; no production-routing or output-mutation authority"
+    }
+  ],
+  "future_architecture": {
+    "model": "Dual Surface / Single Core",
+    "gui": "active",
+    "agent_interface": "future_not_implemented",
+    "preferred_future_protocol": "MCP",
+    "single_core_rule": "active_architecture_direction"
+  },
+  "public_boundary": {
+    "production_source_code_public": false,
+    "private_prompts_public": false,
+    "credentials_public": false,
+    "privileged_infrastructure_details_public": false,
+    "customer_data_public": false,
+    "private_raw_evaluation_evidence_public": false
+  },
+  "product_surfaces": {
+    "studio": {
+      "availability": "PC_ONLY",
+      "desktop": "ENABLED",
+      "mobile": "VISIBLE_DISABLED",
+      "purpose": "finish and revise the current video",
+      "current_editing_surfaces": [
+        "Title",
+        "Thumbnail",
+        "Subtitles",
+        "CTA",
+        "Cut"
+      ],
+      "includes_supported_revision_render": true,
+      "general_purpose_nle": false
+    },
+    "growth": {
+      "purpose": "organize what happened, why it may have happened, and what to change next using observed KPI and video-side evidence",
+      "core_v1_status": "PRODUCTION",
+      "overall_maturity": "ACTIVE_EXPANSION",
+      "current_notes": [
+        "X exact-window KPI collection is a current production capability",
+        "metric availability depends on provider/API/account permissions",
+        "cross-platform adapter coverage is not complete"
+      ]
+    }
+  },
+  "security_auth_posture": {
+    "authentication": "PASSWORDLESS_EMAIL_OTP",
+    "pwa_otp_digits": 6,
+    "remembered_email": "EMAIL_ADDRESS_ONLY",
+    "remembered_email_persists_otp": false,
+    "remembered_email_persists_auth_token": false,
+    "rationale": "minimize the FramePrime-specific credential surface users must create/manage and keep PWA login low-friction",
+    "claims_not_made": [
+      "email OTP is universally stronger than password or MFA",
+      "current email OTP is MFA",
+      "FramePrime is fully security-audited or certified"
+    ],
+    "public_control_principles": [
+      "owner-scoped protected data access",
+      "RLS/authenticated-user boundaries on protected paths",
+      "secret values excluded from public repository",
+      "fail-closed integrity patterns",
+      "private learning remains owner-scoped"
+    ],
+    "prelaunch_security_audit": "PENDING",
+    "audit_scope_high_level": [
+      "OTP",
+      "RLS",
+      "secret exposure",
+      "IDOR-style authorization",
+      "public/private permission boundaries"
+    ]
+  },
+  "release_status": {
+    "stage": "PRE_BETA",
+    "general_availability": false,
+    "beta_validation": "PREPARATION_NOT_YET_STARTED",
+    "formal_prelaunch_security_audit": "PENDING",
+    "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
+    "repository_publication_means_formal_service_launch": false
+  }
+}

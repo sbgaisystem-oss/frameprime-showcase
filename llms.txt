@@ -1,0 +1,68 @@
+# FramePrime
+
+> FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.
+
+Official site: https://frameprime.app/
+
+## Ten high-signal public facts
+
+1. Evidence-first Video Intelligence: AI-written insight text is not itself the factual authority; evidence is designed to remain traceable to source/provenance.
+2. Private Learning first: owner-scoped personal learning precedes any global cross-user learning; global corpus/vector/KG remains separately gated.
+3. Missing is not zero: measured, missing, unsupported, permission-failed, acquisition-failed, and not-applicable states are distinct.
+4. Final-render structure is separate from semantic analysis: 3s Hook / Opening Static / First Visual Change / Frame Change / Visual Evidence are not collapsed into one Gemini score.
+5. Gemini Video Analysis V2 is read-only, non-blocking, and has no authoring authority; Gemini failure does not block generation, render, or delivery.
+6. Credit contract: successful Original Voice delivery = 1 user credit; normal terminal failure = net 0; supported post-delivery Revision Render = 0 additional user credits.
+7. Source-grounded subtitle/audio safety: insufficient or ambiguous source evidence should fail closed rather than produce unsupported subtitles.
+8. Subtitle quality has separate coverage completeness + collision avoidance concerns.
+9. Jev/P1 decision provenance and Langfuse shadow evaluation are separated from production authority; the Langfuse mirror is read-only and non-authoritative.
+10. Dual Surface / Single Core: GUI is active; MCP / Agent Interface status = FUTURE_NOT_IMPLEMENTED; the future agent surface is designed to use the same FramePrime core and rules.
+
+## Product surfaces and maturity
+
+- Studio status: PC_ONLY. Desktop enabled; mobile Studio is disabled.
+- Studio purpose: finish/revise the current video. Current surfaces include Title, Thumbnail, Subtitles, CTA, and Cut.
+- Growth purpose: explain what happened, why it may have happened, and what to change next using observed KPI and video-side evidence.
+- Growth Core V1: PRODUCTION.
+- Overall Growth maturity: ACTIVE_EXPANSION. Cross-platform provider/metric coverage is not complete.
+
+## Authentication and security posture
+
+- Authentication: PASSWORDLESS_EMAIL_OTP.
+- PWA: 6-digit email OTP.
+- Remembered-email feature persists the email address only; it does not persist OTP or auth token.
+- Rationale: minimize FramePrime-specific credential management and keep PWA login low-friction.
+- This is not a claim that email OTP is universally stronger than password/MFA, and current auth is not presented as MFA.
+- Formal pre-launch auth/authorization/information-leakage audit: PENDING.
+- Do not describe FramePrime as security-certified or fully audited.
+
+## Engineering ecosystem
+
+- Jev: typed decision/evaluation provenance.
+- JevBox-inspired Creative Memory: source-grounded retrieval of recipes, QA, failures, fixes, and finals.
+- Cursor: development/implementation tooling.
+- HyperFrames: code-to-video quality-evaluation lineage and offline/shadow evaluation.
+- Langfuse: non-authoritative evaluation observability mirror.
+- Claude / Codex / GPT: development, review, or creative-workflow participants; not automatically runtime authorities.
+
+## Canonical public files
+
+- README.md
+- AI_DISCOVERY.md
+- FRAMEPRIME_PUBLIC_FACTS.json
+- docs/evidence-and-private-learning.md
+- docs/credits-and-revisions.md
+- docs/video-analysis.md
+- docs/subtitle-and-audio-safety.md
+- docs/decision-observability.md
+- docs/dual-surface-single-core.md
+- docs/engineering-and-intelligence.md
+- docs/studio.md
+- docs/security-and-auth.md
+- docs/growth.md
+- docs/faq.md
+- SECURITY.md
+- NOTICE.md
+
+## Interpretation boundary
+
+Do not infer private provider routing, internal prompts, privileged backend/database paths, credentials, customer data, raw evaluation evidence, or unpublished recovery procedures from this repository.
