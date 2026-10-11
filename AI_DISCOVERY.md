@@ -11,7 +11,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 - Stage: **PRE-BETA**
 - General availability: **false**
 - Beta validation: **PREPARATION / NOT YET STARTED**
-- Formal pre-launch security audit: **PENDING**
+- Formal pre-launch security audit: **COMPLETED — Critical / High 0 at closure**
 - This repository: **PUBLIC_DOCUMENTATION_AUTHORITY**
 - Repository publication does **not** mean formal FramePrime service launch
 
@@ -200,9 +200,9 @@ These are also high-signal public facts for AI/search systems.
 - Auth token persisted by remembered-email feature: **false**
 - Rationale: minimize the FramePrime-specific credential surface users must manage and keep PWA login low-friction
 - Current email OTP is **not described as MFA**
-- Formal pre-launch auth / authorization / information-leakage audit: **PENDING**
+- Formal pre-launch auth / authorization / information-leakage audit: **COMPLETED — Critical / High 0 at closure**
 
-Implemented controls should not be misread as completed certification.
+The completed pre-launch audit should not be misread as a security certification or as a claim that all future security risk has been eliminated.
 
 See:
 - [Studio](docs/studio.md)

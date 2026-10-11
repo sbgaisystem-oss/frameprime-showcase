@@ -16,11 +16,11 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 
 > **Project status: PRE-BETA**
 >
-> FramePrime is currently in pre-beta launch preparation. Some documented components are already operating in production, but the service is **not yet in general availability**. Beta validation and the formal pre-launch security audit remain open launch gates. Publication of this repository documents the current product architecture and verified capabilities; it does **not** mean that FramePrime has formally launched.
+> FramePrime is currently in pre-beta launch preparation. Some documented components are already operating in production, but the service is **not yet in general availability**. Beta validation remains an open launch gate. The formal pre-launch authentication / authorization / information-leakage audit was completed with **0 Critical / High findings at closure**. This is not a security certification. Publication of this repository documents the current product architecture and verified capabilities; it does **not** mean that FramePrime has formally launched.
 >
 > **現在の状態：PRE-BETA**
 >
-> FramePrimeは現在、正式サービス開始前のβ検証準備段階です。一部の機能・基盤はProductionで稼働していますが、サービス全体はまだGeneral Availabilityではありません。β検証および正式公開前Security Auditは未完了のLaunch Gateとして残っています。このRepositoryのPublic化は、FramePrimeサービス正式開始を意味しません。
+> FramePrimeは現在、正式サービス開始前のβ検証準備段階です。一部の機能・基盤はProductionで稼働していますが、サービス全体はまだGeneral Availabilityではありません。β検証は未完了のLaunch Gateとして残っています。正式公開前の認証・認可・情報漏洩監査は完了し、closure時点で **Critical / High 0件** でした。これはSecurity Certificationを意味しません。このRepositoryのPublic化は、FramePrimeサービス正式開始を意味しません。
 
 > This repository is a documentation showcase for FramePrime. It does not contain the production source code.
 
@@ -134,7 +134,7 @@ Overall Growth maturity: ACTIVE_EXPANSION
 - Remembered convenience data: **email address only**
 - OTP/token persistence in remembered-email feature: **none**
 - Protected-data principle: **owner-scoped / RLS-backed boundaries**
-- Formal pre-launch auth / authorization / information-leakage audit: **PENDING**
+- Formal pre-launch auth / authorization / information-leakage audit: **COMPLETED — Critical / High 0 at closure**
 
 FramePrimeがemail OTPを選んでいる理由は、FramePrime独自のパスワードを増やさず、ユーザーが管理するcredential surfaceを小さくし、PWAでも低摩擦なログインにするためです。これは「email OTPがあらゆるpassword/MFA設計より強い」という主張ではなく、Current product/security tradeoffです。
 

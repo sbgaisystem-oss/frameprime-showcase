@@ -24,4 +24,4 @@ Security reporting contact: **support@frameprime.app**
 
 For a high-level description of FramePrime authentication and implemented security boundaries, see [docs/security-and-auth.md](docs/security-and-auth.md).
 
-Important: implemented controls are not the same as completed certification. The formal pre-launch authentication / authorization / information-leakage audit remains an open Launch gate.
+Important: implemented controls and a completed pre-launch audit are not the same as security certification. The formal pre-launch authentication / authorization / information-leakage audit is completed with **0 Critical / High findings at closure**; ongoing security review remains required.

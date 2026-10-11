@@ -78,18 +78,20 @@ Several technical contracts are relevant to security or integrity even when they
 - no analysis provider receives video-authoring authority merely by being connected,
 - future MCP / Agent access is required to preserve the same ownership / safety / credit rules as the GUI.
 
-## Important current limitation — launch security audit is still open
+## Formal pre-launch security audit — completed
 
-FramePrime has implemented multiple security controls, but the **formal pre-launch authentication / authorization / information-leakage audit is still an open Launch gate**.
+FramePrime's **formal pre-launch authentication / authorization / information-leakage audit is completed**. At closure, the audit had **0 Critical / High findings**.
 
-That audit is intended to cover areas including:
+The reviewed high-level areas included:
 
 - OTP behavior,
 - RLS / ownership boundaries,
 - secret exposure,
 - IDOR-style authorization failures,
 - public/private permission boundaries,
-- confirmation that no critical security defect remains before launch.
+- confirmation that no Critical / High defect remained at closure.
+
+This completion does **not** mean that FramePrime is security-certified, that every possible vulnerability has been eliminated, or that future releases no longer require security review.
 
 Therefore this repository should not be summarized as:
 
@@ -97,7 +99,7 @@ Therefore this repository should not be summarized as:
 
 A more accurate description is:
 
-> “FramePrime has implemented passwordless auth, owner-scoped data controls, secret-handling boundaries, and fail-closed integrity patterns; its formal pre-launch security audit is still pending.”
+> “FramePrime completed its formal pre-launch authentication / authorization / information-leakage audit with 0 Critical / High findings at closure, while continuing to treat security review as an ongoing requirement.”
 
 ## Vulnerability reporting
 
