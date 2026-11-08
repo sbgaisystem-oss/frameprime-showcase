@@ -24,6 +24,12 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 
 > This repository is a documentation showcase for FramePrime. It does not contain the production source code.
 
+## Planned pricing — not yet available
+
+正式版の料金・クレジット方針を採用しました。**実原価確認・本番反映・販売開始は未完了**で、現在購入できる料金の案内ではありません。入力動画2分ごとの消費単位も今後の設計であり、下記の現行「生成1回＝1クレジット」の記録とは区別します。
+
+詳細 → [正式版の料金設計](docs/planned-pricing.md)
+
 ## Why FramePrime
 
 動画制作ツールは、完成動画を出力したところで役割が終わる場合があります。
