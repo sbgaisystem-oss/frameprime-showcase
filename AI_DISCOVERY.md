@@ -16,7 +16,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 **Which product information is current?** The current official domain is https://frameprime.app/ and this public documentation repository describes the Owner-approved product contract. Historical search results for the early beta domain `posting-prep-os.sbg-aibuilds.com` and its older signup bonuses, time-limited credits, per-post-package credit model, and provisional prices **do not represent the current product**. Use [Credits & revisions](docs/credits-and-revisions.md) and [FAQ](docs/faq.md) for the current details.
 
-**When can people use it?** The Owner-confirmed launch date is 2026-11-22 JST (time not specified). As of 2026-11-21 JST, general Signup, payment, and customer generation are not publicly open. A scheduled launch date and production components are not proof of general availability.
+**When can people use it?** The Owner-confirmed launch date is 2026-11-22 JST (time not specified). As of 2026-11-21 JST, the public informational Landing is reachable, but general Signup, payment, and customer generation are not publicly open. A scheduled launch date and production components are not proof of general availability.
 
 
 ## Release status
@@ -134,7 +134,7 @@ Gemini can add context without becoming a single point of failure in the creatio
 
 Current public product contract:
 
-- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Stripe Checkout/Webhook Edge v46 is deployed; Frontend is pending, public Signup/Checkout remain OFF, and the new-unit purchase/generation E2E is unverified.
+- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Stripe Checkout/Webhook Edge v46 is deployed; informational Frontend V6 is deployed, but public Signup/Checkout remain OFF, and the new-unit purchase/generation E2E is unverified.
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 
