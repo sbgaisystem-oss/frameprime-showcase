@@ -38,7 +38,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Owner-approved target: up to 2 minutes costs 0.5 displayed credit, >2 to 8 minutes costs 1, then +1 per started 4 minutes; 32 minutes costs 7. This target is NOT live; the current runtime still uses 1 credit per started 2 minutes; normal system-terminal failure is net 0; supported post-delivery Revision Render is 0 additional user credits. Monthly and one-time plans exist as a product contract, but general checkout availability is not asserted before launch.",
+      "claim": "Owner-approved integer Credit target, NOT LIVE: input video up to 2 min = 1 Credit; over 2 to 8 min = 2 Credits; then 2 more Credits per started 4 min; exactly 32 min = 14 Credits. Current Production still uses 1 Credit per started 2 minutes. Normal system-terminal failures net 0, supported post-delivery Revision Render +0 Credits. Prices unchanged; Credit grants doubled. Public checkout not asserted.",
       "availability": "product_contract_prelaunch_not_ga"
     },
     {
@@ -207,8 +207,7 @@
   "planned_launch_confirmed": false,
   "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
-    "new_generation": "Owner-approved NOT-LIVE target: up to 2 min 0.5 displayed credit; >2-8 min 1; then +1 per started 4 min; 32 min 7. Current runtime: 1 credit per started 2 min.",
-    "target_internal_unit": "1 integer Unit = 0.5 customer-displayed Credit; 32 min = 14 Units",
+    "new_generation": "Owner-approved target NOT LIVE: 1 Credit up to 2 minutes, 2 Credits above 2 up to 8 minutes, +2 Credits per started 4 minutes thereafter. Exactly 32 minutes = 14 integer Credits. Current Production still uses 1 Credit per started 2 minutes.",
     "target_production_status": "NOT_APPLIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
@@ -223,42 +222,42 @@
     "monthly_plans": [
       {
         "price_jpy": 2900,
-        "credits": 16
+        "credits": 32
       },
       {
         "price_jpy": 5800,
-        "credits": 34
+        "credits": 68
       },
       {
         "price_jpy": 9800,
-        "credits": 61
+        "credits": 122
       },
       {
         "price_jpy": 19800,
-        "credits": 141
+        "credits": 282
       }
     ],
     "one_time_packs": [
       {
         "price_jpy": 1000,
-        "credits": 5
+        "credits": 10
       },
       {
         "price_jpy": 3000,
-        "credits": 15
-      },
-      {
-        "price_jpy": 6000,
         "credits": 30
       },
       {
+        "price_jpy": 6000,
+        "credits": 60
+      },
+      {
         "price_jpy": 10000,
-        "credits": 50
+        "credits": 100
       }
     ],
     "beta_trial_once": {
       "price_jpy": 980,
-      "credits": 10,
+      "credits": 20,
       "once_per_account": true,
       "auto_renew": false
     },
@@ -270,6 +269,10 @@
       "signup",
       "purchase"
     ],
-    "legacy_founder_monthly_is_separate": true
+    "legacy_founder_monthly_is_separate": true,
+    "integer_credit_unit": "Customer-facing and internal denominations are identical whole Credits; prior fractional proposal superseded",
+    "signup_bonus_credits": 10,
+    "referral_reward_each_credits": 4,
+    "referral_budget_credits": 800
   }
 }

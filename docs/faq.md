@@ -19,11 +19,11 @@ FramePrimeは単一の生成モデルではなく、動画制作・字幕・投�
 
 ## Original Voiceの生成には何credit必要ですか？
 
-Owner採用の新段階式では、サーバー検証済みの入力動画が **2分以内0.5 Credit、2分超〜8分1 Credit、以降4分ごとに1 Credit追加** です（32分=7 Credits）。内部整数1 Unitは顧客表示0.5 Creditに相当します。**この新仕様はProduction未適用で、現行Runtimeは旧式の入力2分ごと1 Creditです。** 通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+Owner採用の新段階式では、サーバー検証済みの入力動画が **2分以内1 Credit、2分超〜8分2 Credits、以降4分ごとに2 Credits追加** です（32分=14 Credits）。表示・内部台帳とも整数Creditに統一します。**この新仕様はProduction未適用で、現行Runtimeは旧式の入力2分ごと1 Creditです。** 通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
 
 ## Creditの購入方式は？
 
-正式な月額は **2,900円/16、5,800円/34、9,800円/61、19,800円/141 Credits** です。買い切りは **1,000円/5、3,000円/15、6,000円/30、10,000円/50 Credits**。別枠のβ体験980円/10 Creditsは生涯1回・自動更新なし。すべて税込で、Creditは期限なし・繰越可能です。詳細は[Credits and revisions](credits-and-revisions.md)。正式公開前は一般購入が利用可能とは主張しません。
+正式な月額は **2,900円/32、5,800円/68、9,800円/122、19,800円/282 Credits** です。買い切りは **1,000円/10、3,000円/30、6,000円/60、10,000円/100 Credits**。別枠のβ体験980円/20 Creditsは生涯1回・自動更新なし。すべて税込で、Creditは期限なし・繰越可能です。詳細は[Credits and revisions](credits-and-revisions.md)。登録特典10 Credits・紹介報酬双方4 Credits（予算800 Credits）も新整数仕様です。これらはProduction未適用で、正式公開前は一般購入が利用可能とは主張しません。
 
 ## 完成後の修正でもcreditを消費しますか？
 
