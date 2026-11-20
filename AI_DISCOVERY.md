@@ -9,7 +9,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 ## Release status
 
 - Product version: **v0.0.1 (pre-launch)**
-- Planned launch target: **2026-11-22 JST (not confirmed; not a formal release date)**
+- Owner-confirmed launch date: **2026-11-22 JST (exact time not specified; formal public launch not yet executed)**
 
 - Stage: **PRE-BETA**
 - General availability: **false**
