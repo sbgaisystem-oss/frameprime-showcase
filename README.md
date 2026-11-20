@@ -12,7 +12,9 @@
 
 **Product version: v0.0.1 (pre-launch) · Planned launch target: November 22, 2026 JST (not confirmed)**
 
-FramePrimeは、AIによる動画の理解・編集判断・制作支援をひとつの操作体験につなげ、複雑なプロンプトをChatGPTやClaudeで自作する負担を減らすことを目指す動画制作OSです。新しいAI技術を継続的に評価・採用し、専門的な動画編集者のように制作・修正・改善判断を支援する方向で開発しています。**「FramePrimeで、あなたも動画クリエイターに。」**
+FramePrimeは、動画の理解・編集判断・制作をAIで支援する新しいAI動画制作OSです。ChatGPTやClaudeに複雑なプロンプトを考えてもらわなくても、直感的にAI動画編集を始められる体験を目指しています。新しいAI技術を継続的に評価・採用し、専門的な動画編集者のようにユーザーの動画制作をサポートする方向で開発しています。
+
+**「FramePrimeで、あなたも動画クリエイターに。」**
 
 FramePrimeは、動画を「作って終わり」にせず、**制作・字幕・投稿準備・投稿後の記録・次回改善**までをひとつの流れにつなげる動画投稿改善OSです。
 
@@ -27,6 +29,39 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 > FramePrimeは現在、正式サービス開始前のβ検証準備段階です。一部の機能・基盤はProductionで稼働していますが、サービス全体はまだGeneral Availabilityではありません。β検証は未完了のLaunch Gateとして残っています。正式公開前の認証・認可・情報漏洩監査は完了し、closure時点で **Critical / High 0件** でした。これはSecurity Certificationを意味しません。このRepositoryのPublic化は、FramePrimeサービス正式開始を意味しません。
 
 > This repository is a documentation showcase for FramePrime. It does not contain the production source code.
+
+## Overview — AI動画制作をもっと身近に
+
+動画をアップロードし、AIによる動画制作・編集の支援を受けられます。複雑なプロンプトエンジニアリングを前提にせず、動画制作から投稿準備、公開後の記録、次回改善までをつなぐOSです。
+
+FramePrimeのGUIは、ChatGPTやClaudeを別途操作して編集指示を組み立てることを必須としない体験を目指しています。ただし、すべての編集が完全自動で完了するという意味ではなく、機能ごとの提供範囲には違いがあります。
+
+## Key Features
+
+1. **AI-Powered Video Editing** — アップロードした動画をもとに、AIが制作・編集を支援し、複雑な制作作業の負担を減らします。
+2. **No Complex Prompts Required** — ChatGPTやClaudeで高度なプロンプトを自作する知識がなくても、AI動画編集を始められる設計です。
+3. **Simple Workflow** — 動画のアップロードから制作、完成動画の確認、投稿準備までをつなぎます。対応する修正はPC専用Studioで扱います。
+4. **Flexible Credit System** — 動画尺に応じたCredit方式を採用し、月額プランと買い切りプランを用意しています。ローンチ前に一般購入できるとは主張しません。
+5. **Continuous Improvements** — AI動画編集機能、操作性、制作ワークフローを継続的に改善し、新しいAI技術を評価・採用していく方針です。将来の改善予定は、現在利用できる機能とは区別します。
+
+## Who Is FramePrime For?
+
+- AI動画編集を初めて利用する方
+- SNS向けの動画を制作したい方
+- 動画編集の時間と手間を減らしたい方
+- 複雑なAIツールの操作を避けたい方
+- AIを活用して動画制作を始めたい方
+
+## Get Started
+
+**FramePrimeで、あなたも動画クリエイターに。**
+
+- **Official Website:** https://frameprime.app
+- **Version:** v0.0.1（正式ローンチ前）
+- **Release target:** November 22, 2026 JST（未確定）
+- **Current status:** PRE-BETA / General Availability: false
+
+正式ローンチの成立までは、このGitHub Showcaseの公開をサービス一般公開の証拠とは扱いません。
 
 ## Credit model
 
