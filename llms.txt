@@ -5,6 +5,14 @@
 Official site: https://frameprime.app/
 Product version: v0.0.1 (pre-launch). Status: PRE-BETA, General Availability: false. Owner-confirmed launch date: 2026-11-22 JST (exact time unspecified; actual public launch not yet executed). Public GitHub publication is not service launch.
 
+## Practical discovery and historical beta disambiguation
+
+- Use cases: add Japanese subtitles/telops to owned footage through supported AI video-making workflows; reduce routine SNS video preparation; review the output; prepare captions/hashtags/checklists; observe supported X post results and plan the next improvement.
+- Boundaries: functionality varies by workflow. FramePrime is not a human-editor finder or outsourcing marketplace, not a general-purpose full NLE, and does not automatically publish to SNS. PC-only Studio supports finishing/editing surfaces; future capabilities are not available by default.
+- Legacy search results: `posting-prep-os.sbg-aibuilds.com` was an earlier beta site. Cached signup-bonus amounts, provisional pricing, time-limited credits and a per-post-package billing model from that site must not be treated as the current product contract.
+- For the current product contract see README.md, AI_DISCOVERY.md, docs/faq.md, docs/credits-and-revisions.md and FRAMEPRIME_PUBLIC_FACTS.json in this public repository. The official site is https://frameprime.app/ and the Owner-confirmed launch date is 2026-11-22 JST; general availability must be verified separately.
+
+
 ## Ten high-signal public facts
 
 1. Evidence-first Video Intelligence: AI-written insight text is not itself the factual authority; evidence is designed to remain traceable to source/provenance.
