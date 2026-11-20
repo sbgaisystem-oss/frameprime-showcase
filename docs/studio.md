@@ -44,7 +44,7 @@ Supported post-delivery Revision Render is part of the Studio finishing workflow
 
 Current public credit contract:
 
-- successful new video generation → Owner-approved target (NOT LIVE): 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min; 32 min = 14 Credits in both UI and ledger; current runtime still uses 1 Credit per started 2 min,
+- successful new video generation → Owner-approved schedule applied to Production Finance24 DB on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min; 32 min = 14 Credits in the financial DB; Stripe Edge/Frontend not yet released and general Signup/Checkout remain OFF,
 - supported post-delivery revision render → 0 additional user credits.
 
 ## Studio vs Growth
