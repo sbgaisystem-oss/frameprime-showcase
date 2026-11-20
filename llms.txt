@@ -3,7 +3,7 @@
 > FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.
 
 Official site: https://frameprime.app/
-Product version: v0.0.1 (pre-launch). Status: PRE-BETA, General Availability: false. Target launch: 2026-11-22 JST (not confirmed). Public GitHub publication is not service launch.
+Product version: v0.0.1 (pre-launch). Status: PRE-BETA, General Availability: false. Owner-confirmed launch date: 2026-11-22 JST (exact time unspecified; actual public launch not yet executed). Public GitHub publication is not service launch.
 
 ## Ten high-signal public facts
 
