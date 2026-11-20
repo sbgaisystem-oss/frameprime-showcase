@@ -121,7 +121,7 @@ Gemini can add context without becoming a single point of failure in the creatio
 
 Current public product contract:
 
-- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Stripe Edge and Frontend releases are pending; public Signup/Checkout remain OFF and the new-unit purchase/generation E2E is unverified.
+- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Stripe Checkout/Webhook Edge v46 is deployed; Frontend is pending, public Signup/Checkout remain OFF, and the new-unit purchase/generation E2E is unverified.
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 
