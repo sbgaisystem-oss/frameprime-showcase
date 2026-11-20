@@ -38,7 +38,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Owner-approved integer Credit schedule, applied to Production Finance24 DB on 2026-11-21 (not generally available): input video up to 2 min = 1 Credit; over 2 to 8 min = 2 Credits; then 2 more Credits per started 4 min; exactly 32 min = 14 Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, but Frontend and public launch gates are pending; public Signup/Checkout remain OFF. Normal system-terminal failures net 0, supported post-delivery Revision Render +0 Credits. Prices unchanged; Credit grants doubled. Public checkout not asserted.",
+      "claim": "Owner-approved integer Credit schedule, applied to Production Finance24 DB on 2026-11-21 (not generally available): input video up to 2 min = 1 Credit; over 2 to 8 min = 2 Credits; then 2 more Credits per started 4 min; exactly 32 min = 14 Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, and public Landing/Frontend V6 is deployed; general launch gates remain pending and public Signup/Checkout are OFF. Normal system-terminal failures net 0, supported post-delivery Revision Render +0 Credits. Prices unchanged; Credit grants doubled. Public checkout not asserted.",
       "availability": "product_contract_prelaunch_not_ga"
     },
     {
@@ -207,8 +207,8 @@
   "planned_launch_confirmed": true,
   "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
-    "new_generation": "Owner-approved schedule applied in Production Finance24 DB on 2026-11-21 (general release pending): 1 Credit up to 2 minutes, 2 Credits above 2 up to 8 minutes, +2 Credits per started 4 minutes thereafter. Exactly 32 minutes = 14 integer Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, but Frontend and public launch gates are pending; public Signup/Checkout remain OFF.",
-    "target_production_status": "FINANCE_DB_AND_STRIPE_V46_APPLIED_FRONTEND_PENDING",
+    "new_generation": "Owner-approved schedule applied in Production Finance24 DB on 2026-11-21 (general release pending): 1 Credit up to 2 minutes, 2 Credits above 2 up to 8 minutes, +2 Credits per started 4 minutes thereafter. Exactly 32 minutes = 14 integer Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, and public Landing/Frontend V6 is deployed; general launch gates remain pending and public Signup/Checkout are OFF.",
+    "target_production_status": "FINANCE_DB_STRIPE_V46_PUBLIC_LANDING_V176_DEPLOYED_GENERAL_FLOWS_OFF",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
     "plans": [
