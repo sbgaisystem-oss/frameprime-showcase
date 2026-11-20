@@ -18,6 +18,16 @@ FramePrimeは、動画の理解・編集判断・制作をAIで支援する新�
 
 FramePrimeは、動画を「作って終わり」にせず、**制作・字幕・投稿準備・投稿後の記録・次回改善**までをひとつの流れにつなげる動画投稿改善OSです。
 
+
+
+## 現在のFramePrimeと旧β版の検索結果について（2026-11-21 JST）
+
+FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS向け動画を仕上げて投稿文を準備したり、投稿後に取得できた実測結果を次の制作へ活かしたりする作業をAIで支援する**動画投稿改善OS**です。機能と出力内容は対応する制作フローによって異なり、すべての編集が全自動で完了するわけではありません。動画編集者の紹介・外注マッチングサービスでもありません。
+
+**古い検索結果との区別：** 旧βサイト `posting-prep-os.sbg-aibuilds.com` の検索スニペットや過去の利用規約・料金表示は、現在のFramePrimeの商品・Credit制度・機能範囲の正本ではありません。現行の説明は本Repositoryの[料金とCredits](docs/credits-and-revisions.md)、[FAQ](docs/faq.md)、[AI向け公開事実](AI_DISCOVERY.md)を参照してください。正式サイトは `https://frameprime.app/` です。
+
+**公開状態：** 2026年11月22日（JST）のローンチ日はOwner確定ですが、2026年11月21日時点では一般向けSignup・Checkout・生成はまだ開始していません。日付の決定と実サービスの公開完了は別です。
+
 **Official site:** https://frameprime.app/
 
 > **Project status: PRE-BETA · v0.0.1 pre-launch · Owner-confirmed launch date: November 22, 2026 JST (general availability not yet enabled)**
