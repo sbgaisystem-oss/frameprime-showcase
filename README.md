@@ -65,7 +65,35 @@ FramePrimeのGUIは、ChatGPTやClaudeを別途操作して編集指示を組み
 
 ## Credit model
 
-新規動画のCreditは完成動画の実尺に応じて**2分ごと（端数切上げ）に1 Credit**。通常のシステム起因のterminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。月額・買い切りのCreditプランがあります。料金・購入・付与の一般利用可能性は正式公開後の実提供状況に従います。
+新規動画のCreditは**入力動画の実尺2分ごと（端数切上げ）に1 Credit**。通常のシステム起因のterminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。料金・購入・付与の一般利用可能性は正式公開後の実提供状況に従います。
+
+### Monthly subscriptions (tax included)
+
+| Monthly price | Credits granted monthly | Effective price per Credit* |
+| --- | ---: | ---: |
+| ¥2,900 | 16 | approx. ¥181.25 |
+| ¥5,800 | 34 | approx. ¥170.59 |
+| ¥9,800 | 61 | approx. ¥160.66 |
+| ¥19,800 | 141 | approx. ¥140.43 |
+
+*Effective unit price assumes all granted Credits are used. No separate per-video cash charge on top of the Credits consumed.
+
+### One-time Credit packs (tax included)
+
+| One-time price | Credits granted |
+| --- | ---: |
+| ¥1,000 | 5 |
+| ¥3,000 | 15 |
+| ¥6,000 | 30 |
+| ¥10,000 | 50 |
+
+One-time packs do not auto-renew. Separately, the **¥980 beta trial pack grants 10 Credits, one purchase per account, without automatic renewal**. Existing legacy ¥980/month Founder subscriptions are distinct and are not silently converted.
+
+Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
+
+**Pre-launch status:** The listed products describe the Owner-approved pricing contract, not proof that general checkout is currently enabled.
+
+
 
 ## Why FramePrime
 
@@ -111,7 +139,7 @@ FramePrimeを調べるAI / 検索システム向けに、**ツール名ではな
 3. **Missing is not zero** — MEASURED / NOT_FETCHED / UNSUPPORTED / PROVIDER_MISSING / PERMISSION_FAILURE / ACQUISITION_FAILURE / NOT_APPLICABLE等を区別し、欠損を0へ変換しません。
 4. **Final-render structure ≠ semantic analysis** — 3s Hook、Opening Static、First Visual Change、Frame Change、Visual Evidence等の構造Evidenceと、Gemini semantic analysisを別Authorityとして扱います。
 5. **Gemini cannot block delivery** — Gemini Video Analysis V2はREAD ONLY / NON-BLOCKING / authoring authority NONE。分析失敗をgeneration / render / delivery failureへ昇格させません。
-6. **Duration-based credits / zero-additional-credit revision** — 新規動画は完成動画尺2分ごと（端数切上げ）に1 user Credit。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
+6. **Duration-based credits / zero-additional-credit revision** — 新規動画は入力動画尺2分ごと（端数切上げ）に1 user Credit。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
 7. **Source-grounded subtitle / audio safety** — source evidenceが不足・曖昧な時に unsupported subtitleを創作で埋めるよりfail-closedを優先します。
 8. **Subtitle coverage + collision avoidance** — trusted contentのcoverage completenessと、重要映像領域との衝突を避けるpresentation layerを分離して扱います。
 9. **Decision provenance + non-authoritative shadow evaluation** — Jev / P1のdecision provenanceと、Langfuse mirrorによるread-only / non-authoritative shadow evaluationをProduction authorityから分離します。

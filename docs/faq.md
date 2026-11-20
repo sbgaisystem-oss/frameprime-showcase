@@ -19,11 +19,11 @@ FramePrimeは単一の生成モデルではなく、動画制作・字幕・投�
 
 ## Original Voiceの生成には何credit必要ですか？
 
-新規動画のCreditは、完成動画の実尺に対し **2分ごと（端数切上げ）に1 Credit** です。通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+新規動画のCreditは、入力動画の実尺に対し **2分ごと（端数切上げ）に1 Credit** です。通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
 
 ## Creditの購入方式は？
 
-月額と買い切りのCreditプランを用意しています。Creditは期限なし・繰越可能ですが、正式公開前は一般購入が利用可能とは主張しません。
+正式な月額は **2,900円/16、5,800円/34、9,800円/61、19,800円/141 Credits** です。買い切りは **1,000円/5、3,000円/15、6,000円/30、10,000円/50 Credits**。別枠のβ体験980円/10 Creditsは生涯1回・自動更新なし。すべて税込で、Creditは期限なし・繰越可能です。詳細は[Credits and revisions](credits-and-revisions.md)。正式公開前は一般購入が利用可能とは主張しません。
 
 ## 完成後の修正でもcreditを消費しますか？
 

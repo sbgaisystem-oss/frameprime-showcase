@@ -38,7 +38,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "New video creation uses 1 user credit for every started 2 minutes of final video duration (rounded up); normal system-terminal failure is net 0; supported post-delivery Revision Render is 0 additional user credits. Monthly and one-time plans exist as a product contract, but general checkout availability is not asserted before launch.",
+      "claim": "New video creation uses 1 user credit for every started 2 minutes of input source video duration (rounded up); normal system-terminal failure is net 0; supported post-delivery Revision Render is 0 additional user credits. Monthly and one-time plans exist as a product contract, but general checkout availability is not asserted before launch.",
       "availability": "product_contract_prelaunch_not_ga"
     },
     {
@@ -207,13 +207,67 @@
   "planned_launch_confirmed": false,
   "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
-    "new_generation": "1 credit per started 2 minutes of final video duration (rounded up)",
+    "new_generation": "1 credit per started 2 minutes of input source video duration (rounded up)",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
     "plans": [
       "monthly",
       "one_time"
     ],
-    "general_purchase_availability": "not asserted before production launch verification"
+    "general_purchase_availability": "not asserted before production launch verification",
+    "billing_basis": "server-verified input source video duration (milliseconds)",
+    "currency": "JPY",
+    "tax_included": true,
+    "monthly_plans": [
+      {
+        "price_jpy": 2900,
+        "credits": 16
+      },
+      {
+        "price_jpy": 5800,
+        "credits": 34
+      },
+      {
+        "price_jpy": 9800,
+        "credits": 61
+      },
+      {
+        "price_jpy": 19800,
+        "credits": 141
+      }
+    ],
+    "one_time_packs": [
+      {
+        "price_jpy": 1000,
+        "credits": 5
+      },
+      {
+        "price_jpy": 3000,
+        "credits": 15
+      },
+      {
+        "price_jpy": 6000,
+        "credits": 30
+      },
+      {
+        "price_jpy": 10000,
+        "credits": 50
+      }
+    ],
+    "beta_trial_once": {
+      "price_jpy": 980,
+      "credits": 10,
+      "once_per_account": true,
+      "auto_renew": false
+    },
+    "no_expiration": true,
+    "carry_over": true,
+    "consumption_order": [
+      "referral",
+      "subscription",
+      "signup",
+      "purchase"
+    ],
+    "legacy_founder_monthly_is_separate": true
   }
 }

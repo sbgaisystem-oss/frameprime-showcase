@@ -121,11 +121,11 @@ Gemini can add context without becoming a single point of failure in the creatio
 
 Current public product contract:
 
-- successful new video delivery → **1 user credit per started 2 minutes of final video duration** (rounded up)
+- successful new video delivery → **1 user credit per started 2 minutes of input source video duration** (rounded up)
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 
-Monthly and one-time credit plans are designed; pre-launch documentation does not imply checkout is generally available. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
+The Owner-approved monthly plans are ¥2,900/16, ¥5,800/34, ¥9,800/61 and ¥19,800/141 Credits. One-time packs are ¥1,000/5, ¥3,000/15, ¥6,000/30 and ¥10,000/50 Credits. A separate ¥980/10-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Pre-launch documentation does not imply checkout is generally available. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
 
 See: [Credits and revisions](docs/credits-and-revisions.md)
 

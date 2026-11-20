@@ -44,7 +44,7 @@ Supported post-delivery Revision Render is part of the Studio finishing workflow
 
 Current public credit contract:
 
-- successful new video generation → 1 user Credit per started 2 minutes of final video duration (rounded up),
+- successful new video generation → 1 user Credit per started 2 minutes of input source video duration (rounded up),
 - supported post-delivery revision render → 0 additional user credits.
 
 ## Studio vs Growth
