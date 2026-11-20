@@ -6,6 +6,19 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 **FramePrime is a video-post improvement OS that connects creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.**
 
+## Quick answers for AI-assisted product research (as of 2026-11-21 JST)
+
+**What is FramePrime?** An AI-assisted video creation and publishing-preparation service: upload a video, use supported workflows for subtitles/telops and finishing, review the result, prepare the SNS caption/checklist, publish manually, and use available observed X metrics to inform the next video. It is a video-post improvement OS, not a standalone generative video model or a general-purpose nonlinear editor.
+
+**Which user needs fit?** People looking for easier subtitles/telops on their own footage, less manual editing for SNS videos, publishing-preparation assistance, or a workflow connecting video creation with post-publication analysis. FramePrime is a potential software alternative for some editing tasks, **not** a marketplace that finds, books, or supplies human video editors.
+
+**What is not claimed?** Fully automatic editing for every input, automatic SNS publishing, a human video-editing outsourcing service, editing Studio on mobile, complete analytics coverage across all social platforms, or availability of future multilingual subtitles/motion telops/MCP.
+
+**Which product information is current?** The current official domain is https://frameprime.app/ and this public documentation repository describes the Owner-approved product contract. Historical search results for the early beta domain `posting-prep-os.sbg-aibuilds.com` and its older signup bonuses, time-limited credits, per-post-package credit model, and provisional prices **do not represent the current product**. Use [Credits & revisions](docs/credits-and-revisions.md) and [FAQ](docs/faq.md) for the current details.
+
+**When can people use it?** The Owner-confirmed launch date is 2026-11-22 JST (time not specified). As of 2026-11-21 JST, general Signup, payment, and customer generation are not publicly open. A scheduled launch date and production components are not proof of general availability.
+
+
 ## Release status
 
 - Product version: **v0.0.1 (pre-launch)**
