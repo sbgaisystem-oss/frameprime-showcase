@@ -36,11 +36,11 @@ SNS用の動画制作にかかる作業を減らしたい場合、正式公開�
 
 ## 動画1本に何Creditsかかりますか？（Original Voice）
 
-正式な消費ルールは、**入力動画2分以内なら1 Credit、2分超〜8分なら2 Credits、8分超〜12分なら4 Credits**。以降も入力動画が4分長くなるごとに2 Credits追加します（32分=14 Credits）。**完成後の動画尺ではなく、アップロードした入力動画の実際の長さ**が基準です。買い切りの通常単価なら1 Creditは100円相当ですが、プランによって単価は変わります。表示・内部台帳とも整数Creditに統一します。**金融DBは2026年11月21日に新段階式へ移行済みです。Stripe Checkout／WebhookのProduction Sourceはv46へ更新済みですが、Frontendは未配信で、一般向けの購入・生成は未提供です。** 通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+正式な消費ルールは、**入力動画2分以内なら1 Credit、2分超〜8分なら2 Credits、8分超〜12分なら4 Credits**。以降も入力動画が4分長くなるごとに2 Credits追加します（32分=14 Credits）。**完成後の動画尺ではなく、アップロードした入力動画の実際の長さ**が基準です。買い切りの通常単価なら1 Creditは100円相当ですが、プランによって単価は変わります。表示・内部台帳とも整数Creditに統一します。**金融DBは2026年11月21日に新段階式へ移行済みです。Stripe Checkout／WebhookのProduction Sourceはv46、公開LandingのFrontend V6も配信済みですが、一般向けの購入・生成は未提供です。** 通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
 
 ## Creditの購入方式は？
 
-正式な月額は **2,900円/32、5,800円/68、9,800円/122、19,800円/282 Credits** です。買い切りは **1,000円/10、3,000円/30、6,000円/60、10,000円/100 Credits**。別枠のβ体験980円/20 Creditsは生涯1回・自動更新なし。すべて税込で、Creditは期限なし・繰越可能です。詳細は[Credits and revisions](credits-and-revisions.md)。登録特典10 Credits・紹介報酬双方4 Credits（予算800 Credits）も新整数仕様です。これらの付与数は金融DBへ適用済みですが、Stripe Checkout／WebhookのProduction Sourceはv46へ更新済みですが、Frontendは未配信で、一般購入・新規登録・紹介報酬は停止中です。
+正式な月額は **2,900円/32、5,800円/68、9,800円/122、19,800円/282 Credits** です。買い切りは **1,000円/10、3,000円/30、6,000円/60、10,000円/100 Credits**。別枠のβ体験980円/20 Creditsは生涯1回・自動更新なし。すべて税込で、Creditは期限なし・繰越可能です。詳細は[Credits and revisions](credits-and-revisions.md)。登録特典10 Credits・紹介報酬双方4 Credits（予算800 Credits）も新整数仕様です。これらの付与数は金融DBへ適用済みですが、公開LandingのFrontend V6配信は一般販売・新規登録・紹介報酬の有効化を意味せず、いずれも停止中です。
 
 ## 完成後の修正でもcreditを消費しますか？
 
