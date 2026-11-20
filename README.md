@@ -10,7 +10,7 @@
 
 **つくる → 学ぶ → 次を伸ばす。**
 
-**Product version: v0.0.1 (pre-launch) · Planned launch target: November 22, 2026 JST (not confirmed)**
+**Product version: v0.0.1 (pre-launch) · Owner-confirmed launch date: November 22, 2026 JST (public launch not yet executed)**
 
 FramePrimeは、動画の理解・編集判断・制作をAIで支援する新しいAI動画制作OSです。ChatGPTやClaudeに複雑なプロンプトを考えてもらわなくても、直感的にAI動画編集を始められる体験を目指しています。新しいAI技術を継続的に評価・採用し、専門的な動画編集者のようにユーザーの動画制作をサポートする方向で開発しています。
 
@@ -20,7 +20,7 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 
 **Official site:** https://frameprime.app/
 
-> **Project status: PRE-BETA · v0.0.1 pre-launch · target November 22, 2026 JST (not confirmed)**
+> **Project status: PRE-BETA · v0.0.1 pre-launch · Owner-confirmed launch date: November 22, 2026 JST (general availability not yet enabled)**
 >
 > FramePrime is currently in pre-beta launch preparation. Some documented components are already operating in production, but the service is **not yet in general availability**. Beta validation remains an open launch gate. The formal pre-launch authentication / authorization / information-leakage audit was completed with **0 Critical / High findings at closure**. This is not a security certification. Publication of this repository documents the current product architecture and verified capabilities; it does **not** mean that FramePrime has formally launched.
 >
@@ -84,7 +84,7 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 - **Official Website:** https://frameprime.app
 - **Version:** v0.0.1（正式ローンチ前）
-- **Release target:** November 22, 2026 JST（未確定）
+- **Release target:** November 22, 2026 JST（Owner確定／実公開・一般販売開始は未成立）
 - **Current status:** PRE-BETA / General Availability: false
 
 正式ローンチの成立までは、このGitHub Showcaseの公開をサービス一般公開の証拠とは扱いません。
