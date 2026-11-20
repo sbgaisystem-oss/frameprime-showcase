@@ -19,7 +19,7 @@ FramePrimeは単一の生成モデルではなく、動画制作・字幕・投�
 
 ## Original Voiceの生成には何credit必要ですか？
 
-新規動画のCreditは、入力動画の実尺に対し **2分ごと（端数切上げ）に1 Credit** です。通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+Owner採用の新段階式では、サーバー検証済みの入力動画が **2分以内0.5 Credit、2分超〜8分1 Credit、以降4分ごとに1 Credit追加** です（32分=7 Credits）。内部整数1 Unitは顧客表示0.5 Creditに相当します。**この新仕様はProduction未適用で、現行Runtimeは旧式の入力2分ごと1 Creditです。** 通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
 
 ## Creditの購入方式は？
 

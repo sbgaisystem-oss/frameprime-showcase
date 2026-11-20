@@ -2,13 +2,17 @@
 
 FramePrime deliberately separates the credit cost of **creating a new deliverable** from the cost of **refining an already delivered video**.
 
-## Current public product contract
+## Owner-approved target credit schedule (not yet applied in Production)
+
+**Customer-visible Credit and internal integer Unit are different:** 0.5 customer Credit = 1 internal Unit. A 32-minute source uses 7 displayed Credits = 14 internal Units under the target schedule. The currently deployed runtime still uses the legacy 1 Credit per started 2 minutes; this target schedule is **NOT live** until protected financial and UI release is verified.
+
+## Target product contract
 
 ### Original Voice generation
 
 A successfully delivered Original Voice generation consumes:
 
-**1 user Credit per started 2 minutes of input source video duration (rounded up)**
+**0 < input duration <= 2 minutes: 0.5 displayed Credit; >2 to 8 minutes: 1 displayed Credit; above 8 minutes: 1 additional Credit per started 4-minute interval.** At exactly 32 minutes: 7 Credits. **This target is not yet applied to Production.**
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
@@ -62,13 +66,15 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 
 | Input video length | Credits | One-time-pack equivalent (¥200/Credit) |
 | --- | ---: | ---: |
-| Up to 2 minutes | 1 | ¥200 |
-| 4 minutes | 2 | ¥400 |
-| 10 minutes | 5 | ¥1,000 |
-| 20 minutes | 10 | ¥2,000 |
-| 30 minutes | 15 | ¥3,000 |
+| Up to 2 minutes | 0.5 | ¥100 |
+| 4 minutes | 1 | ¥200 |
+| 8 minutes | 1 | ¥200 |
+| 10 minutes | 2 | ¥400 |
+| 20 minutes | 4 | ¥800 |
+| 30 minutes | 7 | ¥1,400 |
+| 32 minutes | 7 | ¥1,400 |
 
-The 30-minute calculation is illustrative pricing mathematics; it does not establish that the current production runtime supports 30-minute processing.
+The 30/32-minute calculations are target-schedule pricing illustrations only; the live runtime has not yet adopted this schedule, nor is long-form production support established.
 
 ## Why this matters
 
@@ -76,7 +82,7 @@ The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → ceil(input source video duration in minutes / 2) Credits when successfully delivered
+  → target: 0.5 Credit up to 2 minutes; 1 Credit up to 8 minutes; +1 per started 4 minutes after 8 (NOT LIVE)
 
 Supported revision of delivered result
   → 0 additional user credits

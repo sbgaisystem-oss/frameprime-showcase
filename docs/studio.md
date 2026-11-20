@@ -44,7 +44,7 @@ Supported post-delivery Revision Render is part of the Studio finishing workflow
 
 Current public credit contract:
 
-- successful new video generation → 1 user Credit per started 2 minutes of input source video duration (rounded up),
+- successful new video generation → Owner-approved target (NOT LIVE): 0.5 Credit up to 2 min, 1 Credit for >2–8 min, then +1 per started 4 min; 32 min = 7 displayed Credits = 14 internal integer Units; current runtime still uses 1 Credit per started 2 min,
 - supported post-delivery revision render → 0 additional user credits.
 
 ## Studio vs Growth

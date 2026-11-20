@@ -121,7 +121,7 @@ Gemini can add context without becoming a single point of failure in the creatio
 
 Current public product contract:
 
-- successful new video delivery → **1 user credit per started 2 minutes of input source video duration** (rounded up)
+- successful new video delivery → **Owner-approved target (NOT LIVE): 0.5 Credit up to 2 min, 1 Credit for >2–8 min, then +1 Credit per started 4 min; 32 min = 7 Credits**. Current runtime still uses 1 Credit per started 2 minutes.
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 

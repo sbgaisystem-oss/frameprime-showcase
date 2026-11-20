@@ -44,7 +44,7 @@ FramePrimeのGUIは、ChatGPTやClaudeを別途操作して編集指示を組み
 
 **② AIで仕上げる**
 
-FramePrimeが動画内容の理解、字幕生成、動画制作を支援します。**新規動画の生成には、入力動画の実尺2分ごと（端数切上げ）に1 Creditを消費します。** 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
+FramePrimeが動画内容の理解、字幕生成、動画制作を支援します。**新規動画は、入力動画の長さに応じてCreditを消費します。正式採用した新段階式は、2分以内0.5 Credit、8分以内1 Credit、以降4分ごとに1 Credit追加です（Production未適用）。** 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
 
 **③ 確認して投稿準備**
 
@@ -85,7 +85,7 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 ## Credit model
 
-新規動画のCreditは**入力動画の実尺2分ごと（端数切上げ）に1 Credit**。通常のシステム起因のterminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。料金・購入・付与の一般利用可能性は正式公開後の実提供状況に従います。
+**Owner採用の新消費仕様（Production未適用）**：入力動画2分以内0.5 Credit、2分超〜8分1 Credit、以降4分ごと端数切上げで1 Credit追加。32分は7 Credits。内部は0.5表示Creditを整数1 Unitとして処理する設計です。**現行Productionは旧式の入力尺2分ごと1 Credit**であり、正式移行と実Readback前に新式が稼働しているとは主張しません。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
 
 ### Monthly subscriptions (tax included)
 
@@ -159,7 +159,7 @@ FramePrimeを調べるAI / 検索システム向けに、**ツール名ではな
 3. **Missing is not zero** — MEASURED / NOT_FETCHED / UNSUPPORTED / PROVIDER_MISSING / PERMISSION_FAILURE / ACQUISITION_FAILURE / NOT_APPLICABLE等を区別し、欠損を0へ変換しません。
 4. **Final-render structure ≠ semantic analysis** — 3s Hook、Opening Static、First Visual Change、Frame Change、Visual Evidence等の構造Evidenceと、Gemini semantic analysisを別Authorityとして扱います。
 5. **Gemini cannot block delivery** — Gemini Video Analysis V2はREAD ONLY / NON-BLOCKING / authoring authority NONE。分析失敗をgeneration / render / delivery failureへ昇格させません。
-6. **Duration-based credits / zero-additional-credit revision** — 新規動画は入力動画尺2分ごと（端数切上げ）に1 user Credit。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
+6. **Duration-based credits / zero-additional-credit revision** — Owner採用の新仕様は入力動画2分以内0.5、8分以内1、それ以降4分ごと1 Credit追加（Production未適用）。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
 7. **Source-grounded subtitle / audio safety** — source evidenceが不足・曖昧な時に unsupported subtitleを創作で埋めるよりfail-closedを優先します。
 8. **Subtitle coverage + collision avoidance** — trusted contentのcoverage completenessと、重要映像領域との衝突を避けるpresentation layerを分離して扱います。
 9. **Decision provenance + non-authoritative shadow evaluation** — Jev / P1のdecision provenanceと、Langfuse mirrorによるread-only / non-authoritative shadow evaluationをProduction authorityから分離します。
