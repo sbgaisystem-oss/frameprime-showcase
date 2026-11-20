@@ -200,11 +200,11 @@
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
     "product_version": "v0.0.1",
     "planned_launch_target": "2026-11-22 JST",
-    "planned_launch_confirmed": false
+    "planned_launch_confirmed": true
   },
   "product_version": "v0.0.1",
   "planned_launch_target": "2026-11-22 JST",
-  "planned_launch_confirmed": false,
+  "planned_launch_confirmed": true,
   "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
     "new_generation": "Owner-approved schedule applied in Production Finance24 DB on 2026-11-21 (general release pending): 1 Credit up to 2 minutes, 2 Credits above 2 up to 8 minutes, +2 Credits per started 4 minutes thereafter. Exactly 32 minutes = 14 integer Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, but Frontend and public launch gates are pending; public Signup/Checkout remain OFF.",
