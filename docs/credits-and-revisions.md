@@ -4,7 +4,7 @@ FramePrime deliberately separates the credit cost of **creating a new deliverabl
 
 ## Owner-approved integer Credit schedule (Finance24 DB applied; general release pending)
 
-**The same integer Credit is used for customer display and internal accounting.** At normal one-time-pack rates, 2 Credits = ¥200. A 32-minute source uses 14 Credits. The previous fractional-credit and secondary-Unit design was superseded. Production Finance24 DB was migrated to the integer Credit schedule on 2026-11-21. Stripe Checkout/Webhook Edge and the customer Frontend remain pending, and general Signup/Checkout are OFF; post-cutover purchase/generation E2E is not yet verified.
+**The same integer Credit is used for customer display and internal accounting.** At normal one-time-pack rates, 2 Credits = ¥200. A 32-minute source uses 14 Credits. The previous fractional-credit and secondary-Unit design was superseded. Production Finance24 DB was migrated to the integer Credit schedule on 2026-11-21. Stripe Checkout/Webhook Edge v46 is deployed; the customer Frontend remains pending, and general Signup/Checkout are OFF; post-cutover purchase/generation E2E is not yet verified.
 
 ## Target product contract
 
@@ -12,7 +12,7 @@ FramePrime deliberately separates the credit cost of **creating a new deliverabl
 
 A successfully delivered Original Voice generation consumes:
 
-**0 < input duration <= 2 minutes: 1 Credit; >2 to 8 minutes: 2 Credits; above 8 minutes: 2 additional Credits per started 4-minute interval.** At exactly 32 minutes: 14 Credits. **This schedule is applied to the Production financial DB; it is not yet generally available through the pending Stripe Edge/Frontend release.**
+**0 < input duration <= 2 minutes: 1 Credit; >2 to 8 minutes: 2 Credits; above 8 minutes: 2 additional Credits per started 4-minute interval.** At exactly 32 minutes: 14 Credits. **This schedule is applied to the Production financial DB; it is not yet generally available because the customer Frontend and public activation gates are still pending.**
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
