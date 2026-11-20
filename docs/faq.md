@@ -19,7 +19,11 @@ FramePrimeは単一の生成モデルではなく、動画制作・字幕・投�
 
 ## Original Voiceの生成には何credit必要ですか？
 
-正常にDELIVEREDしたOriginal Voice生成は **1 user credit** を消費します。通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+新規動画のCreditは、完成動画の実尺に対し **2分ごと（端数切上げ）に1 Credit** です。通常のsystem terminal failureはreservationが解放され、net 0 user creditsです。
+
+## Creditの購入方式は？
+
+月額と買い切りのCreditプランを用意しています。Creditは期限なし・繰越可能ですが、正式公開前は一般購入が利用可能とは主張しません。
 
 ## 完成後の修正でもcreditを消費しますか？
 
@@ -91,7 +95,7 @@ Current design rationaleは、FramePrime独自のpassword credentialを増やさ
 
 ## セキュリティ監査は完了していますか？
 
-いいえ。Passwordless auth、owner-scoped/RLS境界、secret非公開、fail-closed等の対策は実装されていますが、Launch向けの **OTP / RLS / secret / IDOR / public-permissionを含む総合Security Auditはまだopen gate** です。Security certified / fully auditedとは表現しません。
+2026年10月12日に、対象を認証・認可・情報漏洩に限定した正式な事前監査は完了し、closure時点のCritical／Highは0件でした。ただし、これはSecurity Certificationではなく、後続のProduction変更・正式ローンチE2Eの成立を意味しません。
 
 ## Productionソースコードは公開されていますか？
 

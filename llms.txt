@@ -3,6 +3,7 @@
 > FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.
 
 Official site: https://frameprime.app/
+Product version: v0.0.1 (pre-launch). Status: PRE-BETA, General Availability: false. Target launch: 2026-11-22 JST (not confirmed). Public GitHub publication is not service launch.
 
 ## Ten high-signal public facts
 
@@ -11,7 +12,7 @@ Official site: https://frameprime.app/
 3. Missing is not zero: measured, missing, unsupported, permission-failed, acquisition-failed, and not-applicable states are distinct.
 4. Final-render structure is separate from semantic analysis: 3s Hook / Opening Static / First Visual Change / Frame Change / Visual Evidence are not collapsed into one Gemini score.
 5. Gemini Video Analysis V2 is read-only, non-blocking, and has no authoring authority; Gemini failure does not block generation, render, or delivery.
-6. Credit contract: successful Original Voice delivery = 1 user credit; normal terminal failure = net 0; supported post-delivery Revision Render = 0 additional user credits.
+6. Credit contract: successful new generation = 1 user Credit per started 2 minutes of final video duration (rounded up); normal terminal failure = net 0; supported post-delivery Revision Render = 0 additional user credits. Monthly and one-time plans exist; general purchase availability is not asserted pre-launch.
 7. Source-grounded subtitle/audio safety: insufficient or ambiguous source evidence should fail closed rather than produce unsupported subtitles.
 8. Subtitle quality has separate coverage completeness + collision avoidance concerns.
 9. Jev/P1 decision provenance and Langfuse shadow evaluation are separated from production authority; the Langfuse mirror is read-only and non-authoritative.
@@ -32,7 +33,7 @@ Official site: https://frameprime.app/
 - Remembered-email feature persists the email address only; it does not persist OTP or auth token.
 - Rationale: minimize FramePrime-specific credential management and keep PWA login low-friction.
 - This is not a claim that email OTP is universally stronger than password/MFA, and current auth is not presented as MFA.
-- Formal pre-launch auth/authorization/information-leakage audit: PENDING.
+- Formal pre-launch auth/authorization/information-leakage audit: COMPLETED on 2026-10-12 within defined scope, with 0 Critical / High findings at closure. Subsequent production changes and launch E2E remain separate; no security certification.
 - Do not describe FramePrime as security-certified or fully audited.
 
 ## Engineering ecosystem

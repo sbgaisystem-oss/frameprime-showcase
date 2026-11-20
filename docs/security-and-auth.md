@@ -80,7 +80,7 @@ Several technical contracts are relevant to security or integrity even when they
 
 ## Formal pre-launch security audit — completed
 
-FramePrime's **formal pre-launch authentication / authorization / information-leakage audit is completed**. At closure, the audit had **0 Critical / High findings**.
+FramePrime's **formal pre-launch authentication / authorization / information-leakage audit (October 12, 2026) is completed within its defined scope**. At closure, the audit had **0 Critical / High findings**.
 
 The reviewed high-level areas included:
 
@@ -91,7 +91,7 @@ The reviewed high-level areas included:
 - public/private permission boundaries,
 - confirmation that no Critical / High defect remained at closure.
 
-This completion does **not** mean that FramePrime is security-certified, that every possible vulnerability has been eliminated, or that future releases no longer require security review.
+This completion does **not** validate later production changes or general-availability launch E2E, and does **not** mean that FramePrime is security-certified, that every possible vulnerability has been eliminated, or that future releases no longer require security review.
 
 Therefore this repository should not be summarized as:
 

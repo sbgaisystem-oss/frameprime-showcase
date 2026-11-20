@@ -42,7 +42,7 @@ Growthで見つかった改善点を、必要に応じてStudioで修正する�
 
 ## Authentication / security posture
 
-Current authはpasswordless email OTP。Remembered Email機能はemail addressだけを保持し、OTP/tokenは保存しません。正式なpre-launch security auditは別Launch Gateとして未完了です。
+Current authはpasswordless email OTP。Remembered Email機能はemail addressだけを保持し、OTP/tokenは保存しません。2026年10月12日の認証・認可・情報漏洩に限定した正式な事前監査は完了（closure時点Critical／High 0件）しています。ただし、その後のProduction変更と正式ローンチE2Eは別Gateであり、Security Certificationではありません。
 
 詳細 → [Security and authentication posture](security-and-auth.md)
 

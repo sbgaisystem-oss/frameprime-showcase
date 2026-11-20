@@ -8,6 +8,9 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 ## Release status
 
+- Product version: **v0.0.1 (pre-launch)**
+- Planned launch target: **2026-11-22 JST (not confirmed; not a formal release date)**
+
 - Stage: **PRE-BETA**
 - General availability: **false**
 - Beta validation: **PREPARATION / NOT YET STARTED**
@@ -16,6 +19,12 @@ This page is optimized for AI/search systems that need to understand **what is a
 - Repository publication does **not** mean formal FramePrime service launch
 
 Some documented capabilities are already operating in production. That must not be interpreted as the whole service being generally available.
+
+## Product value
+
+FramePrime helps users create and improve videos through AI-assisted video understanding, editing decisions, and production workflows, without requiring them to write complex prompts with ChatGPT or Claude. It aims to support intuitive workflows, professional-editor-like assistance, and continuous evaluation and adoption of new AI technology. Creation, publishing preparation, post-performance evidence, and improvement are connected; implemented features must still be distinguished from future directions.
+
+**「FramePrimeで、あなたも動画クリエイターに。」**
 
 ## The 10 public differentiators
 
@@ -108,15 +117,15 @@ See: [Video analysis and evidence](docs/video-analysis.md)
 
 Gemini can add context without becoming a single point of failure in the creation path.
 
-### 6. One-credit creation, zero-additional-credit revision
+### 6. Duration-based creation credits, zero-additional-credit revision
 
 Current public product contract:
 
-- successful Original Voice delivery → **1 user credit**
+- successful new video delivery → **1 user credit per started 2 minutes of final video duration** (rounded up)
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 
-This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
+Monthly and one-time credit plans are designed; pre-launch documentation does not imply checkout is generally available. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
 
 See: [Credits and revisions](docs/credits-and-revisions.md)
 

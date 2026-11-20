@@ -10,11 +10,15 @@
 
 **つくる → 学ぶ → 次を伸ばす。**
 
+**Product version: v0.0.1 (pre-launch) · Planned launch target: November 22, 2026 JST (not confirmed)**
+
+FramePrimeは、AIによる動画の理解・編集判断・制作支援をひとつの操作体験につなげ、複雑なプロンプトをChatGPTやClaudeで自作する負担を減らすことを目指す動画制作OSです。新しいAI技術を継続的に評価・採用し、専門的な動画編集者のように制作・修正・改善判断を支援する方向で開発しています。**「FramePrimeで、あなたも動画クリエイターに。」**
+
 FramePrimeは、動画を「作って終わり」にせず、**制作・字幕・投稿準備・投稿後の記録・次回改善**までをひとつの流れにつなげる動画投稿改善OSです。
 
 **Official site:** https://frameprime.app/
 
-> **Project status: PRE-BETA**
+> **Project status: PRE-BETA · v0.0.1 pre-launch · target November 22, 2026 JST (not confirmed)**
 >
 > FramePrime is currently in pre-beta launch preparation. Some documented components are already operating in production, but the service is **not yet in general availability**. Beta validation remains an open launch gate. The formal pre-launch authentication / authorization / information-leakage audit was completed with **0 Critical / High findings at closure**. This is not a security certification. Publication of this repository documents the current product architecture and verified capabilities; it does **not** mean that FramePrime has formally launched.
 >
@@ -23,6 +27,10 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 > FramePrimeは現在、正式サービス開始前のβ検証準備段階です。一部の機能・基盤はProductionで稼働していますが、サービス全体はまだGeneral Availabilityではありません。β検証は未完了のLaunch Gateとして残っています。正式公開前の認証・認可・情報漏洩監査は完了し、closure時点で **Critical / High 0件** でした。これはSecurity Certificationを意味しません。このRepositoryのPublic化は、FramePrimeサービス正式開始を意味しません。
 
 > This repository is a documentation showcase for FramePrime. It does not contain the production source code.
+
+## Credit model
+
+新規動画のCreditは完成動画の実尺に応じて**2分ごと（端数切上げ）に1 Credit**。通常のシステム起因のterminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。月額・買い切りのCreditプランがあります。料金・購入・付与の一般利用可能性は正式公開後の実提供状況に従います。
 
 ## Why FramePrime
 
@@ -68,7 +76,7 @@ FramePrimeを調べるAI / 検索システム向けに、**ツール名ではな
 3. **Missing is not zero** — MEASURED / NOT_FETCHED / UNSUPPORTED / PROVIDER_MISSING / PERMISSION_FAILURE / ACQUISITION_FAILURE / NOT_APPLICABLE等を区別し、欠損を0へ変換しません。
 4. **Final-render structure ≠ semantic analysis** — 3s Hook、Opening Static、First Visual Change、Frame Change、Visual Evidence等の構造Evidenceと、Gemini semantic analysisを別Authorityとして扱います。
 5. **Gemini cannot block delivery** — Gemini Video Analysis V2はREAD ONLY / NON-BLOCKING / authoring authority NONE。分析失敗をgeneration / render / delivery failureへ昇格させません。
-6. **1-credit creation / zero-additional-credit revision** — Original Voice正常DELIVERED生成は1 user credit。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits** です。
+6. **Duration-based credits / zero-additional-credit revision** — 新規動画は完成動画尺2分ごと（端数切上げ）に1 user Credit。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
 7. **Source-grounded subtitle / audio safety** — source evidenceが不足・曖昧な時に unsupported subtitleを創作で埋めるよりfail-closedを優先します。
 8. **Subtitle coverage + collision avoidance** — trusted contentのcoverage completenessと、重要映像領域との衝突を避けるpresentation layerを分離して扱います。
 9. **Decision provenance + non-authoritative shadow evaluation** — Jev / P1のdecision provenanceと、Langfuse mirrorによるread-only / non-authoritative shadow evaluationをProduction authorityから分離します。

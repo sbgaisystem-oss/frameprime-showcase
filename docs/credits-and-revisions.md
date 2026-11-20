@@ -8,7 +8,7 @@ FramePrime deliberately separates the credit cost of **creating a new deliverabl
 
 A successfully delivered Original Voice generation consumes:
 
-**1 user credit**
+**1 user Credit for each started 2 minutes of the final video duration (rounded up)**
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
@@ -28,13 +28,17 @@ Supported post-delivery Revision Render operations use:
 
 This means a user can refine the delivered result through the supported revision workflow without paying another generation credit for each revision render.
 
+## Credit plans and pre-launch availability
+
+Monthly and one-time credit plans are part of the product contract. Credits have no expiration and can carry over. Specific pricing and general checkout availability must match the current production offering; PRE-BETA documentation does not claim that public checkout has launched.
+
 ## Why this matters
 
 The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → 1 credit when successfully delivered
+  → ceil(final video duration in minutes / 2) Credits when successfully delivered
 
 Supported revision of delivered result
   → 0 additional user credits
