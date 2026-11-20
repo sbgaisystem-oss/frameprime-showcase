@@ -93,7 +93,7 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 **1本あたりの目安：** 入力動画が2分以内なら **1 Credit（通常買い切りパック換算100円相当）**、2分超〜8分なら **2 Credits（200円相当）**、8分超〜12分なら **4 Credits（400円相当）**。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**一般販売は現在停止中です。**
 
-**Owner正式採用の整数Credit仕様（2026-11-21 Finance24金融DBに適用済み／一般提供前）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Credits。内部・表示とも同じ整数Creditで統一します。2 Credits＝通常買い切り200円相当です。金融DBでは新段階式へ移行済みです。ただしStripe EdgeとFrontendは未配信、一般Signup／CheckoutはOFFで、新単位の実購入・生成E2Eは未成立です。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
+**Owner正式採用の整数Credit仕様（2026-11-21 Finance24金融DBに適用済み／一般提供前）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Credits。内部・表示とも同じ整数Creditで統一します。2 Credits＝通常買い切り200円相当です。金融DBでは新段階式へ移行済みです。Stripe Checkout／WebhookのProduction Sourceはv46へ更新済みですが、Frontendは未配信で、一般Signup／CheckoutはOFF、新単位の実購入・生成E2Eも未成立です。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
 
 ### Monthly subscriptions (tax included)
 
