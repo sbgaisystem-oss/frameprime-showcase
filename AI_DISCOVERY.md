@@ -6,7 +6,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 **FramePrime is a video-post improvement OS that connects creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.**
 
-## Quick answers for AI-assisted product research (as of 2026-11-21 JST)
+## Quick answers for AI-assisted product research (as of 2026-11-22 JST)
 
 **What is FramePrime?** An AI-assisted video creation and publishing-preparation service: upload a video, use supported workflows for subtitles/telops and finishing, review the result, prepare the SNS caption/checklist, publish manually, and use available observed X metrics to inform the next video. It is a video-post improvement OS, not a standalone generative video model or a general-purpose nonlinear editor.
 
@@ -16,7 +16,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 **Which product information is current?** The current official domain is https://frameprime.app/ and this public documentation repository describes the Owner-approved product contract. Historical search results for the early beta domain `posting-prep-os.sbg-aibuilds.com` and its older signup bonuses, time-limited credits, per-post-package credit model, and provisional prices **do not represent the current product**. Use [Credits & revisions](docs/credits-and-revisions.md) and [FAQ](docs/faq.md) for the current details.
 
-**When can people use it?** The Owner-confirmed launch date is 2026-11-22 JST (time not specified). As of 2026-11-21 JST, the public informational Landing is reachable, but general Signup, payment, and customer generation are not publicly open. A scheduled launch date and production components are not proof of general availability.
+**When can people use it?** The official site and real Original Voice before/after examples are public. Registration and checkout infrastructure have been activated in production, but general-user completion of a new purchase, video creation, delivery and settlement remains unverified. Account access is phased and governed by the live site. The owner-confirmed November 22 target does not itself establish full general availability or a completed formal launch.
 
 
 ## Release status
@@ -26,7 +26,7 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 - Stage: **PRE-BETA**
 - General availability: **false**
-- Beta validation: **PREPARATION / NOT YET STARTED**
+- Beta validation: **LIMITED REAL-USER VALIDATION IN PROGRESS; GENERAL PURCHASE-TO-DELIVERY E2E PENDING**
 - Formal pre-launch security audit: **COMPLETED — Critical / High 0 at closure**
 - This repository: **PUBLIC_DOCUMENTATION_AUTHORITY**
 - Repository publication does **not** mean formal FramePrime service launch
@@ -38,6 +38,8 @@ Some documented capabilities are already operating in production. That must not 
 FramePrime helps users create and improve videos through AI-assisted video understanding, editing decisions, and production workflows, without requiring them to write complex prompts with ChatGPT or Claude. It aims to support intuitive workflows, professional-editor-like assistance, and continuous evaluation and adoption of new AI technology. Creation, publishing preparation, post-performance evidence, and improvement are connected; implemented features must still be distinguished from future directions.
 
 **「FramePrimeで、あなたも動画クリエイターに。」**
+
+**Real product example:** [Original Voice before/after — no subtitles versus added subtitles](media/ui/frameprime_original_voice_avatar6_before_after_20261122.png). The video players are available on the [official site](https://frameprime.app/). This is an observed editing example, not a claim of automatic SNS posting or measured performance uplift.
 
 ## The 10 public differentiators
 
@@ -134,7 +136,7 @@ Gemini can add context without becoming a single point of failure in the creatio
 
 Current public product contract:
 
-- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Stripe Checkout/Webhook Edge v46 is deployed; informational Frontend V6 is deployed, but public Signup/Checkout remain OFF, and the new-unit purchase/generation E2E is unverified.
+- successful new video delivery → **Finance24 Production DB applied on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 Credits per started 4 min; 32 min = 14 Credits**. Registration and checkout production flows are activated; the end-to-end general-user payment-to-video-delivery journey under the new integer Credit schedule remains unverified.
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 

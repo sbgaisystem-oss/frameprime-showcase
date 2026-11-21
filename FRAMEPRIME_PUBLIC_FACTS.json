@@ -38,8 +38,8 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Owner-approved integer Credit schedule, applied to Production Finance24 DB on 2026-11-21 (not generally available): input video up to 2 min = 1 Credit; over 2 to 8 min = 2 Credits; then 2 more Credits per started 4 min; exactly 32 min = 14 Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, and public Landing/Frontend V6 is deployed; general launch gates remain pending and public Signup/Checkout are OFF. Normal system-terminal failures net 0, supported post-delivery Revision Render +0 Credits. Prices unchanged; Credit grants doubled. Public checkout not asserted.",
-      "availability": "product_contract_prelaunch_not_ga"
+      "claim": "Owner-approved integer Credit schedule applied in production on 2026-11-21: source video up to 2 minutes = 1 Credit; above 2 through 8 minutes = 2 Credits; thereafter +2 Credits per started 4-minute interval; exactly 32 minutes = 14 Credits. Signup, checkout and referral gates have been activated in production, while individual access, consent and general-user purchase-to-video-delivery E2E are separately constrained or unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render uses 0 additional Credits. This is not a formal general-availability claim.",
+      "availability": "production_credit_contract_phased_access_general_e2e_pending"
     },
     {
       "id": "source_grounded_subtitle_audio_safety",
@@ -158,6 +158,14 @@
         "metric availability depends on provider/API/account permissions",
         "cross-platform adapter coverage is not complete"
       ]
+    },
+    "original_voice_before_after": {
+      "asset": "media/ui/frameprime_original_voice_avatar6_before_after_20261122.png",
+      "description": "Same Original Voice source video shown without subtitles and with FramePrime-added subtitles",
+      "duration_approx_seconds": 18,
+      "source": "official_public_site",
+      "evidence_type": "live_site_screenshot",
+      "not_evidence_of_general_availability": true
     }
   },
   "security_auth_posture": {
@@ -193,29 +201,30 @@
   "release_status": {
     "stage": "PRE_BETA",
     "general_availability": false,
-    "beta_validation": "PREPARATION_NOT_YET_STARTED",
+    "beta_validation": "LIMITED_REAL_USER_VALIDATION_IN_PROGRESS",
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
     "product_version": "v0.0.1",
     "planned_launch_target": "2026-11-22 JST",
-    "planned_launch_confirmed": true
+    "planned_launch_confirmed": true,
+    "public_showcase_updated_date": "2026-11-22"
   },
   "product_version": "v0.0.1",
   "planned_launch_target": "2026-11-22 JST",
   "planned_launch_confirmed": true,
   "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
-    "new_generation": "Owner-approved schedule applied in Production Finance24 DB on 2026-11-21 (general release pending): 1 Credit up to 2 minutes, 2 Credits above 2 up to 8 minutes, +2 Credits per started 4 minutes thereafter. Exactly 32 minutes = 14 integer Credits. Production financial DB now uses the integer duration schedule; Stripe Checkout/Webhook Edge v46 is deployed, and public Landing/Frontend V6 is deployed; general launch gates remain pending and public Signup/Checkout are OFF.",
-    "target_production_status": "FINANCE_DB_STRIPE_V46_PUBLIC_LANDING_V176_DEPLOYED_GENERAL_FLOWS_OFF",
+    "new_generation": "Owner-approved integer Credit schedule applied in production on 2026-11-21: 1 Credit for source video up to 2 min; 2 Credits for >2 through 8 min; +2 Credits per started 4 min after 8 min; exactly 32 min = 14 Credits. Registration and checkout gates are activated in production, but full general-user payment-to-video-delivery E2E and formal general availability remain separately unverified.",
+    "target_production_status": "SIGNUP_CHECKOUT_REFERRAL_PRODUCTION_GATES_ENABLED_GENERAL_PURCHASE_DELIVERY_E2E_PENDING",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
     "plans": [
       "monthly",
       "one_time"
     ],
-    "general_purchase_availability": "not asserted before production launch verification",
+    "general_purchase_availability": "production_gate_enabled_phased_customer_access_general_e2e_unverified",
     "billing_basis": "server-verified input source video duration (milliseconds)",
     "currency": "JPY",
     "tax_included": true,

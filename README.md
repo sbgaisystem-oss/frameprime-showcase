@@ -20,13 +20,13 @@ FramePrimeは、動画を「作って終わり」にせず、**制作・字幕�
 
 
 
-## 現在のFramePrimeと旧β版の検索結果について（2026-11-21 JST）
+## 現在のFramePrimeと旧β版の検索結果について（2026-11-22 JST）
 
 FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS向け動画を仕上げて投稿文を準備したり、投稿後に取得できた実測結果を次の制作へ活かしたりする作業をAIで支援する**動画投稿改善OS**です。機能と出力内容は対応する制作フローによって異なり、すべての編集が全自動で完了するわけではありません。動画編集者の紹介・外注マッチングサービスでもありません。
 
 **古い検索結果との区別：** 旧βサイト `posting-prep-os.sbg-aibuilds.com` の検索スニペットや過去の利用規約・料金表示は、現在のFramePrimeの商品・Credit制度・機能範囲の正本ではありません。現行の説明は本Repositoryの[料金とCredits](docs/credits-and-revisions.md)、[FAQ](docs/faq.md)、[AI向け公開事実](AI_DISCOVERY.md)を参照してください。正式サイトは `https://frameprime.app/` です。
 
-**公開状態：** 2026年11月22日（JST）のローンチ日はOwner確定です。2026年11月21日時点で公式LandingとC11-A公開動画の配信は確認済みですが、一般向けSignup・Checkout・動画生成はまだ開始していません。Landing公開と実サービス開始は別です。
+**公開状態（2026-11-22時点）：** 公式サイトとOriginal VoiceのBefore／After実例は公開済みです。登録・決済の本番経路は段階的に有効化されていますが、一般ユーザーによる新料金体系での実購入→新動画納品・精算までの完走確認は別Gateです。全員への一般提供開始や正式なXローンチ投稿済みとは断定しません。利用可否は公式サイトの画面案内をご確認ください。
 
 **Official site:** https://frameprime.app/
 
@@ -50,7 +50,7 @@ FramePrimeのGUIは、ChatGPTやClaudeを別途操作して編集指示を組み
 
 **動画を入れる → AIが字幕・動画制作を支援 → 完成動画と投稿準備を確認する。** 対応する制作フローでは、SNS向けキャプション案・ハッシュタグ・投稿前チェックリストも利用できます。投稿操作はご自身で行い、投稿後は取得できたXの実測結果などを振り返れます。
 
-対応機能や出力内容は選んだ制作方法によって異なります。**現在は正式ローンチ前で、新規登録・生成・購入は一般向けに開放されていません。**
+対応機能や出力内容は選んだ制作方法によって異なります。**サービスは段階提供中です。登録・購入の本番有効化と、すべてのアカウントで購入から動画納品まで完走できることは別です。**
 
 ## FramePrimeの使い方 — 3ステップ
 
@@ -70,7 +70,7 @@ FramePrimeが動画内容の理解、字幕生成、動画制作を支援しま�
 
 Growthでは、取得できた投稿後の実測データと動画の特徴を照合し、次の動画で改善するポイントを整理します。利用できる指標・SNS連携の範囲は提供状況によって異なります。
 
-> この3ステップは製品の基本的な利用フローの説明です。PRE-BETA期間中の一般利用・全工程の完全自動化を保証するものではありません。実動画のBefore/Afterは公開可能な証拠を確認後に別途掲載します。
+> この3ステップは製品の基本的な利用フローの説明です。PRE-BETA期間中の一般利用・全工程の完全自動化を保証するものではありません。実動画のBefore／Afterは下の「Original Voice — 実際の制作例」で公開しています。
 
 ## Key Features
 
@@ -94,16 +94,16 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 - **Official Website:** https://frameprime.app
 - **Version:** v0.0.1（正式ローンチ前）
-- **Release target:** November 22, 2026 JST（Owner確定／実公開・一般販売開始は未成立）
+- **Release target:** November 22, 2026 JST（Owner決定の予定日。正式な一般提供や実購入E2Eの完了は別途確認）
 - **Current status:** PRE-BETA / General Availability: false
 
 正式ローンチの成立までは、このGitHub Showcaseの公開をサービス一般公開の証拠とは扱いません。
 
 ## Credit model
 
-**1本あたりの目安：** 入力動画が2分以内なら **1 Credit（通常買い切りパック換算100円相当）**、2分超〜8分なら **2 Credits（200円相当）**、8分超〜12分なら **4 Credits（400円相当）**。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**一般販売は現在停止中です。**
+**1本あたりの目安：** 入力動画が2分以内なら **1 Credit（通常買い切りパック換算100円相当）**、2分超〜8分なら **2 Credits（200円相当）**、8分超〜12分なら **4 Credits（400円相当）**。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**本番決済の有効化と個々のアカウントの購入可否は異なります。公式画面でご確認ください。**
 
-**Owner正式採用の整数Credit仕様（2026-11-21 Finance24金融DBに適用済み／一般提供前）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Credits。内部・表示とも同じ整数Creditで統一します。2 Credits＝通常買い切り200円相当です。金融DBでは新段階式へ移行済みです。Stripe Checkout／WebhookのProduction Sourceはv46へ更新済みですが、公開Landingと既存ログインのFrontend V6は配信済みですが、一般Signup／CheckoutはOFF、新単位の実購入・生成E2Eも未成立です。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
+**Owner正式採用の整数Credit仕様（2026-11-21 Finance24金融DBに適用済み／一般提供前）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Credits。内部・表示とも同じ整数Creditで統一します。2 Credits＝通常買い切り200円相当です。金融DBでは新段階式へ移行済みです。登録・決済に必要な本番経路は有効化されていますが、新整数Credit体系での一般ユーザー実購入→動画生成・精算の一連E2Eは、この公開文書の更新時点で未確認です。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
 
 ### Monthly subscriptions (tax included)
 
@@ -205,11 +205,15 @@ FramePrimeを調べるAI / 検索システム向けに、**ツール名ではな
 - [Studio](docs/studio.md)
 - [Security and authentication posture](docs/security-and-auth.md)
 
-## Product surfaces
+## Original Voice — 実際のBefore／After制作例
 
 <p align="center">
-  <img src="media/ui/frameprime_github_product_surfaces_v1.png" alt="FramePrime product surfaces: Mobile flow, Studio, and Growth" width="100%" />
+  <img src="media/ui/frameprime_original_voice_avatar6_before_after_20261122.png" alt="Original Voiceの実例。左は字幕なし元動画、右はFramePrimeで字幕を追加した完成動画" width="100%" />
 </p>
+
+同じ約18秒の動画の比較です。**Beforeは字幕なしの元動画、AfterはFramePrimeで字幕を追加した完成動画**です。この画像は公式サイトに掲載されている実際の比較画面です。あらゆる動画編集やSNS投稿が自動完了するという意味ではありません。
+
+[公式サイトで比較動画を見る](https://frameprime.app/) · [Studioの修正機能](docs/studio.md) · [Growthの役割](docs/growth.md)
 
 ## Studio and Growth — role and maturity
 

@@ -1,12 +1,12 @@
 # Media Inventory
 
-This directory contains the media assets approved for the audited FramePrime public-showcase snapshot. The FramePrime logo uses the official brand authority. The hero and Product surfaces images resolve to the Current FramePrime showcase-image authority.
+This directory contains media assets used by the public FramePrime documentation showcase. The logo is the official FramePrime brand. The hero graphic is an illustrative product visual, while the Original Voice before/after screenshot below comes from the public FramePrime site as of 2026-11-22. The superseded product-surfaces composite showed historical Fuuri-era video footage and is no longer an active public example.
 
 ## Included assets
 
 - `brand/frameprime_header_official_v1.png` — Official FramePrime brand asset
 - `hero/frameprime_github_hero_create_learn_improve_v1.png` — Current canonical FramePrime showcase hero
-- `ui/frameprime_github_product_surfaces_v1.png` — Current canonical Product surfaces composite
+- `ui/frameprime_original_voice_avatar6_before_after_20261122.png` — Public Original Voice before/after comparison (no subtitles versus added FramePrime subtitles)
 
 ## Media rights / privacy scan
 
@@ -22,4 +22,4 @@ Checks required for the public snapshot:
 - no service-smoke source media reuse,
 - image metadata contains no private path, credential, or personal identifier.
 
-Only the exact assets listed above belong in the public release snapshot.
+Only the assets listed above are linked by the current public README. Historical composite screenshots should not be presented as current production examples.

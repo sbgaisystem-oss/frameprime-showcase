@@ -28,7 +28,7 @@ Studio also supports the revision workflow around an already delivered video.
 
 ## Subtitle editing
 
-Studio can expose the generated subtitles with timing and text-editing controls.
+Studio can expose the generated subtitles with timing and text-editing controls. In supported post-delivery revisions, users can add or split a subtitle interval, save changes, and render a separate revised file in the Library while retaining the original. The minimum-duration automatic correction feature is not asserted as deployed; very short subtitle intervals may still require manual adjustment.
 
 Publicly relevant quality concepts include:
 
@@ -44,7 +44,7 @@ Supported post-delivery Revision Render is part of the Studio finishing workflow
 
 Current public credit contract:
 
-- successful new video generation → Owner-approved schedule applied to Production Finance24 DB on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min; 32 min = 14 Credits in the financial DB; Stripe Checkout/Webhook Edge v46 deployed; informational Frontend V6 deployed but general Signup/Checkout remain OFF,
+- successful new video generation → the Owner-approved integer-Credit schedule: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min; 32 min = 14 Credits. Registration and checkout production activation is separate from verifying general-user purchase-to-video-delivery E2E,
 - supported post-delivery revision render → 0 additional user credits.
 
 ## Studio vs Growth
