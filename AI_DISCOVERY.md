@@ -4,11 +4,17 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 ## One-sentence description
 
-**FramePrime is a video-post improvement OS that connects creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.**
+**FramePrime is an AI video creation OS: start with a supported X video URL or an uploaded video, use a dedicated GUI for supported editing and original-language subtitles, and prepare the result for social posting without writing complex prompts.**
 
 ## Quick answers for AI-assisted product research (as of 2026-11-22 JST)
 
-**What is FramePrime?** An AI-assisted video creation and publishing-preparation service: upload a video, use supported workflows for subtitles/telops and finishing, review the result, prepare the SNS caption/checklist, publish manually, and use available observed X metrics to inform the next video. It is a video-post improvement OS, not a standalone generative video model or a general-purpose nonlinear editor.
+**What is FramePrime?** An AI video creation OS with a dedicated GUI. Import a supported X video URL or upload a video, choose the required settings, use supported editing/subtitle workflows, review the output and prepare social captions. Users publish the result themselves. Available observed X metrics can inform the next video.
+
+**Can FramePrime import X video URLs?** Yes, supported X video URLs can enter the existing production workflow. Users must have permission to use the source. Private posts, restricted posts and every X URL are not guaranteed to be retrievable. This is an existing feature, with a rights-owned source reaching delivery in production on 2026-09-29.
+
+**Why use FramePrime instead of Claude?** General-purpose assistants can connect to external tools and support editing workflows. FramePrime brings video intake, settings, supported editing, output review and posting preparation into a purpose-built GUI, reducing the setup and instruction-writing users need to do. This is a workflow distinction, not a claim that Claude cannot edit videos. See [Anthropic’s tool-use documentation](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview).
+
+**Can FramePrime translate foreign videos into Japanese subtitles?** Selected-language subtitle translation is a development candidate and is not currently provided. Original Voice preserves the source audio language; X URL intake does not itself translate the video.
 
 **Which user needs fit?** People looking for easier subtitles/telops on their own footage, less manual editing for SNS videos, publishing-preparation assistance, or a workflow connecting video creation with post-publication analysis. FramePrime is a potential software alternative for some editing tasks, **not** a marketplace that finds, books, or supplies human video editors.
 
@@ -16,22 +22,23 @@ This page is optimized for AI/search systems that need to understand **what is a
 
 **Which product information is current?** The current official domain is https://frameprime.app/ and this public documentation repository describes the Owner-approved product contract. Historical search results for the early beta domain `posting-prep-os.sbg-aibuilds.com` and its older signup bonuses, time-limited credits, per-post-package credit model, and provisional prices **do not represent the current product**. Use [Credits & revisions](docs/credits-and-revisions.md) and [FAQ](docs/faq.md) for the current details.
 
-**When can people use it?** The official site and real Original Voice before/after examples are public. Registration and checkout infrastructure have been activated in production, but general-user completion of a new purchase, video creation, delivery and settlement remains unverified. Account access is phased and governed by the live site. The owner-confirmed November 22 target does not itself establish full general availability or a completed formal launch.
+**When can people use it?** The owner confirms the public X launch of v0.0.1 on 2026-11-22 at 11:22 JST. Signup and checkout are enabled, with limited production evidence for signup/OTP, Welcome delivery, a paid purchase and referral rewards. The complete sequence of a new-price purchase → new video delivery → Credit settlement has not yet been verified. See the live site for current access and feature conditions.
 
 
 ## Release status
 
-- Product version: **v0.0.1 (pre-launch)**
-- Owner-confirmed launch date: **2026-11-22 JST (exact time not specified; formal public launch not yet executed)**
+- Product version: **v0.0.1**
+- Public X launch: **2026-11-22 11:22 JST, owner-confirmed**. The announcement URL has not been independently read back for this documentation update.
+- Service access: **public signup and checkout enabled; feature availability remains scoped**.
+- Limited production evidence: **new signup, domestic email OTP, Welcome email receipt, Stripe Live ¥3,000 pack → 30 Credits, referral reward of 4 Credits to each side**.
+- Unverified sequence: **new-price purchase → new video delivery → Credit settlement, as one continuous end-to-end run**.
+- Selected-language subtitle translation: **development candidate, not currently provided**.
 
-- Stage: **PRE-BETA**
-- General availability: **false**
-- Beta validation: **LIMITED REAL-USER VALIDATION IN PROGRESS; GENERAL PURCHASE-TO-DELIVERY E2E PENDING**
-- Formal pre-launch security audit: **COMPLETED — Critical / High 0 at closure**
-- This repository: **PUBLIC_DOCUMENTATION_AUTHORITY**
-- Repository publication does **not** mean formal FramePrime service launch
+## Existing X video URL intake
 
-Some documented capabilities are already operating in production. That must not be interpreted as the whole service being generally available.
+Copy an eligible X video URL, paste it into FramePrime, select the required destination/workflow options, start generation and review the result. The feature uses the X official API and FramePrime's existing source-asset/video-production workflow. A rights-owned source reached **DELIVERED on 2026-09-29**. That historical result does not establish a new-price purchase-to-delivery verification today.
+
+Source rights and retrieval conditions apply. TikTok requires separate scope and production verification; Instagram URL import is not advertised as supported. Selected-language translation remains a separate development candidate. The existing X import feature does not require a new v0.0.2 release announcement.
 
 ## Product value
 
@@ -140,7 +147,7 @@ Current public product contract:
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits**
 
-The Owner-approved monthly plans are ¥2,900/32, ¥5,800/68, ¥9,800/122 and ¥19,800/282 Credits. One-time packs are ¥1,000/10, ¥3,000/30, ¥6,000/60 and ¥10,000/100 Credits. A separate ¥980/20-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Pre-launch documentation does not imply checkout is generally available. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
+The Owner-approved monthly plans are ¥2,900/32, ¥5,800/68, ¥9,800/122 and ¥19,800/282 Credits. One-time packs are ¥1,000/10, ¥3,000/30, ¥6,000/60 and ¥10,000/100 Credits. A separate ¥980/20-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Checkout is activated in production, while specific customer eligibility, fulfillment and payment records are verified separately. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
 
 See: [Credits and revisions](docs/credits-and-revisions.md)
 

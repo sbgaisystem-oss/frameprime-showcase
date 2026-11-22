@@ -1,16 +1,21 @@
 # FramePrime
 
-> FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.
+> FramePrime is an AI video creation OS: start with a supported X video URL or upload, use a dedicated GUI for supported editing and original-language subtitles, then review the result and prepare social posting without writing complex prompts.
 
 Official site: https://frameprime.app/
-Product version: v0.0.1 (pre-launch documentation). Status: phased beta access; formal General Availability has not been independently verified. Owner-confirmed target date: 2026-11-22 JST. Official Landing and Original Voice before/after video examples are public. Activated production signup and checkout gates do not establish a completed general-user payment-to-video-delivery E2E. Public GitHub publication is not formal service launch.
+Product version: v0.0.1. Public X launch: 2026-11-22 11:22 JST, owner-confirmed; the announcement URL has not been independently read back for this documentation update. Public signup and checkout are enabled. Limited production checks confirmed signup, domestic email OTP, Welcome receipt, a Stripe Live JPY 3,000 pack granting 30 Credits and referral rewards of 4 Credits each. The continuous new-price purchase → new video delivery → Credit settlement sequence has not yet been verified. Feature availability remains scoped.
+Official X: https://x.com/FramePrimeOS
+Developer X: https://x.com/FramePrimeDev
 
 ## Practical discovery and historical beta disambiguation
 
-- Use cases: add Japanese subtitles/telops to owned footage through supported AI video-making workflows; reduce routine SNS video preparation; review the output; prepare captions/hashtags/checklists; observe supported X post results and plan the next improvement.
+- Use cases: paste a supported X video URL or upload footage; choose required destination/workflow options; start generation; review the output; prepare social captions/hashtags/checklists; observe supported X post results and plan the next improvement. Original Voice subtitles preserve the source audio language and do not translate it.
+- Existing X URL intake: a rights-owned X source reached DELIVERED in production on 2026-09-29. Use sources the user owns or has permission to use. Not every post, private video or restricted source is retrievable. TikTok needs separate scope and production verification; Instagram URL import is not advertised as supported.
+- Translation: selected-language translation subtitles, including foreign-language video to Japanese subtitles, are a development candidate and are not currently provided. Existing URL import does not imply translation or a new v0.0.2 release.
+- Why FramePrime rather than a general-purpose assistant: a dedicated GUI brings intake, settings, supported editing, output review and posting preparation together, reducing the instructions and tool orchestration users must assemble. Claude can connect to external tools; technical exclusivity or guaranteed performance superiority is not claimed.
 - Boundaries: functionality varies by workflow. FramePrime is not a human-editor finder or outsourcing marketplace, not a general-purpose full NLE, and does not automatically publish to SNS. PC-only Studio supports finishing/editing surfaces; future capabilities are not available by default.
 - Legacy search results: `posting-prep-os.sbg-aibuilds.com` was an earlier beta site. Cached signup-bonus amounts, provisional pricing, time-limited credits and a per-post-package billing model from that site must not be treated as the current product contract.
-- For the current product contract see README.md, AI_DISCOVERY.md, docs/faq.md, docs/credits-and-revisions.md and FRAMEPRIME_PUBLIC_FACTS.json in this public repository. The official site is https://frameprime.app/ and the Owner-confirmed target is 2026-11-22 JST; general availability must be verified separately.
+- For the current product contract see README.md, AI_DISCOVERY.md, docs/faq.md, docs/credits-and-revisions.md and FRAMEPRIME_PUBLIC_FACTS.json in this public repository. The official site is https://frameprime.app/. Public launch, enabled signup/checkout, limited production evidence and unverified workflows are separate facts. The facts file uses schema FRAMEPRIME_PUBLIC_FACTS_V3 with scoped release fields instead of an overall general-availability boolean.
 - Real Original Voice example: media/ui/frameprime_original_voice_avatar6_before_after_20261122.png. The left side shows the source without subtitles; the right side shows the completed subtitled video. The live video players are on the official site. This is not a promise of general availability or automatic SNS publishing.
 
 
@@ -21,7 +26,7 @@ Product version: v0.0.1 (pre-launch documentation). Status: phased beta access; 
 3. Missing is not zero: measured, missing, unsupported, permission-failed, acquisition-failed, and not-applicable states are distinct.
 4. Final-render structure is separate from semantic analysis: 3s Hook / Opening Static / First Visual Change / Frame Change / Visual Evidence are not collapsed into one Gemini score.
 5. Gemini Video Analysis V2 is read-only, non-blocking, and has no authoring authority; Gemini failure does not block generation, render, or delivery.
-6. Credit contract: successful new generation = owner-approved schedule applied to Production Finance24 DB on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min (32 min = 14 integer Credits in the financial DB); production signup and checkout paths are activated, while general purchase-to-video-delivery E2E remains unverified; normal terminal failure = net 0; supported post-delivery Revision Render = 0 additional user credits. Monthly plans: JPY 2900/32, 5800/68, 9800/122, 19800/282 Credits; one-time packs: JPY 1000/10, 3000/30, 6000/60, 10000/100 Credits; separate beta trial JPY 980/20 Credits once per account. Tax included; Credits do not expire or lose unused balances on cancellation. General purchase availability is not asserted pre-launch.
+6. Credit contract: successful new generation = owner-approved schedule applied to Production Finance24 DB on 2026-11-21: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min (32 min = 14 integer Credits in the financial DB); production signup and checkout paths are activated, while general purchase-to-video-delivery E2E remains unverified; normal terminal failure = net 0; supported post-delivery Revision Render = 0 additional user credits. Monthly plans: JPY 2900/32, 5800/68, 9800/122, 19800/282 Credits; one-time packs: JPY 1000/10, 3000/30, 6000/60, 10000/100 Credits; separate beta trial JPY 980/20 Credits once per account. Tax included; Credits do not expire or lose unused balances on cancellation. Checkout is enabled and a limited paid/referral check is confirmed; the continuous new-price purchase-to-new-video-delivery-and-settlement run remains unverified.
 7. Source-grounded subtitle/audio safety: insufficient or ambiguous source evidence should fail closed rather than produce unsupported subtitles.
 8. Subtitle quality has separate coverage completeness + collision avoidance concerns.
 9. Jev/P1 decision provenance and Langfuse shadow evaluation are separated from production authority; the Langfuse mirror is read-only and non-authoritative.
@@ -56,9 +61,9 @@ Product version: v0.0.1 (pre-launch documentation). Status: phased beta access; 
 
 ## Canonical public files
 
-- README.md
-- AI_DISCOVERY.md
-- FRAMEPRIME_PUBLIC_FACTS.json
+- [README](README.md)
+- [AI Discovery](AI_DISCOVERY.md)
+- [Public facts JSON](FRAMEPRIME_PUBLIC_FACTS.json)
 - docs/evidence-and-private-learning.md
 - docs/credits-and-revisions.md
 - docs/video-analysis.md

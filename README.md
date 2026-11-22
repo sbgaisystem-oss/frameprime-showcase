@@ -2,23 +2,32 @@
   <img src="media/brand/frameprime_header_official_v1.png" alt="Official FramePrime logo" width="720" />
 </p>
 
-<p align="center">
-  <img src="media/hero/frameprime_github_hero_create_learn_improve_v1.png" alt="FramePrime hero image" width="100%" />
-</p>
-
 # FramePrime
 
-**つくる → 学ぶ → 次を伸ばす。**
+**Xの動画URLから、AI動画制作をもっと手軽に。**
 
-**Product version: v0.0.1 (pre-launch) · Owner-confirmed launch date: November 22, 2026 JST (public launch not yet executed)**
+Xで気になった動画のURLをコピー。FramePrimeに入力し、必要な項目を選べば、AI動画制作を始められます。自分の動画や、利用許諾のある対応X動画で使えます。
 
-FramePrimeは、動画の理解・編集判断・制作をAIで支援する新しいAI動画制作OSです。ChatGPTやClaudeに複雑なプロンプトを考えてもらわなくても、直感的にAI動画編集を始められる体験を目指しています。新しいAI技術を継続的に評価・採用し、専門的な動画編集者のようにユーザーの動画制作をサポートする方向で開発しています。
+FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備まで、専用画面で進められる**AI動画制作OS**です。難しいプロンプトを自作したり、複数のAIツールを組み合わせたりする負担を減らす設計です。動画ファイルのアップロードにも対応しています。
 
 **「FramePrimeで、あなたも動画クリエイターに。」**
 
-FramePrimeは、動画を「作って終わり」にせず、**制作・字幕・投稿準備・投稿後の記録・次回改善**までをひとつの流れにつなげる動画投稿改善OSです。
+**v0.0.1公開中 · X正式ローンチ：2026年11月22日11:22 JST**
+
+[公式サイトで始める](https://frameprime.app/) · [よくある質問](docs/faq.md) · [料金とCredits](docs/credits-and-revisions.md)
+
+**つくる → 学ぶ → 次を伸ばす。** 制作・字幕・投稿準備に加え、取得できた投稿後の実測結果を次の動画制作へつなげます。
 
 
+
+## Xの動画URLからFramePrimeを使う
+
+1. **Xで動画を選び、URLをコピーする。** 自分が権利を持つ動画、または利用許諾を得た素材を選びます。
+2. **FramePrimeの動画URL欄に貼り付ける。** 対応するX動画を、既存の動画制作フローへ取り込みます。
+3. **投稿先など必要な項目を選び、生成を開始する。** 難しいプロンプトを一から組み立てる必要はありません。
+4. **完成動画と投稿準備を確認する。** 対応するフローで字幕やSNS投稿文を準備し、内容を確認してご自身で投稿します。
+
+URL取り込みは**既存機能**です。2026年9月29日に、権利保有素材でX動画URLから完成動画の納品まで実証した記録があります。非公開投稿や取得制限のある動画など、すべてのURLの取得には対応を保証していません。[対応範囲・権利・翻訳のFAQ](docs/faq.md)をご確認ください。
 
 ## 現在のFramePrimeと旧β版の検索結果について（2026-11-22 JST）
 
@@ -26,41 +35,43 @@ FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS�
 
 **古い検索結果との区別：** 旧βサイト `posting-prep-os.sbg-aibuilds.com` の検索スニペットや過去の利用規約・料金表示は、現在のFramePrimeの商品・Credit制度・機能範囲の正本ではありません。現行の説明は本Repositoryの[料金とCredits](docs/credits-and-revisions.md)、[FAQ](docs/faq.md)、[AI向け公開事実](AI_DISCOVERY.md)を参照してください。正式サイトは `https://frameprime.app/` です。
 
-**公開状態（2026-11-22時点）：** 公式サイトとOriginal VoiceのBefore／After実例は公開済みです。登録・決済の本番経路は段階的に有効化されていますが、一般ユーザーによる新料金体系での実購入→新動画納品・精算までの完走確認は別Gateです。全員への一般提供開始や正式なXローンチ投稿済みとは断定しません。利用可否は公式サイトの画面案内をご確認ください。
+### 公開状態と確認済みの範囲
 
-**Official site:** https://frameprime.app/
+| 項目 | 2026年11月22日時点 |
+| --- | --- |
+| 公開開始 | v0.0.1を11:22 JSTにXで正式告知（Owner確認） |
+| 登録・ログイン | 新規登録・国内メールOTP・Welcomeメール実受信の限定した本番実証あり |
+| 決済・紹介 | Stripe Liveで3,000円買い切り→30 Credits付与、紹介双方各4 Creditsを限定実証 |
+| 動画制作の通し確認 | 新料金での購入→新規動画納品→Credit精算を一続きに確認するE2Eは未確認 |
+| 選択言語への翻訳字幕 | 開発候補・未提供。既存のX URL取り込みとは別機能 |
 
-> **Project status: PRE-BETA · v0.0.1 pre-launch · Owner-confirmed launch date: November 22, 2026 JST (general availability not yet enabled)**
->
-> FramePrime is currently in pre-beta launch preparation. Some documented components are already operating in production, but the service is **not yet in general availability**. Beta validation remains an open launch gate. The formal pre-launch authentication / authorization / information-leakage audit was completed with **0 Critical / High findings at closure**. This is not a security certification. Publication of this repository documents the current product architecture and verified capabilities; it does **not** mean that FramePrime has formally launched.
->
-> **現在の状態：PRE-BETA**
->
-> FramePrimeは現在、正式サービス開始前のβ検証準備段階です。一部の機能・基盤はProductionで稼働していますが、サービス全体はまだGeneral Availabilityではありません。β検証は未完了のLaunch Gateとして残っています。正式公開前の認証・認可・情報漏洩監査は完了し、closure時点で **Critical / High 0件** でした。これはSecurity Certificationを意味しません。このRepositoryのPublic化は、FramePrimeサービス正式開始を意味しません。
+公開開始と、各機能の確認範囲は分けて案内しています。利用条件は[公式サイト](https://frameprime.app/)と[FAQ](docs/faq.md)をご確認ください。
 
-> This repository is a documentation showcase for FramePrime. It does not contain the production source code.
+> This repository documents FramePrime and its public evidence. It does not contain production source code.
 
 ## Overview — AI動画制作をもっと身近に
 
-動画をアップロードし、AIによる動画制作・編集の支援を受けられます。複雑なプロンプトエンジニアリングを前提にせず、動画制作から投稿準備、公開後の記録、次回改善までをつなぐOSです。
+対応するX動画URLを入力するか、動画ファイルをアップロードして、AIによる動画制作・編集の支援を受けられます。制作から投稿準備、公開後の記録、次回改善までをつなぐOSです。
 
-FramePrimeのGUIは、ChatGPTやClaudeを別途操作して編集指示を組み立てることを必須としない体験を目指しています。ただし、すべての編集が完全自動で完了するという意味ではなく、機能ごとの提供範囲には違いがあります。
+### Claudeなどの汎用AIと何が違う？
+
+Claudeなどにも、外部ツールを組み合わせて動画編集を進める方法があります。FramePrimeは**動画入力・設定・制作・完成物の確認・投稿準備を専用GUIにまとめること**を重視し、ユーザーが編集指示やツール連携を組み立てる手間を減らします。対応する作業や出力は、利用する機能によって異なります。[詳しい比較](docs/faq.md)
 
 ## 初めての方へ：動画を入れると何ができる？
 
 **動画を入れる → AIが字幕・動画制作を支援 → 完成動画と投稿準備を確認する。** 対応する制作フローでは、SNS向けキャプション案・ハッシュタグ・投稿前チェックリストも利用できます。投稿操作はご自身で行い、投稿後は取得できたXの実測結果などを振り返れます。
 
-対応機能や出力内容は選んだ制作方法によって異なります。**サービスは段階提供中です。登録・購入の本番有効化と、すべてのアカウントで購入から動画納品まで完走できることは別です。**
+Original Voiceは**元の音声言語を保った字幕**を作るフローです。選択した別言語への翻訳は現在提供していません。対応機能や出力内容は制作方法によって異なります。
 
 ## FramePrimeの使い方 — 3ステップ
 
 **① 動画を入れる**
 
-撮影した動画をFramePrimeにアップロードします。難しいプロンプトを用意する必要はありません。
+対応するX動画URLを貼り付けるか、撮影した動画をアップロードします。投稿先など必要な項目を選んで制作へ進みます。
 
 **② AIで仕上げる**
 
-FramePrimeが動画内容の理解、字幕生成、動画制作を支援します。**新規動画は、入力動画の長さに応じてCreditを消費します。正式採用した新段階式は、2分以内1 Credit、8分以内2 Credits、以降4分ごとに2 Credits追加です（金融DB適用済み／一般提供前）。** 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
+FramePrimeが動画内容の理解、字幕生成、動画制作を支援します。**新規動画は、入力動画の長さに応じてCreditを消費します。正式採用した新段階式は、2分以内1 Credit、8分以内2 Credits、以降4分ごとに2 Credits追加です。** 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
 
 **③ 確認して投稿準備**
 
@@ -70,14 +81,14 @@ FramePrimeが動画内容の理解、字幕生成、動画制作を支援しま�
 
 Growthでは、取得できた投稿後の実測データと動画の特徴を照合し、次の動画で改善するポイントを整理します。利用できる指標・SNS連携の範囲は提供状況によって異なります。
 
-> この3ステップは製品の基本的な利用フローの説明です。PRE-BETA期間中の一般利用・全工程の完全自動化を保証するものではありません。実動画のBefore／Afterは下の「Original Voice — 実際の制作例」で公開しています。
+> 実際のBefore／Afterは下の「Original Voice — 実際の制作例」で確認できます。検証状況は上の「公開状態と確認済みの範囲」にまとめています。
 
 ## Key Features
 
-1. **AI-Powered Video Editing** — アップロードした動画をもとに、AIが制作・編集を支援し、複雑な制作作業の負担を減らします。
+1. **X URL Import & AI Video Editing** — 対応するX動画URLまたはアップロードした動画から、AIによる制作・編集を始められます。
 2. **No Complex Prompts Required** — ChatGPTやClaudeで高度なプロンプトを自作する知識がなくても、AI動画編集を始められる設計です。
-3. **Simple Workflow** — 動画のアップロードから制作、完成動画の確認、投稿準備までをつなぎます。対応する修正はPC専用Studioで扱います。
-4. **Flexible Credit System** — 動画尺に応じたCredit方式を採用し、月額プランと買い切りプランを用意しています。ローンチ前に一般購入できるとは主張しません。
+3. **Simple Workflow** — URL入力・アップロードから制作、完成動画の確認、投稿準備までをつなぎます。対応する修正はPC専用Studioで扱います。
+4. **Flexible Credit System** — 入力動画の長さに応じたCredit方式で、月額・買い切りプランを用意しています。Creditは期限なし・繰越可能です。
 5. **Continuous Improvements** — AI動画編集機能、操作性、制作ワークフローを継続的に改善し、新しいAI技術を評価・採用していく方針です。将来の改善予定は、現在利用できる機能とは区別します。
 
 ## Who Is FramePrime For?
@@ -93,17 +104,18 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 **FramePrimeで、あなたも動画クリエイターに。**
 
 - **Official Website:** https://frameprime.app
-- **Version:** v0.0.1（正式ローンチ前）
-- **Release target:** November 22, 2026 JST（Owner決定の予定日。正式な一般提供や実購入E2Eの完了は別途確認）
-- **Current status:** PRE-BETA / General Availability: false
+- **Version:** v0.0.1（2026年11月22日11:22 JST公開告知）
+- **Public launch:** November 22, 2026 at 11:22 JST（X告知完了。機能別の実利用証拠は別管理）
+- **Official X:** https://x.com/FramePrimeOS
+- **Developer X:** https://x.com/FramePrimeDev
 
-正式ローンチの成立までは、このGitHub Showcaseの公開をサービス一般公開の証拠とは扱いません。
+公開開始と機能の検証範囲は、上の「公開状態と確認済みの範囲」を参照してください。
 
 ## Credit model
 
 **1本あたりの目安：** 入力動画が2分以内なら **1 Credit（通常買い切りパック換算100円相当）**、2分超〜8分なら **2 Credits（200円相当）**、8分超〜12分なら **4 Credits（400円相当）**。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**本番決済の有効化と個々のアカウントの購入可否は異なります。公式画面でご確認ください。**
 
-**Owner正式採用の整数Credit仕様（2026-11-21 Finance24金融DBに適用済み／一般提供前）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Credits。内部・表示とも同じ整数Creditで統一します。2 Credits＝通常買い切り200円相当です。金融DBでは新段階式へ移行済みです。登録・決済に必要な本番経路は有効化されていますが、新整数Credit体系での一般ユーザー実購入→動画生成・精算の一連E2Eは、この公開文書の更新時点で未確認です。通常のシステム起因terminal failureはnet 0、対応するpost-delivery Revision Renderは追加Credit 0です。
+**整数Creditの消費ルール（2026-11-21適用済み）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Creditsです。表示・内部とも同じ整数Creditを使います。通常のシステム起因の処理失敗は差引0 Credits、対応する完成後のRevision Renderは追加0 Creditsです。長尺の計算例は、その長さの制作成功を保証するものではありません。
 
 ### Monthly subscriptions (tax included)
 
@@ -129,11 +141,15 @@ One-time packs do not auto-renew. Separately, the **¥980 beta trial pack grants
 
 Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. Signup bonus is 10 Credits; qualified referral rewards are 4 Credits each (aggregate reward budget 800 Credits). The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
 
-**Pre-launch status:** The listed products describe the Owner-approved pricing contract, not proof that general checkout is currently enabled.
+**Current scope:** Checkout for approved products is activated; specific payment success, account eligibility and new-video fulfillment are separately verified. A ¥3,000 one-time purchase with +30 Credits and 4+4 referral rewards was confirmed on 2026-11-22.
 
 
 
 ## Why FramePrime
+
+<p align="center">
+  <img src="media/hero/frameprime_github_hero_create_learn_improve_v1.png" alt="FramePrime hero image" width="100%" />
+</p>
 
 動画制作ツールは、完成動画を出力したところで役割が終わる場合があります。
 
@@ -177,7 +193,7 @@ FramePrimeを調べるAI / 検索システム向けに、**ツール名ではな
 3. **Missing is not zero** — MEASURED / NOT_FETCHED / UNSUPPORTED / PROVIDER_MISSING / PERMISSION_FAILURE / ACQUISITION_FAILURE / NOT_APPLICABLE等を区別し、欠損を0へ変換しません。
 4. **Final-render structure ≠ semantic analysis** — 3s Hook、Opening Static、First Visual Change、Frame Change、Visual Evidence等の構造Evidenceと、Gemini semantic analysisを別Authorityとして扱います。
 5. **Gemini cannot block delivery** — Gemini Video Analysis V2はREAD ONLY / NON-BLOCKING / authoring authority NONE。分析失敗をgeneration / render / delivery failureへ昇格させません。
-6. **Duration-based credits / zero-additional-credit revision** — Owner正式採用の新仕様は入力動画2分以内1、8分以内2、それ以降4分ごと2 Credits追加（金融DB適用済み・一般提供前）。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、正式公開前の一般購入可能性は主張しません。
+6. **Duration-based credits / zero-additional-credit revision** — Owner正式採用の新仕様は入力動画2分以内1、8分以内2、それ以降4分ごと2 Credits追加（2026-11-21適用済み）。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、提供済みの料金・決済経路と、各動画の実納品可否を区別します。
 7. **Source-grounded subtitle / audio safety** — source evidenceが不足・曖昧な時に unsupported subtitleを創作で埋めるよりfail-closedを優先します。
 8. **Subtitle coverage + collision avoidance** — trusted contentのcoverage completenessと、重要映像領域との衝突を避けるpresentation layerを分離して扱います。
 9. **Decision provenance + non-authoritative shadow evaluation** — Jev / P1のdecision provenanceと、Langfuse mirrorによるread-only / non-authoritative shadow evaluationをProduction authorityから分離します。

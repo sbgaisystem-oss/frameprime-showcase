@@ -1,8 +1,83 @@
 {
-  "schema": "FRAMEPRIME_PUBLIC_FACTS_V2",
+  "schema": "FRAMEPRIME_PUBLIC_FACTS_V3",
   "product": "FramePrime",
   "official_site": "https://frameprime.app/",
-  "summary": "FramePrime is a video-post improvement OS connecting creation, revision, publishing preparation, evidence-grounded analysis, post-performance learning, and the next improvement cycle.",
+  "public_repository": "https://github.com/sbgaisystem-oss/frameprime-showcase",
+  "official_channels": {
+    "x": "https://x.com/FramePrimeOS",
+    "developer_x": "https://x.com/FramePrimeDev"
+  },
+  "product_version": "v0.0.1",
+  "summary": "FramePrime is an AI video creation OS: import a supported X video URL or upload a video, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
+  "product_value": "A dedicated GUI connects eligible X URL intake or upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
+  "existing_x_url_intake": {
+    "status": "EXISTING_FEATURE",
+    "scope": "supported X video URLs for sources the user owns or has permission to use",
+    "workflow": [
+      "copy an eligible X video URL",
+      "paste into FramePrime",
+      "select required destination and workflow options",
+      "start generation",
+      "review the completed video and posting preparation"
+    ],
+    "source_acquisition": "X official API into the existing source-asset and video-production workflow",
+    "production_evidence": {
+      "date": "2026-09-29",
+      "source_rights": "RIGHTS_OWNED",
+      "result": "X_URL_TO_DELIVERED",
+      "scope": "historical production example; does not verify the new-price purchase-to-delivery-and-settlement sequence"
+    },
+    "limits": [
+      "retrieval of every X post is not guaranteed",
+      "private or restricted videos are not guaranteed to be retrievable",
+      "public posting does not grant editing or redistribution rights"
+    ],
+    "other_platforms": {
+      "tiktok": "SEPARATE_SCOPE_AND_PRODUCTION_VERIFICATION_REQUIRED",
+      "instagram": "NOT_ADVERTISED_AS_SUPPORTED"
+    },
+    "original_voice_subtitles": "SOURCE_AUDIO_LANGUAGE_PRESERVED_NO_TRANSLATION"
+  },
+  "selected_language_translation": {
+    "status": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
+    "scope": "selected-language translation subtitles, including the proposed foreign-language video to Japanese subtitle use case",
+    "release_version": "NOT_ASSIGNED_PENDING_FORMAL_RELEASE_AND_PRODUCTION_VERIFICATION"
+  },
+  "release_status": {
+    "stage": "PUBLIC_LAUNCHED",
+    "product_version": "v0.0.1",
+    "public_launch_at_jst": "2026-11-22T11:22:00+09:00",
+    "public_launch_announced_on": "X",
+    "public_launch_basis": "OWNER_CONFIRMED",
+    "service_availability": "PHASED_FEATURE_AVAILABILITY",
+    "signup": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
+    "checkout": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
+    "new_price_purchase_to_new_video_delivery_and_credit_settlement": "NOT_YET_VERIFIED_AS_ONE_CONTINUOUS_E2E",
+    "selected_language_translation": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
+    "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
+    "repository_publication_means_formal_service_launch": false,
+    "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
+    "formal_prelaunch_security_audit_completed_date": "2026-10-12",
+    "public_showcase_updated_date": "2026-11-22"
+  },
+  "public_launch_evidence": {
+    "basis": "OWNER_CONFIRMATION",
+    "launch_time_jst": "2026-11-22T11:22:00+09:00",
+    "announcement_platform": "X",
+    "announcement_url_readback": "NOT_INDEPENDENTLY_VERIFIED_FOR_THIS_DOCUMENTATION_UPDATE"
+  },
+  "limited_production_evidence": {
+    "record_date": "2026-11-22",
+    "signup_domestic_email_otp_and_welcome_receipt": "CONFIRMED_IN_LIMITED_PRODUCTION_CHECK",
+    "stripe_live_purchase": {
+      "type": "ONE_TIME_PACK",
+      "price_jpy": 3000,
+      "purchased_credits": 30,
+      "referral_credits_each": 4,
+      "result": "PAYMENT_WEBHOOK_AND_CREDIT_GRANTS_CONFIRMED"
+    },
+    "remaining_unverified": "one continuous new-price purchase to new video delivery and Credit settlement run"
+  },
   "ai_discovery_pillars": [
     {
       "id": "evidence_first_video_intelligence",
@@ -38,8 +113,8 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Owner-approved integer Credit schedule applied in production on 2026-11-21: source video up to 2 minutes = 1 Credit; above 2 through 8 minutes = 2 Credits; thereafter +2 Credits per started 4-minute interval; exactly 32 minutes = 14 Credits. Signup, checkout and referral gates have been activated in production, while individual access, consent and general-user purchase-to-video-delivery E2E are separately constrained or unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render uses 0 additional Credits. This is not a formal general-availability claim.",
-      "availability": "production_credit_contract_phased_access_general_e2e_pending"
+      "claim": "Integer Credits are applied in production: source duration up to 2 min = 1; >2 through 8 min = 2; thereafter +2 per started 4 min. A limited 2026-11-22 production check confirmed a ¥3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A continuous new-price purchase to new video delivery and Credit settlement run remains unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render uses 0 additional Credits.",
+      "availability": "PRODUCTION_CREDIT_CONTRACT_LIMITED_PURCHASE_CONFIRMED_FULL_SEQUENCE_UNVERIFIED"
     },
     {
       "id": "source_grounded_subtitle_audio_safety",
@@ -198,33 +273,16 @@
     "prelaunch_security_audit_completed_date": "2026-10-12",
     "prelaunch_security_audit_boundary": "formal pre-launch auth/authorization/information-leakage audit completed; not a security certification"
   },
-  "release_status": {
-    "stage": "PRE_BETA",
-    "general_availability": false,
-    "beta_validation": "LIMITED_REAL_USER_VALIDATION_IN_PROGRESS",
-    "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
-    "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
-    "repository_publication_means_formal_service_launch": false,
-    "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "product_version": "v0.0.1",
-    "planned_launch_target": "2026-11-22 JST",
-    "planned_launch_confirmed": true,
-    "public_showcase_updated_date": "2026-11-22"
-  },
-  "product_version": "v0.0.1",
-  "planned_launch_target": "2026-11-22 JST",
-  "planned_launch_confirmed": true,
-  "product_value": "AI-assisted video understanding, editing decisions and creation with less dependence on complex ChatGPT/Claude prompting; intuitive workflow, editor-like assistance, ongoing evaluation/adoption of AI advances, and a creation-to-improvement loop. Features in development are not presented as generally available.",
   "credit_contract": {
-    "new_generation": "Owner-approved integer Credit schedule applied in production on 2026-11-21: 1 Credit for source video up to 2 min; 2 Credits for >2 through 8 min; +2 Credits per started 4 min after 8 min; exactly 32 min = 14 Credits. Registration and checkout gates are activated in production, but full general-user payment-to-video-delivery E2E and formal general availability remain separately unverified.",
-    "target_production_status": "SIGNUP_CHECKOUT_REFERRAL_PRODUCTION_GATES_ENABLED_GENERAL_PURCHASE_DELIVERY_E2E_PENDING",
+    "new_generation": "Integer Credit schedule applied in production on 2026-11-21: 1 Credit for a positive source duration up to 2 min; 2 Credits for >2 through 8 min; +2 Credits per started 4 min after 8 min; exactly 32 min = 14 Credits. The continuous new-price purchase to new video delivery and Credit settlement sequence has not yet been verified.",
+    "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
     "plans": [
       "monthly",
       "one_time"
     ],
-    "general_purchase_availability": "production_gate_enabled_phased_customer_access_general_e2e_unverified",
+    "general_purchase_availability": "CHECKOUT_ENABLED_ACCOUNT_ELIGIBILITY_APPLIES_LIMITED_PURCHASE_CONFIRMED",
     "billing_basis": "server-verified input source video duration (milliseconds)",
     "currency": "JPY",
     "tax_included": true,

@@ -4,9 +4,9 @@ FramePrime deliberately separates the credit cost of **creating a new deliverabl
 
 ## Owner-approved integer Credit schedule (Production applied; general E2E validation pending)
 
-**The same integer Credit is used for customer display and internal accounting.** At normal one-time-pack rates, 2 Credits = ¥200. A 32-minute source uses 14 Credits. The previous fractional-credit and secondary-Unit design was superseded. Production Finance24 DB was migrated to the integer Credit schedule on 2026-11-21. Production signup and checkout flows have been activated. Activation is separate from phased customer eligibility and a verified, general-user end-to-end purchase, credit settlement, and new-video delivery. The complete post-cutover general-user purchase/generation E2E is not yet established.
+**The same integer Credit is used for customer display and internal accounting.** At normal one-time-pack rates, 2 Credits = ¥200. A 32-minute source uses 14 Credits. The previous fractional-credit and secondary-Unit design was superseded. Production Finance24 DB was migrated to the integer Credit schedule on 2026-11-21. Production signup and checkout are enabled. A limited production check on 2026-11-22 confirmed a Stripe Live ¥3,000 one-time purchase, 30 purchased Credits and 4 referral Credits for each side. The continuous sequence of a new-price purchase → new video delivery → Credit settlement has not yet been verified.
 
-## Target product contract
+## Current product contract
 
 ### Original Voice generation
 
@@ -32,9 +32,9 @@ Supported post-delivery Revision Render operations use:
 
 This means a user can refine the delivered result through the supported revision workflow without paying another generation credit for each revision render.
 
-## Credit plans and pre-launch availability
+## Credit plans and current availability
 
-Monthly and one-time credit plans are part of the approved product contract. All amounts are tax-inclusive JPY. Credits do not expire; unused balances carry over even after subscription cancellation. The prices below describe the adopted pricing contract, not proof of generally enabled checkout in PRE-BETA.
+Monthly and one-time credit plans are part of the approved product contract. All amounts are tax-inclusive JPY. Credits do not expire; unused balances carry over even after subscription cancellation. The following prices are the current adopted catalog with live checkout activated; availability, eligibility, successful payment and completed new-video delivery are separately verified.
 
 ### Monthly subscriptions (tax included)
 
@@ -58,9 +58,9 @@ Monthly and one-time credit plans are part of the approved product contract. All
 
 One-time packs do not auto-renew. Separately, the **¥980 beta trial pack grants 20 Credits, one purchase per account, without automatic renewal**. Existing legacy ¥980/month Founder subscriptions are distinct and are not silently converted.
 
-Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. Signup bonus = 10 Credits; qualifying referral rewards = 4 Credits for each side; referral budget = 800 Credits. These denominations are applied in the Production financial DB. Signup, checkout and referral production gates are activated, while individual consent and eligibility, live referral reward delivery, and complete purchase-to-video-delivery E2E remain separately constrained or unverified. The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
+Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. Signup bonus = 10 Credits; qualifying referral rewards = 4 Credits for each side; referral budget = 800 Credits. These denominations are applied in the Production financial DB. Signup and checkout are enabled; the limited 2026-11-22 check confirmed the purchased Credits and both referral rewards. Individual consent and eligibility still apply. The complete new-price purchase → new video delivery → Credit settlement sequence remains unverified. The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
 
-**Availability note:** The plans describe the Owner-approved pricing contract. An enabled production checkout gate does not establish that every account can buy immediately or that all payment-to-delivery scenarios have been verified.
+**Availability note:** FramePrime v0.0.1 publicly launched on 2026-11-22 at 11:22 JST, as confirmed by the owner. The catalog and limited payment evidence above do not establish successful purchases of every plan or completion of the new-price purchase-to-video-delivery-and-settlement sequence.
 
 ## Illustrative consumption by input video length
 
@@ -74,7 +74,7 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 | 30 minutes | 14 | ¥1,400 |
 | 32 minutes | 14 | ¥1,400 |
 
-The 30/32-minute calculations are target-schedule pricing illustrations only; the financial DB has adopted this schedule, but customer-facing generation E2E after the cutover and long-form production support are not yet established.
+The 30/32-minute calculations are pricing illustrations only; the financial DB has adopted this schedule, but customer-facing generation E2E after the cutover and long-form production support are not yet established.
 
 ## Why this matters
 
@@ -82,7 +82,7 @@ The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → target: 1 Credit up to 2 minutes; 2 Credits up to 8 minutes; +2 per started 4 minutes after 8 (FINANCIAL DB APPLIED; CUSTOMER END-TO-END VERIFICATION PENDING)
+  → 1 Credit up to 2 minutes; 2 Credits up to 8 minutes; +2 per started 4 minutes after 8 (FINANCIAL DB APPLIED; CUSTOMER END-TO-END VERIFICATION PENDING)
 
 Supported revision of delivered result
   → 0 additional user credits
