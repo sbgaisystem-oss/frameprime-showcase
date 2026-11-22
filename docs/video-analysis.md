@@ -4,6 +4,8 @@ FramePrime separates **video creation authority**, **final-render structure evid
 
 That separation is intentional: useful analysis should not become a new failure dependency for video generation.
 
+**Current status, checked 2026-11-23: Gemini Video Analysis V2 is OFF in production.** The semantic-analysis sections below describe its design, not an active analysis service. This optional analysis is separate from subtitle authoring and video generation, which have historical production delivery evidence and a separate first-creation-without-purchase confirmation on 2026-11-23. No live Gemini analysis call was executed for this status check.
+
 ## Layer 1 — Final-render structure evidence
 
 FramePrime can describe observable structure in the delivered video, including:
@@ -18,7 +20,7 @@ The first 0–3 seconds can be previewed from the existing final render. FramePr
 
 ## Layer 2 — Gemini Video Analysis V2
 
-Gemini is used as an **analysis-only** system.
+Gemini is designed as an **analysis-only** system and is **currently OFF**.
 
 Public authority boundary:
 
@@ -33,7 +35,7 @@ If Gemini analysis is unavailable, the video creation path can still complete.
 
 ## Semantic signals
 
-Gemini Video Analysis V2 can add content summaries and bounded semantic signals such as:
+If enabled and verified in a future release, the design allows content summaries and bounded semantic signals such as:
 
 - **Topic Clarity**
 - **Value Proposition Clarity**
@@ -46,7 +48,7 @@ These signals are evidence about the content. They are not guaranteed prediction
 
 ## Content-feature analysis
 
-FramePrime also retains content-feature analysis used to describe characteristics such as knowledge/information value, surprise, humor, emotion, visual interest, story strength, and shareability.
+The analysis design also includes content features such as knowledge/information value, surprise, humor, emotion, visual interest, story strength, and shareability. This is not a statement that the currently disabled Gemini path produces these features for new videos.
 
 These are **content characteristics**, not claims that a post will achieve a specific outcome.
 
@@ -56,7 +58,7 @@ Growth combines:
 
 1. available post-performance KPI evidence,
 2. final-render structure evidence,
-3. semantic/content analysis,
+3. semantic/content analysis only when available; the Gemini path is currently OFF,
 4. the user's own historical baseline.
 
 The system keeps these evidence types distinct instead of collapsing them into a single unexplained “AI score.”
@@ -69,4 +71,4 @@ It would be inaccurate to summarize FramePrime as:
 
 A more accurate description is:
 
-> FramePrime maintains final-render opening/structure evidence and separately uses non-blocking Gemini semantic analysis to add context.
+> FramePrime separates final-render opening/structure evidence from optional semantic analysis. The Gemini analysis path is currently OFF; its non-blocking design does not imply current execution.

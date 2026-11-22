@@ -42,7 +42,7 @@ Evidence-linked comparison
 Growth / Studio recommendation
 ```
 
-The deployed Private Learning path is owner-scoped. Global cross-user learning, a global video corpus, vector search, or knowledge-graph style aggregation is not implied by this public repository.
+The deployed Private Learning path is owner-scoped. Global cross-user learning, a global video corpus, vector search, or knowledge-graph style aggregation is not implied by this public repository. This describes FramePrime's personal-improvement data boundary; it is not a blanket promise about every external AI provider's model-training or data-retention terms. The existence of the path also does not establish that a particular user has sufficient data for learning.
 
 ## Sample-size restraint
 

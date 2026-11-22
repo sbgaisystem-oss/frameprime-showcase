@@ -10,7 +10,7 @@ Current public status:
 - **Growth Auto Reflection / X exact-window collection: Production capability**
 - **Overall Growth maturity: ACTIVE_EXPANSION**
 
-This means the core learning surface exists and is operating, but broader provider coverage is not complete.
+This means the core learning surface exists, but available evidence and broader provider coverage are limited. **Gemini supplemental semantic analysis is currently OFF (checked 2026-11-23).** A production surface does not mean every user has enough matched videos and observed results for personal learning. Demonstration screens with illustrative numbers are not customer outcomes or proof of performance uplift.
 
 Metric availability depends on the social platform, API scope, account type, permissions, and FramePrime's implemented adapter coverage. A metric or provider that is not available is not fabricated.
 

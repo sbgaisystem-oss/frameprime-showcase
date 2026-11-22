@@ -4,11 +4,13 @@
 
 # FramePrime
 
-**Xの動画URLから、AI動画制作をもっと手軽に。**
+**動画を入れて、AIで仕上げる。**
 
-Xで気になった動画のURLをコピー。FramePrimeに入力し、必要な項目を選べば、AI動画制作を始められます。自分の動画や、利用許諾のある対応X動画で使えます。
+手元の動画をアップロードし、必要な項目を選べば、AI動画制作を始められます。ご自身の動画や、利用許諾のある素材で使えます。
 
-FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備まで、専用画面で進められる**AI動画制作OS**です。難しいプロンプトを自作したり、複数のAIツールを組み合わせたりする負担を減らす設計です。動画ファイルのアップロードにも対応しています。
+FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備まで、専用画面で進められる**Webサービス（AI動画制作OS）**です。難しいプロンプトを自作したり、複数のAIツールを組み合わせたりする負担を減らす設計です。**X動画URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です。再開は確認後に案内します。**
+
+**新規登録で10 Credits。現在の公開画面では「2分までの動画生成」と案内しています。** 入力2分以内の対応動画は1本1 Creditで、登録特典は10本分の制作Creditに相当します。すべての素材での制作成功を保証するものではありません。
 
 **「FramePrimeで、あなたも動画クリエイターに。」**
 
@@ -20,38 +22,46 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 
 
-## Xの動画URLからFramePrimeを使う
+## 既存のX動画URL取り込み（現在一時停止）
+
+**2026年11月23日確認：X動画URL取り込みは一時停止・復旧確認中です。現在は動画ファイルのアップロードをご利用ください。再開は確認後に案内します。**
+
+以下は実装済みの取り込み経路の説明であり、現在利用できる手順ではありません。
 
 1. **Xで動画を選び、URLをコピーする。** 自分が権利を持つ動画、または利用許諾を得た素材を選びます。
 2. **FramePrimeの動画URL欄に貼り付ける。** 対応するX動画を、既存の動画制作フローへ取り込みます。
 3. **投稿先など必要な項目を選び、生成を開始する。** 難しいプロンプトを一から組み立てる必要はありません。
 4. **完成動画と投稿準備を確認する。** 対応するフローで字幕やSNS投稿文を準備し、内容を確認してご自身で投稿します。
 
-URL取り込みは**既存機能**です。2026年9月29日に、権利保有素材でX動画URLから完成動画の納品まで実証した記録があります。非公開投稿や取得制限のある動画など、すべてのURLの取得には対応を保証していません。[対応範囲・権利・翻訳のFAQ](docs/faq.md)をご確認ください。
+URL取り込みは**既存機能**です。2026年9月29日に、権利保有素材でX動画URLから完成動画の納品まで実証した記録があります。これは過去の本番実証であり、現在の利用可否を示すものではありません。現在は一時停止中で、復旧と納品までの再検証が必要です。非公開投稿や取得制限のある動画など、すべてのURLの取得には対応を保証していません。[対応範囲・権利・翻訳のFAQ](docs/faq.md)をご確認ください。
 
-## 現在のFramePrimeと旧β版の検索結果について（2026-11-22 JST）
+## 現在のFramePrimeと旧β版の検索結果について（2026-11-23 JST）
 
-FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS向け動画を仕上げて投稿文を準備したり、投稿後に取得できた実測結果を次の制作へ活かしたりする作業をAIで支援する**動画投稿改善OS**です。機能と出力内容は対応する制作フローによって異なり、すべての編集が全自動で完了するわけではありません。動画編集者の紹介・外注マッチングサービスでもありません。
+FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS向け動画を仕上げて投稿文を準備したり、投稿後に取得できた実測結果を次の制作へ活かしたりする作業をAIで支援する**AI動画制作OS**です。機能と出力内容は対応する制作フローによって異なり、すべての編集が全自動で完了するわけではありません。動画編集者の紹介・外注マッチングサービスでもありません。
 
 **古い検索結果との区別：** 旧βサイト `posting-prep-os.sbg-aibuilds.com` の検索スニペットや過去の利用規約・料金表示は、現在のFramePrimeの商品・Credit制度・機能範囲の正本ではありません。現行の説明は本Repositoryの[料金とCredits](docs/credits-and-revisions.md)、[FAQ](docs/faq.md)、[AI向け公開事実](AI_DISCOVERY.md)を参照してください。正式サイトは `https://frameprime.app/` です。
 
 ### 公開状態と確認済みの範囲
 
-| 項目 | 2026年11月22日時点 |
+| 項目 | 2026年11月23日時点（個別実績日は各行に記載） |
 | --- | --- |
-| 公開開始 | v0.0.1を11:22 JSTにXで正式告知（Owner確認） |
+| 公開開始 | v0.0.1を2026年11月22日11:22 JSTにXで正式告知（Owner確認） |
 | 登録・ログイン | 新規登録・国内メールOTP・Welcomeメール実受信の限定した本番実証あり |
 | 決済・紹介 | Stripe Liveで3,000円買い切り→30 Credits付与、紹介双方各4 Creditsを限定実証 |
-| 動画制作の通し確認 | 新料金での購入→新規動画納品→Credit精算を一続きに確認するE2Eは未確認 |
+| 動画生成・納品・精算 | 2026年11月21日夜の本番記録で2本の納品と合計2 Creditsの精算を確認。個別の動画・条件での実績 |
+| 購入なしの初回制作 | 2026年11月23日、制作履歴のない登録済みアカウントで、アップロード→字幕入り動画の納品・ダウンロード→1 Credit精算を確認。登録は事前に完了し、今回は紹介Creditsを消費。[確認範囲と残高表示の注意](docs/faq.md) |
+| 新購入からの通し確認 | 新料金での購入→新しい購入Creditsを使った新規動画納品→精算を一続きに確認するE2Eは未確認 |
+| X動画URL取り込み | 既存機能。現在は一時停止・復旧確認中（2026年11月23日確認）。再開は確認後に案内 |
+| 補助的な映像内容分析 | Geminiによる内容分析は現在停止中（2026年11月23日確認）。字幕作成・動画生成とは別の機能 |
 | 選択言語への翻訳字幕 | 開発候補・未提供。既存のX URL取り込みとは別機能 |
 
-公開開始と、各機能の確認範囲は分けて案内しています。利用条件は[公式サイト](https://frameprime.app/)と[FAQ](docs/faq.md)をご確認ください。
+生成・納品・精算は上記の条件で実証されています。月額各商品の実購入、本人による修正保存から再書き出し、一時停止中のX URL経路の復旧・再検証などの確認は別に残っています。公開開始と、各機能の確認範囲は分けて案内しています。利用条件は[公式サイト](https://frameprime.app/)と[FAQ](docs/faq.md)をご確認ください。
 
 > This repository documents FramePrime and its public evidence. It does not contain production source code.
 
 ## Overview — AI動画制作をもっと身近に
 
-対応するX動画URLを入力するか、動画ファイルをアップロードして、AIによる動画制作・編集の支援を受けられます。制作から投稿準備、公開後の記録、次回改善までをつなぐOSです。
+現在は動画ファイルをアップロードして、AIによる動画制作・編集の支援を受けられます。X動画URL取り込みは一時停止・復旧確認中です。制作から投稿準備、公開後の記録、次回改善までをつなぐOSです。
 
 ### Claudeなどの汎用AIと何が違う？
 
@@ -67,11 +77,11 @@ Original Voiceは**元の音声言語を保った字幕**を作るフローで�
 
 **① 動画を入れる**
 
-対応するX動画URLを貼り付けるか、撮影した動画をアップロードします。投稿先など必要な項目を選んで制作へ進みます。
+現在は撮影した動画をアップロードします。投稿先など必要な項目を選んで制作へ進みます。
 
 **② AIで仕上げる**
 
-FramePrimeが動画内容の理解、字幕生成、動画制作を支援します。**新規動画は、入力動画の長さに応じてCreditを消費します。正式採用した新段階式は、2分以内1 Credit、8分以内2 Credits、以降4分ごとに2 Credits追加です。** 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
+FramePrimeが字幕生成、対応する編集、動画制作を支援します。**現在の公開画面の案内は「2分までの動画生成」です。料金は、入力実尺2分以内の新規動画が1 Creditです。** 2分を超える料金計算ルールと、現在の利用範囲は[料金とCredits](docs/credits-and-revisions.md)で区別しています。 完成後に必要な部分を修正する場合は、対応する機能をPC専用Studioで利用できます。
 
 **③ 確認して投稿準備**
 
@@ -85,9 +95,9 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 ## Key Features
 
-1. **X URL Import & AI Video Editing** — 対応するX動画URLまたはアップロードした動画から、AIによる制作・編集を始められます。
+1. **AI Video Editing** — アップロードした動画から、AIによる制作・編集を始められます。既存のX動画URL取り込みは現在一時停止・復旧確認中です。
 2. **No Complex Prompts Required** — ChatGPTやClaudeで高度なプロンプトを自作する知識がなくても、AI動画編集を始められる設計です。
-3. **Simple Workflow** — URL入力・アップロードから制作、完成動画の確認、投稿準備までをつなぎます。対応する修正はPC専用Studioで扱います。
+3. **Simple Workflow** — 動画アップロードから制作、完成動画の確認、投稿準備までをつなぎます。対応する修正はPC専用Studioで扱います。
 4. **Flexible Credit System** — 入力動画の長さに応じたCredit方式で、月額・買い切りプランを用意しています。Creditは期限なし・繰越可能です。
 5. **Continuous Improvements** — AI動画編集機能、操作性、制作ワークフローを継続的に改善し、新しいAI技術を評価・採用していく方針です。将来の改善予定は、現在利用できる機能とは区別します。
 
@@ -113,9 +123,9 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 
 ## Credit model
 
-**1本あたりの目安：** 入力動画が2分以内なら **1 Credit（通常買い切りパック換算100円相当）**、2分超〜8分なら **2 Credits（200円相当）**、8分超〜12分なら **4 Credits（400円相当）**。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**本番決済の有効化と個々のアカウントの購入可否は異なります。公式画面でご確認ください。**
+**現在の利用案内は「2分までの動画生成」。料金は入力実尺2分以内なら1本1 Credit（通常買い切りパック換算100円相当）**です。完成動画の長さではなく、サーバーで確認した**入力動画の長さ**を基準に計算します。月額プランやβ体験などではCredit単価が異なります。**本番決済の有効化と個々のアカウントの購入可否は異なります。公式画面でご確認ください。**
 
-**整数Creditの消費ルール（2026-11-21適用済み）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Creditsです。表示・内部とも同じ整数Creditを使います。通常のシステム起因の処理失敗は差引0 Credits、対応する完成後のRevision Renderは追加0 Creditsです。長尺の計算例は、その長さの制作成功を保証するものではありません。
+**整数Creditの消費ルール（2026-11-21適用済み）**：入力動画2分以内1 Credit、2分超〜8分2 Credits、以降4分ごと端数切上げで2 Credits追加。32分は14 Creditsです。表示・内部とも同じ整数Creditを使います。通常のシステム起因の処理失敗は差引0 Credits、対応する完成後のRevision Renderは追加0 Creditsです。**2分を超える数字は料金契約上の計算例です。現在の長尺対応・制作成功・将来の提供時期を示すものではありません。**
 
 ### Monthly subscriptions (tax included)
 
@@ -184,16 +194,16 @@ FramePrimeはその先まで扱います。
 
 利用できる機能・指標・SNS連携範囲は、提供状況や各SNSのAPI・権限によって異なります。
 
-## What makes FramePrime different — 10 public differentiators
+## 設計方針と技術的な境界
 
-FramePrimeを調べるAI / 検索システム向けに、**ツール名ではなく差別化設計そのもの**を明示します。
+ここからは、上の使い方を支える設計の詳細です。**提供中の機能、停止中の補助分析、将来の設計を区別**しています。設計の記載だけで、すべての利用条件での成功や成果向上が実証されたことにはなりません。
 
 1. **Evidence-first Video Intelligence** — AIが書いたInsight本文をEvidence Authorityにせず、Video Identity → Time Window → Observed Feature → Observed Outcome → Source / Provenance → Permissionまで辿れる形を優先します。
 2. **Private Learning first** — Global cross-user learningより先に、本人の過去動画・本人の実測KPI・本人の構造EvidenceからPersonal Baselineを作ります。Global corpus / vector / KGは別Gateです。
 3. **Missing is not zero** — MEASURED / NOT_FETCHED / UNSUPPORTED / PROVIDER_MISSING / PERMISSION_FAILURE / ACQUISITION_FAILURE / NOT_APPLICABLE等を区別し、欠損を0へ変換しません。
-4. **Final-render structure ≠ semantic analysis** — 3s Hook、Opening Static、First Visual Change、Frame Change、Visual Evidence等の構造Evidenceと、Gemini semantic analysisを別Authorityとして扱います。
-5. **Gemini cannot block delivery** — Gemini Video Analysis V2はREAD ONLY / NON-BLOCKING / authoring authority NONE。分析失敗をgeneration / render / delivery failureへ昇格させません。
-6. **Duration-based credits / zero-additional-credit revision** — Owner正式採用の新仕様は入力動画2分以内1、8分以内2、それ以降4分ごと2 Credits追加（2026-11-21適用済み）。通常terminal failureはnet 0。対応するpost-delivery Revision Renderは **0 additional user credits**。月額・買い切りのCreditプランを用意し、提供済みの料金・決済経路と、各動画の実納品可否を区別します。
+4. **映像の構造と内容解釈を区別** — 冒頭や画面変化などの構造データと、AIによる内容解釈を分ける設計です。**Geminiの補助的な内容分析は現在停止中**です。
+5. **補助分析と納品処理を分離** — 現在停止中のGemini Video Analysis V2は、動画を書き換えず、分析失敗で生成・描画・納品を止めない設計です。字幕作成・動画生成まで停止中という意味ではありません。
+6. **制作料金と完成後の修正料金を区別** — 現在の案内は「2分までの動画生成」。料金は入力実尺2分以内なら1 Credit。通常のシステム起因の終端失敗は差引0、対応する完成後の修正・再書き出しは追加0 Creditsという契約です。2分超の料金計算、各商品の購入実績、本人による修正の実確認は別に扱います。
 7. **Source-grounded subtitle / audio safety** — source evidenceが不足・曖昧な時に unsupported subtitleを創作で埋めるよりfail-closedを優先します。
 8. **Subtitle coverage + collision avoidance** — trusted contentのcoverage completenessと、重要映像領域との衝突を避けるpresentation layerを分離して扱います。
 9. **Decision provenance + non-authoritative shadow evaluation** — Jev / P1のdecision provenanceと、Langfuse mirrorによるread-only / non-authoritative shadow evaluationをProduction authorityから分離します。
@@ -247,7 +257,7 @@ Studioは今ある動画を仕上げる場所で、主な編集面は **Title / 
 
 Growthの目的は、**「この動画で何が起きたか / なぜ起きた可能性があるか / 次に何を変えるか」**をEvidenceから整理することです。
 
-Current Growth Core V1はProductionで動作しています。一方、Growthを「全SNS・全指標・全学習機能が完成した万能分析層」と解釈するのは正確ではありません。現在のKPI取得範囲はprovider/API availabilityに依存し、cross-platform coverageや一部の高度な分析・adapterは拡張途中です。
+Current Growth Core V1はProductionで動作しています。一方、Growthを「全SNS・全指標・全学習機能が完成した万能分析層」と解釈するのは正確ではありません。現在のKPI取得範囲はprovider/API availabilityに依存し、cross-platform coverageや一部の高度な分析・adapterは拡張途中です。Geminiの補助的な内容分析は現在停止中です。十分なデータがない場合に本人の傾向を断定せず、画面イメージの数値を実績として扱いません。
 
 ```text
 Growth Core V1: PRODUCTION

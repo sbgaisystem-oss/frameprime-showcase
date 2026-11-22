@@ -24,7 +24,7 @@ Current finishing surfaces include:
 - **CTA**
 - **Cut**
 
-Studio also supports the revision workflow around an already delivered video.
+Studio also supports the revision workflow around an already delivered video. The published revision contract and deployed interface are separate from verification of an authenticated user saving edits, receiving a revised render and incurring no additional Credits; that full user sequence remains unverified in this public update.
 
 ## Subtitle editing
 
@@ -44,7 +44,7 @@ Supported post-delivery Revision Render is part of the Studio finishing workflow
 
 Current public credit contract:
 
-- successful new video generation → the Owner-approved integer-Credit schedule: 1 Credit up to 2 min, 2 Credits for >2–8 min, then +2 per started 4 min; 32 min = 14 Credits. Registration and checkout production activation is separate from verifying general-user purchase-to-video-delivery E2E,
+- current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit. Longer-duration billing rules are documented in [Credits and revisions](credits-and-revisions.md) and do not promise current long-form support or a future release date,
 - supported post-delivery revision render → 0 additional user credits.
 
 ## Studio vs Growth

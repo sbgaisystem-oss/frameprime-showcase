@@ -1,18 +1,24 @@
-# Credits and Revisions
+# 料金・Credits・完成後の修正
 
-FramePrime deliberately separates the credit cost of **creating a new deliverable** from the cost of **refining an already delivered video**.
+FramePrimeでは、**新しい動画を制作する料金**と、**完成した動画を対応範囲で修正する料金**を分けています。
 
-## Owner-approved integer Credit schedule (Production applied; general E2E validation pending)
+**現在の公開画面の案内は「2分までの動画生成」です。料金は入力実尺2分以内の対応動画が1本1 Creditです。新規登録特典は10 Creditsで、同条件の10本分の制作Creditに相当します。** すべての素材で制作成功を保証する意味ではありません。2分を超える料金計算は、現在の長尺対応や今後の提供時期を示すものではありません。
 
-**The same integer Credit is used for customer display and internal accounting.** At normal one-time-pack rates, 2 Credits = ¥200. A 32-minute source uses 14 Credits. The previous fractional-credit and secondary-Unit design was superseded. Production Finance24 DB was migrated to the integer Credit schedule on 2026-11-21. Production signup and checkout are enabled. A limited production check on 2026-11-22 confirmed a Stripe Live ¥3,000 one-time purchase, 30 purchased Credits and 4 referral Credits for each side. The continuous sequence of a new-price purchase → new video delivery → Credit settlement has not yet been verified.
+## 現在の料金制度と本番確認の範囲
 
-## Current product contract
+表示と内部精算は同じ整数Creditです。通常の買い切りパック換算では1 Credit＝100円相当で、月額やβ体験の単価は異なります。2026年11月21日に現行の整数料金へ移行しました。登録・購入経路は公開済みで、11月22日の3,000円買い切り→30 Credits、紹介双方各4 Creditsの本番実績があります。**11月21日夜の本番記録には、動画2本の納品と合計2 Creditsの精算もあります。**
+
+**2026年11月23日、制作履歴のない登録済みアカウントで、購入なしの初回動画制作→字幕入り動画の納品・ダウンロード→1 Credit精算を本番確認しました。** 登録はこの制作確認より前に完了しており、消費したのは紹介Creditsです。同じ操作回での新規登録からの通し確認、登録特典Creditsの消費確認、新しい購入Creditsを使う確認とは区別します。
+
+未確認の範囲には、新料金購入→その購入Creditsを使った新規動画納品→精算を一続きに確認する経路が含まれます。月額各商品の実購入や、本人による修正保存→再書き出し→追加Credit消費なしの確認も別に残っています。個別の成功実績を、すべての素材・商品・条件での成功保証に拡張しません。
+
+## 制作・修正の料金契約
 
 ### Original Voice generation
 
 A successfully delivered Original Voice generation consumes:
 
-**0 < input duration <= 2 minutes: 1 Credit; >2 to 8 minutes: 2 Credits; above 8 minutes: 2 additional Credits per started 4-minute interval.** At exactly 32 minutes: 14 Credits. **This schedule is applied to the Production financial DB. Phased customer availability and complete general-user payment-to-video-delivery E2E require separate verification; neither is guaranteed by gate activation alone.**
+**現在の案内は「2分までの動画生成」です。料金は正の入力実尺2分以内なら1 Creditです。** 料金契約上は、2分超〜8分＝2 Credits、8分超は開始した4分ごとに2 Credits追加（32分＝14 Credits）と定義されています。2分超の値は計算ルールの説明であり、現在の受付・制作・納品範囲や将来の対応予定ではありません。
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
@@ -32,11 +38,11 @@ Supported post-delivery Revision Render operations use:
 
 This means a user can refine the delivered result through the supported revision workflow without paying another generation credit for each revision render.
 
-## Credit plans and current availability
+## 購入プランと利用条件
 
 Monthly and one-time credit plans are part of the approved product contract. All amounts are tax-inclusive JPY. Credits do not expire; unused balances carry over even after subscription cancellation. The following prices are the current adopted catalog with live checkout activated; availability, eligibility, successful payment and completed new-video delivery are separately verified.
 
-### Monthly subscriptions (tax included)
+### 月額プラン（税込）
 
 | Monthly price | Credits granted monthly | Effective price per Credit* |
 | --- | ---: | ---: |
@@ -47,7 +53,7 @@ Monthly and one-time credit plans are part of the approved product contract. All
 
 *Effective unit price assumes all granted Credits are used. No separate per-video cash charge on top of the Credits consumed.
 
-### One-time Credit packs (tax included)
+### 買い切りパック（税込）
 
 | One-time price | Credits granted |
 | --- | ---: |
@@ -62,7 +68,9 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 
 **Availability note:** FramePrime v0.0.1 publicly launched on 2026-11-22 at 11:22 JST, as confirmed by the owner. The catalog and limited payment evidence above do not establish successful purchases of every plan or completion of the new-price purchase-to-video-delivery-and-settlement sequence.
 
-## Illustrative consumption by input video length
+## 入力尺による料金計算例（長尺対応の案内ではありません）
+
+**現在の案内は「2分までの動画生成」です。** 下表の2分を超える行は料金制度上の参考計算であり、利用可能な動画尺や今後の提供時期を示しません。
 
 | Input video length | Credits | One-time-pack equivalent (¥100/Credit) |
 | --- | ---: | ---: |
@@ -74,7 +82,7 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 | 30 minutes | 14 | ¥1,400 |
 | 32 minutes | 14 | ¥1,400 |
 
-The 30/32-minute calculations are pricing illustrations only; the financial DB has adopted this schedule, but customer-facing generation E2E after the cutover and long-form production support are not yet established.
+2分を超える計算例を、現在の長尺対応と読み替えないでください。新料金移行後にも個別動画の納品・精算実績はありますが、新購入から新しい動画への連続E2Eや長尺対応の実証とは別です。
 
 ## Why this matters
 
@@ -82,7 +90,7 @@ The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → 1 Credit up to 2 minutes; 2 Credits up to 8 minutes; +2 per started 4 minutes after 8 (FINANCIAL DB APPLIED; CUSTOMER END-TO-END VERIFICATION PENDING)
+  → Public guidance: video generation up to 2 minutes. Billing: 1 Credit for a positive input duration up to 2 minutes; longer billing calculations do not establish long-form support
 
 Supported revision of delivered result
   → 0 additional user credits

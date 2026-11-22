@@ -8,8 +8,8 @@
     "developer_x": "https://x.com/FramePrimeDev"
   },
   "product_version": "v0.0.1",
-  "summary": "FramePrime is an AI video creation OS: import a supported X video URL or upload a video, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
-  "product_value": "A dedicated GUI connects eligible X URL intake or upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
+  "summary": "FramePrime is an AI video creation OS: upload a video, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
+  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Existing X URL intake is temporarily paused and under restoration verification. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
   "existing_x_url_intake": {
     "status": "EXISTING_FEATURE",
     "scope": "supported X video URLs for sources the user owns or has permission to use",
@@ -25,7 +25,7 @@
       "date": "2026-09-29",
       "source_rights": "RIGHTS_OWNED",
       "result": "X_URL_TO_DELIVERED",
-      "scope": "historical production example; does not verify the new-price purchase-to-delivery-and-settlement sequence"
+      "scope": "historical production example only; X URL intake is currently temporarily paused. Restoration and current-release revalidation remain pending, separate from the unverified new-price purchase-to-delivery-and-settlement sequence."
     },
     "limits": [
       "retrieval of every X post is not guaranteed",
@@ -36,7 +36,13 @@
       "tiktok": "SEPARATE_SCOPE_AND_PRODUCTION_VERIFICATION_REQUIRED",
       "instagram": "NOT_ADVERTISED_AS_SUPPORTED"
     },
-    "original_voice_subtitles": "SOURCE_AUDIO_LANGUAGE_PRESERVED_NO_TRANSLATION"
+    "original_voice_subtitles": "SOURCE_AUDIO_LANGUAGE_PRESERVED_NO_TRANSLATION",
+    "current_release_revalidation": "PENDING_AFTER_RESTORATION",
+    "current_availability": "TEMPORARILY_PAUSED_RESTORATION_VERIFICATION_PENDING",
+    "current_status_checked_date": "2026-11-23",
+    "current_entry_point": "VIDEO_UPLOAD",
+    "resumption_notice": "Resumption will be announced after verification; no date is committed.",
+    "workflow_availability": "EXISTING_IMPLEMENTED_PATH_NOT_CURRENTLY_AVAILABLE"
   },
   "selected_language_translation": {
     "status": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
@@ -58,7 +64,11 @@
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "public_showcase_updated_date": "2026-11-22"
+    "public_showcase_updated_date": "2026-11-23",
+    "video_generation": "LIMITED_UPLOAD_FIRST_CREATION_DELIVERY_DOWNLOAD_AND_CREDIT_SETTLEMENT_CONFIRMED",
+    "supplemental_gemini_semantic_analysis": "OFF",
+    "current_public_video_generation_guidance": "UP_TO_2_MINUTES",
+    "x_url_intake": "TEMPORARILY_PAUSED_RESTORATION_VERIFICATION_PENDING"
   },
   "public_launch_evidence": {
     "basis": "OWNER_CONFIRMATION",
@@ -76,7 +86,39 @@
       "referral_credits_each": 4,
       "result": "PAYMENT_WEBHOOK_AND_CREDIT_GRANTS_CONFIRMED"
     },
-    "remaining_unverified": "one continuous new-price purchase to new video delivery and Credit settlement run"
+    "remaining_unverified": "one continuous new-price purchase to use of those purchased Credits for new video delivery and Credit settlement; this is not the only remaining verification gap",
+    "video_generation_delivery_and_credit_settlement": {
+      "record_date": "2026-11-21",
+      "delivered_videos": 2,
+      "total_credits_settled": 2,
+      "evidence_basis": "EXISTING_PRODUCTION_RECORDS",
+      "scope": "individual tested videos and conditions; not a guarantee of every input, subtitle completeness or the full new-purchase sequence",
+      "evidence_is_historical": true
+    },
+    "additional_unverified_checks": [
+      "actual purchases of each monthly plan",
+      "authenticated user revision save, revised render delivery and no additional Credit consumption as one sequence",
+      "restoration and current-release X URL intake-to-delivery revalidation"
+    ],
+    "latest_check_date": "2026-11-23",
+    "first_creation_without_purchase": {
+      "record_date": "2026-11-23",
+      "result": "UPLOAD_TO_SUBTITLED_VIDEO_DELIVERY_DOWNLOAD_AND_ONE_CREDIT_SETTLEMENT_CONFIRMED",
+      "account_state_before_run": "ALREADY_REGISTERED_NO_PRIOR_CREATIONS_OR_PURCHASES",
+      "registration_occurred_before_this_run": true,
+      "source": "UPLOADED_VIDEO",
+      "workflow": "ORIGINAL_VOICE_SOURCE_AUDIO_LANGUAGE_NO_TRANSLATION",
+      "delivered_videos": 1,
+      "credits_settled": 1,
+      "consumed_credit_type": "REFERRAL",
+      "signup_credit_lot_consumed": false,
+      "purchased_credit_lot_consumed": false,
+      "same_session_new_signup_e2e_verified": false,
+      "evidence_basis": "PRODUCTION_RECORDS_DELIVERED_FILE_DOWNLOAD_AND_MANUAL_BALANCE_REFRESH",
+      "balance_display_after_completion": "NOT_AUTOMATICALLY_UPDATED",
+      "balance_verification": "After delivery, the user used the My Page balance/history refresh control; the displayed settled balance then matched the ledger without reload or re-login.",
+      "scope": "One account, source and tested workflow; does not guarantee subtitle quality or success for every input, same-session new signup, signup-grant consumption, purchased-Credit consumption, X URL intake or translation."
+    }
   },
   "ai_discovery_pillars": [
     {
@@ -90,7 +132,7 @@
       "title": "Private Learning first",
       "claim": "FramePrime prioritizes owner-scoped learning from a user's own videos, observed KPI, and structural evidence before any global cross-user learning.",
       "availability": "production_private_learning_path",
-      "boundary": "global corpus/vector/KG/cross-user learning remains separately gated"
+      "boundary": "global cross-user learning is separately gated; sufficient matched user evidence is required; this is not a blanket external-provider training or retention guarantee"
     },
     {
       "id": "missing_is_not_zero",
@@ -101,19 +143,19 @@
     {
       "id": "structure_vs_semantics",
       "title": "Final-render structure is separate from semantic analysis",
-      "claim": "Final-render structure evidence such as 3s Hook, Opening Static, First Visual Change, Frame Change, and Visual Evidence is kept separate from Gemini semantic analysis.",
-      "availability": "production_feature"
+      "claim": "Final-render structural evidence is kept separate from optional semantic interpretation. The supplemental Gemini semantic-analysis path is currently OFF in production, checked 2026-11-23.",
+      "availability": "PRODUCTION_STRUCTURE_EVIDENCE_WITH_OPTIONAL_GEMINI_SEMANTIC_ANALYSIS_OFF"
     },
     {
       "id": "gemini_non_blocking",
       "title": "Gemini cannot block delivery",
-      "claim": "Gemini Video Analysis V2 is read-only, non-blocking, and has no authoring authority; analysis failure does not become a generation, render, or delivery failure.",
-      "availability": "production_design"
+      "claim": "Gemini Video Analysis V2 is currently OFF in production. Its design is read-only and non-blocking, with no authoring authority. This optional analysis is separate from subtitle authoring and video generation.",
+      "availability": "DESIGN_BOUNDARY_CURRENTLY_OFF"
     },
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Integer Credits are applied in production: source duration up to 2 min = 1; >2 through 8 min = 2; thereafter +2 per started 4 min. A limited 2026-11-22 production check confirmed a ¥3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A continuous new-price purchase to new video delivery and Credit settlement run remains unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render uses 0 additional Credits.",
+      "claim": "Current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Longer duration billing calculations do not establish current long-form support or a future release date. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract, with authenticated revision save/re-render verification pending.",
       "availability": "PRODUCTION_CREDIT_CONTRACT_LIMITED_PURCHASE_CONFIRMED_FULL_SEQUENCE_UNVERIFIED"
     },
     {
@@ -126,7 +168,8 @@
       "id": "subtitle_coverage_collision",
       "title": "Subtitle coverage plus collision avoidance",
       "claim": "FramePrime treats trusted-content coverage completeness and subtitle/telop collision avoidance as separate presentation-quality concerns.",
-      "availability": "production_feature_with_proof"
+      "availability": "production_feature_with_proof",
+      "boundary": "proof is scoped to recorded examples; important visual-content collision avoidance does not mean subtitles are never overlaid on video"
     },
     {
       "id": "decision_shadow_separation",
@@ -222,7 +265,8 @@
         "Cut"
       ],
       "includes_supported_revision_render": true,
-      "general_purpose_nle": false
+      "general_purpose_nle": false,
+      "authenticated_revision_save_rerender_and_credit_e2e": "NOT_YET_VERIFIED_AS_ONE_USER_SEQUENCE"
     },
     "growth": {
       "purpose": "organize what happened, why it may have happened, and what to change next using observed KPI and video-side evidence",
@@ -231,7 +275,10 @@
       "current_notes": [
         "X exact-window KPI collection is a current production capability",
         "metric availability depends on provider/API/account permissions",
-        "cross-platform adapter coverage is not complete"
+        "cross-platform adapter coverage is not complete",
+        "Supplemental Gemini semantic analysis is currently OFF",
+        "Personal learning requires sufficient matched videos and observed post results",
+        "Illustrative demonstration-screen metrics are not customer outcomes or proof of performance uplift"
       ]
     },
     "original_voice_before_after": {
@@ -274,7 +321,7 @@
     "prelaunch_security_audit_boundary": "formal pre-launch auth/authorization/information-leakage audit completed; not a security certification"
   },
   "credit_contract": {
-    "new_generation": "Integer Credit schedule applied in production on 2026-11-21: 1 Credit for a positive source duration up to 2 min; 2 Credits for >2 through 8 min; +2 Credits per started 4 min after 8 min; exactly 32 min = 14 Credits. The continuous new-price purchase to new video delivery and Credit settlement sequence has not yet been verified.",
+    "new_generation": "Current public guidance: video generation up to 2 minutes. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). These longer calculations do not establish current long-form support or a future release date. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
     "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
@@ -340,6 +387,28 @@
     "integer_credit_unit": "Customer-facing and internal denominations are identical whole Credits; prior fractional proposal superseded",
     "signup_bonus_credits": 10,
     "referral_reward_each_credits": 4,
-    "referral_budget_credits": 800
-  }
+    "referral_budget_credits": 800,
+    "revision_verification": "PRICING_CONTRACT_DEFINED_AUTHENTICATED_SAVE_RERENDER_NO_ADDITIONAL_CREDIT_SEQUENCE_PENDING"
+  },
+  "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。現在は手元の動画のアップロードから始められます。X動画URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です。再開は確認後に案内します。",
+  "current_usage_guidance": {
+    "checked_date": "2026-11-22",
+    "signup_bonus_credits": 10,
+    "basis": "CURRENT_PUBLIC_UI_GUIDANCE",
+    "scope": "Current public screens state support for video generation up to 2 minutes.",
+    "longer_duration_pricing_is_support_promise": false,
+    "long_form_release_date": "NOT_COMMITTED",
+    "video_generation_duration_guidance_seconds": 120,
+    "billing_credits_for_positive_input_duration_up_to_2_minutes": 1
+  },
+  "supplemental_semantic_analysis": {
+    "name": "Gemini Video Analysis V2",
+    "production_status": "OFF",
+    "checked_date": "2026-11-23",
+    "evidence": "PRODUCTION_CONFIGURATION_READBACK",
+    "live_analysis_call_executed_for_this_check": false,
+    "boundary": "Optional supplemental content analysis; separate from subtitle authoring and video generation. Its OFF state does not imply those paths are OFF.",
+    "design": "read-only, non-blocking, no authoring authority; does not block generation, render or delivery"
+  },
+  "semantic_analysis_signals_availability": "DESIGN_SCOPE_CURRENTLY_OFF"
 }
