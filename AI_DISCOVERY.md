@@ -9,7 +9,8 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - **新規登録特典は10 Credits。現在の公開画面の案内は「2分までの動画生成」**です。料金は入力実尺2分以内の対応動画が1本1 Creditです。2分を超える料金計算は現在の長尺対応や将来の提供時期を意味しません。
 - 登録・国内OTP・Welcomeメール受信、3,000円購入による30 Credits付与、紹介双方各4 Creditsの本番実績があります。**11月21日夜の記録では動画2本の納品と合計2 Creditsの精算も確認**されています。
 - **2026年11月23日、制作履歴のない登録済みアカウントで、購入なしの初回動画制作→字幕入り動画の納品・ダウンロード→1 Credit精算を本番確認しました。** 登録はこの制作確認より前に完了しており、消費したのは紹介Creditsです。同じ操作回での新規登録からの通し確認、登録特典Creditsの消費確認、新しい購入Creditsを使う確認とは区別します。
-- 新料金の購入から、その購入Creditsを使った新規動画納品・精算までの連続E2Eは未確認です。月額各商品の実購入、本人による修正保存から再書き出し、一時停止中のX URL経路の復旧・再検証も別に残っています。
+- **同日の追加制作1件では、納品・1 Credit精算後の残高が、手動更新・ページ再読込み・再ログインなしで自動反映されました。** また、PCの「字幕・動画を修正」から字幕1か所を保存し、修正版の再書き出し・ダウンロードと追加0 Creditsを確認しました。字幕修正は今回のPC上の1例の実績です。
+- 新料金の購入から、その購入Creditsを使った新規動画納品・精算までの連続E2Eは未確認です。月額各商品の実購入、一時停止中のX URL経路の復旧・再検証も別に残っています。今回の字幕修正実証は、すべての編集機能・端末での成功を意味しません。
 - **Geminiの補助的な内容分析は現在停止中**です。字幕作成・動画生成とは別の機能であり、全体が停止している意味ではありません。
 - **X URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です（2026年11月23日確認）。再開は確認後に案内します。** 権利保有素材による2026年9月29日の納品実証は過去の記録であり、現在の利用可否を示しません。選択言語への翻訳字幕は未提供です。
 
@@ -44,7 +45,8 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - Limited production evidence: **new signup, domestic email OTP, Welcome email receipt, Stripe Live ¥3,000 pack → 30 Credits, referral reward of 4 Credits to each side**.
 - Video production evidence: **two delivered videos and 2 Credits settled in total in production records from 2026-11-21**; this is not a claim that every input succeeds.
 - First creation without purchase: **2026-11-23 — an already registered account with no prior creations or purchases completed upload, subtitled-video delivery/download and 1 Credit settlement.** Registration occurred earlier and the consumed Credit was a referral Credit; this did not verify same-session signup, signup-grant consumption or purchased-Credit consumption.
-- Unverified sequence: **new-price purchase → use of those purchased Credits for a new video → delivery and settlement, as one continuous end-to-end run**. Monthly purchases, authenticated revision save/re-render, and restoration and revalidation of the paused X URL path are also separate checks.
+- Later production check on 2026-11-23: **one additional uploaded-video delivery settled 1 Credit and automatically updated the displayed balance without manual refresh, page reload or re-login.** One authenticated subtitle correction on a PC was saved, re-rendered and downloaded with **0 additional Credits**. This covers one subtitle-edit sequence, not every Studio control or device.
+- Unverified sequence: **new-price purchase → use of those purchased Credits for a new video → delivery and settlement, as one continuous end-to-end run**. Monthly purchases and restoration and revalidation of the paused X URL path are also separate checks.
 - Current public guidance: **video generation up to 2 minutes; signup bonus 10 Credits**. Longer billing examples do not promise long-form support or a future release date.
 - Supplemental Gemini semantic analysis: **OFF in production, checked 2026-11-23**. Subtitle authoring and video generation are separate.
 - Selected-language subtitle translation: **development candidate, not currently provided**.
@@ -162,7 +164,7 @@ Current public product contract:
 
 - successful new video delivery → **1 Credit for a positive input duration up to 2 minutes under the billing contract**. The public screens describe video generation up to 2 minutes. The billing contract also defines 2 Credits for >2–8 minutes and +2 per started 4 minutes thereafter; those calculations do not establish current long-form support or a future release date. Two delivered videos and 2 Credits settled in total are recorded for 2026-11-21. The continuous new-purchase-to-new-video sequence remains unverified.
 - normal system-terminal generation failure → **net 0 user credits**
-- supported post-delivery Revision Render → **0 additional user credits under the pricing contract**; an authenticated user save/re-render and no-additional-charge sequence remains separately unverified
+- supported post-delivery Revision Render → **0 additional user credits under the pricing contract**; one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits on 2026-11-23; this does not verify every editing control or device
 
 The Owner-approved monthly plans are ¥2,900/32, ¥5,800/68, ¥9,800/122 and ¥19,800/282 Credits. One-time packs are ¥1,000/10, ¥3,000/30, ¥6,000/60 and ¥10,000/100 Credits. A separate ¥980/20-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Checkout is activated in production, while specific customer eligibility, fulfillment and payment records are verified separately. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
 

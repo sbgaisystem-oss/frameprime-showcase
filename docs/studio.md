@@ -24,7 +24,7 @@ Current finishing surfaces include:
 - **CTA**
 - **Cut**
 
-Studio also supports the revision workflow around an already delivered video. The published revision contract and deployed interface are separate from verification of an authenticated user saving edits, receiving a revised render and incurring no additional Credits; that full user sequence remains unverified in this public update.
+Studio also supports the revision workflow around an already delivered video. On 2026-11-23, one authenticated user on a PC used the delivery screen's subtitle/video correction entry, saved one subtitle-text correction, and received and downloaded a revised render with 0 additional Credits. The original delivered video was retained. This verifies the tested subtitle-correction route; it does not establish that every Studio control or mobile device has been tested.
 
 ## Subtitle editing
 

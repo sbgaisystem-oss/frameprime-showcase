@@ -97,7 +97,6 @@
     },
     "additional_unverified_checks": [
       "actual purchases of each monthly plan",
-      "authenticated user revision save, revised render delivery and no additional Credit consumption as one sequence",
       "restoration and current-release X URL intake-to-delivery revalidation"
     ],
     "latest_check_date": "2026-11-23",
@@ -117,7 +116,35 @@
       "evidence_basis": "PRODUCTION_RECORDS_DELIVERED_FILE_DOWNLOAD_AND_MANUAL_BALANCE_REFRESH",
       "balance_display_after_completion": "NOT_AUTOMATICALLY_UPDATED",
       "balance_verification": "After delivery, the user used the My Page balance/history refresh control; the displayed settled balance then matched the ledger without reload or re-login.",
-      "scope": "One account, source and tested workflow; does not guarantee subtitle quality or success for every input, same-session new signup, signup-grant consumption, purchased-Credit consumption, X URL intake or translation."
+      "scope": "One account, source and tested workflow; does not guarantee subtitle quality or success for every input, same-session new signup, signup-grant consumption, purchased-Credit consumption, X URL intake or translation.",
+      "balance_observation_scope": "HISTORICAL_FIRST_CREATION_BEFORE_BALANCE_DISPLAY_FIX"
+    },
+    "post_fix_balance_display_check": {
+      "record_date": "2026-11-23",
+      "result": "AUTOMATIC_DISPLAY_UPDATE_AFTER_ONE_VIDEO_DELIVERY_AND_ONE_CREDIT_SETTLEMENT_CONFIRMED",
+      "source": "UPLOADED_VIDEO",
+      "credits_settled": 1,
+      "consumed_credit_type": "REFERRAL",
+      "manual_balance_refresh_count": 0,
+      "page_reload_count": 0,
+      "relogin_count": 0,
+      "displayed_balance_matched_ledger": true,
+      "evidence_basis": "PRODUCTION_UI_OBSERVATION_DELIVERED_FILE_DOWNLOAD_AND_LEDGER_READBACK",
+      "scope": "One additional uploaded-video creation after the display fix; not a guarantee for every device, connection or workflow, and not a verification of signup-grant or purchased-Credit consumption."
+    },
+    "subtitle_revision_without_additional_credits": {
+      "record_date": "2026-11-23",
+      "result": "AUTHENTICATED_SUBTITLE_SAVE_REVISED_RENDER_DOWNLOAD_AND_ZERO_ADDITIONAL_CREDITS_CONFIRMED",
+      "device_tested": "PC",
+      "entry": "DELIVERED_VIDEO_SUBTITLE_AND_VIDEO_CORRECTION",
+      "change_tested": "ONE_SUBTITLE_TEXT_PUNCTUATION_CORRECTION",
+      "saved_revision_and_revised_video_confirmed": true,
+      "revised_video_downloaded_and_verified": true,
+      "original_delivered_video_retained": true,
+      "additional_credits_consumed": 0,
+      "balance_unchanged_after_revision": true,
+      "evidence_basis": "AUTHENTICATED_UI_SAVE_PRODUCTION_RECORDS_REVISED_FILE_DOWNLOAD_AND_LEDGER_READBACK",
+      "scope": "One subtitle-correction sequence on a PC; does not establish coverage of every Studio editing control, mobile device or source."
     }
   },
   "ai_discovery_pillars": [
@@ -155,7 +182,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Longer duration billing calculations do not establish current long-form support or a future release date. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract, with authenticated revision save/re-render verification pending.",
+      "claim": "Current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Longer duration billing calculations do not establish current long-form support or a future release date. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract. On 2026-11-23, one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits; this does not verify every editing control or device.",
       "availability": "PRODUCTION_CREDIT_CONTRACT_LIMITED_PURCHASE_CONFIRMED_FULL_SEQUENCE_UNVERIFIED"
     },
     {
@@ -266,7 +293,7 @@
       ],
       "includes_supported_revision_render": true,
       "general_purpose_nle": false,
-      "authenticated_revision_save_rerender_and_credit_e2e": "NOT_YET_VERIFIED_AS_ONE_USER_SEQUENCE"
+      "authenticated_revision_save_rerender_and_credit_e2e": "LIMITED_PC_SUBTITLE_CORRECTION_SEQUENCE_CONFIRMED_OTHER_STUDIO_CONTROLS_NOT_COVERED"
     },
     "growth": {
       "purpose": "organize what happened, why it may have happened, and what to change next using observed KPI and video-side evidence",
@@ -388,7 +415,7 @@
     "signup_bonus_credits": 10,
     "referral_reward_each_credits": 4,
     "referral_budget_credits": 800,
-    "revision_verification": "PRICING_CONTRACT_DEFINED_AUTHENTICATED_SAVE_RERENDER_NO_ADDITIONAL_CREDIT_SEQUENCE_PENDING"
+    "revision_verification": "ONE_AUTHENTICATED_PC_SUBTITLE_SAVE_RERENDER_DOWNLOAD_ZERO_ADDITIONAL_CREDIT_SEQUENCE_CONFIRMED_2026_11_23"
   },
   "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。現在は手元の動画のアップロードから始められます。X動画URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です。再開は確認後に案内します。",
   "current_usage_guidance": {
