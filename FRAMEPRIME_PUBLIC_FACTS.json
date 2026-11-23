@@ -348,6 +348,10 @@
     "prelaunch_security_audit_boundary": "formal pre-launch auth/authorization/information-leakage audit completed; not a security certification"
   },
   "credit_contract": {
+    "social_post_text_creation_credits": 0,
+    "social_post_text_regeneration_credits": 0,
+    "hashtags_and_publishing_preparation_credits": 0,
+    "social_text_billing_note": "Creating or revising SNS posting text, hashtags and publishing preparation does not consume Credits. The legacy beta package-per-Credit charge is superseded. New video generation has a separate duration-based Credit contract.",
     "new_generation": "Current public guidance: video generation up to 2 minutes. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). These longer calculations do not establish current long-form support or a future release date. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
     "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
