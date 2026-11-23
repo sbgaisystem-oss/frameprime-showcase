@@ -351,7 +351,7 @@
     "social_post_text_creation_credits": 0,
     "social_post_text_regeneration_credits": 0,
     "hashtags_and_publishing_preparation_credits": 0,
-    "social_text_billing_note": "Creating or revising SNS posting text, hashtags and publishing preparation does not consume Credits. The legacy beta package-per-Credit charge is superseded. New video generation has a separate duration-based Credit contract.",
+    "social_text_billing_note": "SNS posting copy and hashtags are currently prepared as an optional part of supported video generation. Adding or omitting posting copy does not change the video generation Credit charge; the posting copy itself costs 0 additional Credits. Standalone new posting-text creation is not publicly offered. Legacy posting preparation history remains viewable. No promise of independently available free text regeneration.",
     "new_generation": "Current public guidance: video generation up to 2 minutes. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). These longer calculations do not establish current long-form support or a future release date. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
     "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
@@ -419,7 +419,11 @@
     "signup_bonus_credits": 10,
     "referral_reward_each_credits": 4,
     "referral_budget_credits": 800,
-    "revision_verification": "ONE_AUTHENTICATED_PC_SUBTITLE_SAVE_RERENDER_DOWNLOAD_ZERO_ADDITIONAL_CREDIT_SEQUENCE_CONFIRMED_2026_11_23"
+    "revision_verification": "ONE_AUTHENTICATED_PC_SUBTITLE_SAVE_RERENDER_DOWNLOAD_ZERO_ADDITIONAL_CREDIT_SEQUENCE_CONFIRMED_2026_11_23",
+    "social_text_current_availability": "VIDEO_GENERATION_ATTACHED_ONLY",
+    "standalone_post_text_creation": "NOT_PUBLICLY_OFFERED_PENDING_QUALITY_REDESIGN",
+    "legacy_post_history": "READABLE_AND_COPYABLE",
+    "video_source_credit_not_waived": true
   },
   "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。現在は手元の動画のアップロードから始められます。X動画URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です。再開は確認後に案内します。",
   "current_usage_guidance": {
