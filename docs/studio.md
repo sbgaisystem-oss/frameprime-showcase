@@ -1,81 +1,99 @@
-# Studio
+# Studio｜AIで作った動画を、必要なところだけ仕上げる
 
-Studio is FramePrime's **PC-only finishing and revision surface**.
+**Studioは、FramePrimeで制作した動画を確認し、気になる部分を修正して仕上げるPC専用機能です。** 動画編集を一から組み立て直すのではなく、完成した動画を見て「ここの字幕を直したい」「見せ方を調整したい」という作業を進めやすくすることを目指しています。
 
-## Availability
+FramePrimeでは、動画ファイルのアップロードからAIによる動画制作、完成動画の確認、対応する修正、SNS投稿文の準備までを一つのサービスで扱います。Studioはそのうち、**完成後の仕上げと修正**を担当します。
 
-Current product boundary:
+[FramePrime公式サイト](https://frameprime.app/) · [Studioの公式紹介ページ](https://frameprime.app/features/studio/) · [料金とCredits](credits-and-revisions.md) · [よくある質問](faq.md)
 
-- **Desktop / PC:** Studio is available.
-- **Mobile:** the Studio card may be visible, but the Studio surface is disabled for mobile use.
-- Studio is not intended to be a full Premiere / CapCut-class nonlinear editor.
+## Studioでは何ができる？
 
-The mobile product remains focused on the simpler creation / delivery / posting workflow, while deeper finishing work stays on PC.
+| 対応する編集項目 | 何をするための機能？ |
+| --- | --- |
+| 字幕（Subtitles） | 生成された字幕の内容やタイミングを確認し、対応する部分を修正する |
+| タイトル（Title） | 動画のタイトルなど、表示する内容を整える |
+| サムネイル（Thumbnail） | 動画の見せ方に関わるサムネイル設定を整える |
+| CTA | 視聴者への案内や次の行動につながる表示を調整する |
+| カット（Cut） | 対応範囲で動画のカットを調整する |
+| 修正・再書き出し | 対応する修正を保存し、修正版の動画を書き出して受け取る |
 
-## Studioでできること — AIで作った動画を、必要なところだけ仕上げる
+**注意：** 上記はStudioで扱う編集領域です。すべての編集項目について、任意の素材・設定での操作や再書き出しが本番検証済みという意味ではありません。実際に確認できた操作は下記の「本番で確認した修正例」をご覧ください。
 
-**FramePrimeは、動画をアップロードしてAIで制作し、完成物を確認してSNS投稿を準備するOSです。** Studioはその中の**PC専用の仕上げ・修正画面**です。一般的な動画編集ソフトのように一からタイムラインを組み立てることより、FramePrimeで制作した動画の必要な部分を見つけて直すことを重視しています。
+## 実際のBefore／After｜字幕のない動画から字幕付き動画へ
 
-- **字幕を直す：** AIが付けた字幕の文字・タイミングを確認し、対応する編集で修正できます。
-- **見せ方を整える：** タイトル、サムネイル、CTA、カットなど、対応する編集項目を調整します。
-- **完成動画を再書き出し：** 対応する完成後の修正・再書き出しは追加0 Creditsです。元の納品動画を保持して修正版を受け取れるフローがあります。
-- **投稿準備までつなぐ：** SNS投稿文・ハッシュタグ・投稿準備の作成・文章調整は追加0 Credits。投稿文の有無によって、動画制作で消費するCreditsは変わりません。
+![Original Voiceで制作した約18秒の動画のBefore／After比較。字幕なしの元動画と、字幕を追加した完成動画](../media/ui/frameprime_original_voice_avatar6_before_after_20261122.png)
 
-**実証済みの範囲：** 2026年11月23日、PCで字幕1か所を修正し、保存→再書き出し→ダウンロード、追加0 Creditsを確認しました。すべてのStudio操作・素材・端末で同じ結果を保証するものではありません。
+**Before：** 字幕のない元動画。
 
-**編集ソフトとの違い：** Premiere ProやCapCut等の全機能を置き換えるものではありません。AI制作から、対応する部分修正、投稿準備までのつながった作業を簡単にすることが価値です。細かな自由編集が必要なら専用編集ソフトが適します。
+**After：** FramePrimeで字幕を追加した完成動画。
 
-## What Studio is for
+同じ約18秒の動画による制作例です。**この画像はAIによる字幕付き動画制作のBefore／Afterであり、Studioの全編集機能を実証する画像ではありません。** 実際の比較動画は[公式サイト](https://frameprime.app/)で案内しています。字幕の表示品質や編集結果は素材・設定によって異なります。
 
-Studio is the place to **finish an existing video**, not the place to judge long-term post performance.
+## 完成した動画の字幕を直すには？
 
-Current finishing surfaces include:
+以下は、**2026年11月23日にPCで本番確認した字幕1か所の修正例**に基づく操作の流れです。
 
-- **Title**
-- **Thumbnail**
-- **Subtitles**
-- **CTA**
-- **Cut**
+1. **完成動画を開く。** 動画の納品画面から、PCで「字幕・動画を修正」を選びます。
+2. **気になる字幕を直す。** 修正画面で該当する字幕の文字を編集します。
+3. **変更を保存する。** 修正した字幕内容を保存します。
+4. **修正版を書き出す。** 対応する再書き出し処理を行います。
+5. **修正版を確認・ダウンロードする。** 書き出された動画を受け取り、表示内容を確認します。
 
-Studio also supports the revision workflow around an already delivered video. On 2026-11-23, one authenticated user on a PC used the delivery screen's subtitle/video correction entry, saved one subtitle-text correction, and received and downloaded a revised render with 0 additional Credits. The original delivered video was retained. This verifies the tested subtitle-correction route; it does not establish that every Studio control or mobile device has been tested.
+この確認では、**元の納品動画を残したまま修正版をダウンロードでき、追加Credit消費は0**でした。字幕の文字修正1か所の本番実績であり、すべての字幕編集・カット・CTA・サムネイル等について同じ操作が検証済みとは限りません。
 
-## Subtitle editing
+**画面を見る：** [公式Studio紹介ページ](https://frameprime.app/features/studio/) ／ [FramePrimeのアプリを開く](https://frameprime.app/)
 
-Studio can expose the generated subtitles with timing and text-editing controls. In supported post-delivery revisions, users can add or split a subtitle interval, save changes, and render a separate revised file in the Library while retaining the original. The minimum-duration automatic correction feature is not asserted as deployed; very short subtitle intervals may still require manual adjustment.
+*画面資料について：上のBefore／Afterは実際の制作結果です。Studioの編集画面そのもののスクリーンショットは、この公開リポジトリにはまだ収録されていません。ログイン後の画面構成や操作できる項目は、実際のアプリ画面でご確認ください。*
 
-Publicly relevant quality concepts include:
+## 編集ソフトとの違い
 
-- subtitle coverage completeness,
-- collision avoidance,
-- text editing,
-- presentation adjustments,
-- bounded revision of the delivered result.
+Premiere ProやCapCutのような編集ソフトは、タイムライン上で細かい編集を自由に組み立てる用途にも向いています。
 
-## Revision Render
+一方、**FramePrimeは「動画をAIで作る → 完成を確認する → 必要なところを直す → 投稿の準備をする」という流れをまとめること**を重視しています。
 
-Supported post-delivery Revision Render is part of the Studio finishing workflow.
+- **FramePrimeが向いている場合：** 難しい編集操作を最初から覚えるより、動画をアップロードしてAIに制作を支援してもらい、完成後は必要な修正に集中したい場合。
+- **一般的な編集ソフトが向いている場合：** 複雑なタイムライン編集、多数の素材の細かい合成、自由度の高い演出など、FramePrimeの対応範囲を超える編集を行いたい場合。
 
-Current public credit contract:
+両者は必ずしも置き換え関係ではありません。必要に応じて使い分けられます。
 
-- current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit. Longer-duration billing rules are documented in [Credits and revisions](credits-and-revisions.md) and do not promise current long-form support or a future release date,
-- supported post-delivery revision render → 0 additional user credits.
+## Credits｜修正にも投稿文にも、追加消費はありません
 
-## Studio vs Growth
+| 作業 | Credits |
+| --- | ---: |
+| 入力動画2分以内の対応する新規動画制作 | 1 Credit |
+| 対応する完成後の修正・再書き出し | **追加0 Credits** |
+| SNS投稿文・ハッシュタグ・投稿準備の作成 | **追加0 Credits** |
+| 投稿文の文章調整・再生成 | **追加0 Credits** |
 
-The product split is intentional:
+**動画制作時にSNS投稿文を作成するか、作成しないかによって、その動画制作で消費するCreditsは変わりません。** 投稿文の作成を費用面でためらわず、動画と一緒に準備していただけます。
+
+なお、**新しい動画制作や、対応範囲外の再生成まで無制限に無料という意味ではありません。** 現在の公開案内は「2分までの動画生成」です。長尺の料金計算例は長尺制作への対応を保証しません。詳しくは[料金とCredits](credits-and-revisions.md)をご確認ください。
+
+## 利用環境と現在の確認範囲
+
+- **PC：** Studioの対象環境です。
+- **スマートフォン：** Studioのカードが表示される場合でも、Studio編集画面は現在利用対象外です。動画制作・納品・投稿準備は各機能の対応範囲でご利用ください。
+- **本番確認済み：** 2026年11月23日、PCで字幕1か所を修正・保存し、修正版の再書き出し・ダウンロード、元動画の保持、追加0 Creditsを確認しました。
+- **個別に未検証の範囲：** すべてのTitle / Thumbnail / CTA / Cut操作、すべての字幕タイミング編集、全素材・端末での成功率など。今後の機能追加も、提供開始・本番検証が確認されるまでは利用可能と断定しません。
+
+字幕の文字とタイミングを編集する画面はありますが、非常に短い字幕区間を自動補正する機能まで本番提供済みとは案内していません。必要に応じて手動で調整する場合があります。
+
+## FramePrime全体の中での位置づけ
 
 ```text
-Studio
-= fix / finish the current video
-
-Growth
-= learn from evidence and improve the next video
+動画をアップロード
+      ↓
+AIで動画を制作・字幕を追加
+      ↓
+完成動画を確認
+      ↓
+Studioで必要なところを修正（PC）
+      ↓
+SNS投稿文・ハッシュタグを準備
+      ↓
+ユーザー自身がSNSへ投稿
 ```
 
-Growth may identify an issue or next action, but it does not silently rewrite the video. A user-initiated correction belongs in Studio.
+Studioは**いまの動画を仕上げる機能**です。投稿後の実測結果を記録・分析して次の動画の改善に活かす機能とは役割が異なります。SNSへの投稿そのものは現在ユーザー自身が行います。
 
-## Design boundary
-
-Studio is a bounded human correction surface.
-
-The goal is not to turn FramePrime into a general-purpose NLE. The goal is to make the highest-value corrections to FramePrime-generated/delivered video state with less friction.
+[OS全体の概要](overview.md) · [基本ワークフロー](workflow.md) · [FAQ](faq.md)
