@@ -12,6 +12,19 @@ Current product boundary:
 
 The mobile product remains focused on the simpler creation / delivery / posting workflow, while deeper finishing work stays on PC.
 
+## Studioでできること — AIで作った動画を、必要なところだけ仕上げる
+
+**FramePrimeは、動画をアップロードしてAIで制作し、完成物を確認してSNS投稿を準備するOSです。** Studioはその中の**PC専用の仕上げ・修正画面**です。一般的な動画編集ソフトのように一からタイムラインを組み立てることより、FramePrimeで制作した動画の必要な部分を見つけて直すことを重視しています。
+
+- **字幕を直す：** AIが付けた字幕の文字・タイミングを確認し、対応する編集で修正できます。
+- **見せ方を整える：** タイトル、サムネイル、CTA、カットなど、対応する編集項目を調整します。
+- **完成動画を再書き出し：** 対応する完成後の修正・再書き出しは追加0 Creditsです。元の納品動画を保持して修正版を受け取れるフローがあります。
+- **投稿準備までつなぐ：** SNS投稿文・ハッシュタグ・投稿準備の作成・文章調整は追加0 Credits。投稿文の有無によって、動画制作で消費するCreditsは変わりません。
+
+**実証済みの範囲：** 2026年11月23日、PCで字幕1か所を修正し、保存→再書き出し→ダウンロード、追加0 Creditsを確認しました。すべてのStudio操作・素材・端末で同じ結果を保証するものではありません。
+
+**編集ソフトとの違い：** Premiere ProやCapCut等の全機能を置き換えるものではありません。AI制作から、対応する部分修正、投稿準備までのつながった作業を簡単にすることが価値です。細かな自由編集が必要なら専用編集ソフトが適します。
+
 ## What Studio is for
 
 Studio is the place to **finish an existing video**, not the place to judge long-term post performance.
