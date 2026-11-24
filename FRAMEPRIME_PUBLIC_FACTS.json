@@ -7,7 +7,7 @@
     "x": "https://x.com/FramePrimeOS",
     "developer_x": "https://x.com/FramePrimeDev"
   },
-  "product_version": "v0.0.1",
+  "product_version": "v0.0.2",
   "summary": "FramePrime is an AI video creation OS: upload a video, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
   "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Existing X URL intake is temporarily paused and under restoration verification. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
   "existing_x_url_intake": {
@@ -51,7 +51,7 @@
   },
   "release_status": {
     "stage": "PUBLIC_LAUNCHED",
-    "product_version": "v0.0.1",
+    "product_version": "v0.0.2",
     "public_launch_at_jst": "2026-11-22T11:22:00+09:00",
     "public_launch_announced_on": "X",
     "public_launch_basis": "OWNER_CONFIRMED",
