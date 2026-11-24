@@ -8,8 +8,8 @@
     "developer_x": "https://x.com/FramePrimeDev"
   },
   "product_version": "v0.0.2",
-  "summary": "FramePrime is an AI video creation OS: upload a video, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
-  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Existing X URL intake is temporarily paused and under restoration verification. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
+  "summary": "FramePrime is an AI video creation OS: upload a video or enter a supported X video URL, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
+  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
   "existing_x_url_intake": {
     "status": "EXISTING_FEATURE",
     "scope": "supported X video URLs for sources the user owns or has permission to use",
@@ -25,7 +25,7 @@
       "date": "2026-09-29",
       "source_rights": "RIGHTS_OWNED",
       "result": "X_URL_TO_DELIVERED",
-      "scope": "historical production example only; X URL intake is currently temporarily paused. Restoration and current-release revalidation remain pending, separate from the unverified new-price purchase-to-delivery-and-settlement sequence."
+      "scope": "Historical production example; see current restoration evidence separately."
     },
     "limits": [
       "retrieval of every X post is not guaranteed",
@@ -33,16 +33,24 @@
       "public posting does not grant editing or redistribution rights"
     ],
     "other_platforms": {
-      "tiktok": "SEPARATE_SCOPE_AND_PRODUCTION_VERIFICATION_REQUIRED",
-      "instagram": "NOT_ADVERTISED_AS_SUPPORTED"
+      "youtube": "DIRECT_ACQUISITION_NOT_SUPPORTED_USE_FILE_UPLOAD",
+      "tiktok": "DIRECT_ACQUISITION_NOT_SUPPORTED_USE_FILE_UPLOAD",
+      "instagram": "URL_IMPORT_NOT_SUPPORTED"
     },
     "original_voice_subtitles": "SOURCE_AUDIO_LANGUAGE_PRESERVED_NO_TRANSLATION",
-    "current_release_revalidation": "PENDING_AFTER_RESTORATION",
-    "current_availability": "TEMPORARILY_PAUSED_RESTORATION_VERIFICATION_PENDING",
-    "current_status_checked_date": "2026-11-23",
-    "current_entry_point": "VIDEO_UPLOAD",
-    "resumption_notice": "Resumption will be announced after verification; no date is committed.",
-    "workflow_availability": "EXISTING_IMPLEMENTED_PATH_NOT_CURRENTLY_AVAILABLE"
+    "current_release_revalidation": "LIMITED_PRODUCTION_DELIVERY_AND_CREDIT_SETTLEMENT_CONFIRMED",
+    "current_availability": "AVAILABLE_AUTHENTICATED_USERS",
+    "current_status_checked_date": "2026-11-24",
+    "current_entry_point": "VIDEO_UPLOAD_OR_SUPPORTED_X_URL",
+    "resumption_notice": "Restored on 2026-11-24; source rights and retrieval conditions apply.",
+    "workflow_availability": "AVAILABLE_AUTHENTICATED_USERS",
+    "current_production_evidence": {
+      "date": "2026-11-24",
+      "result": "X_URL_TO_DELIVERED_AND_ONE_CREDIT_SETTLEMENT_CONFIRMED",
+      "duration_approx_seconds": 52,
+      "caption_after_fix": "OWNER_CONFIRMED_COMPLETED_VIDEO_AND_CAPTION_UI",
+      "scope": "Limited authenticated-user production evidence, not a guarantee for every URL or independent ledger verification of the post-fix run."
+    }
   },
   "selected_language_translation": {
     "status": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
@@ -64,11 +72,11 @@
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "public_showcase_updated_date": "2026-11-23",
+    "public_showcase_updated_date": "2026-11-24",
     "video_generation": "LIMITED_UPLOAD_FIRST_CREATION_DELIVERY_DOWNLOAD_AND_CREDIT_SETTLEMENT_CONFIRMED",
     "supplemental_gemini_semantic_analysis": "OFF",
     "current_public_video_generation_guidance": "UP_TO_2_MINUTES",
-    "x_url_intake": "TEMPORARILY_PAUSED_RESTORATION_VERIFICATION_PENDING"
+    "x_url_intake": "AVAILABLE_AUTHENTICATED_USERS"
   },
   "public_launch_evidence": {
     "basis": "OWNER_CONFIRMATION",
@@ -96,8 +104,7 @@
       "evidence_is_historical": true
     },
     "additional_unverified_checks": [
-      "actual purchases of each monthly plan",
-      "restoration and current-release X URL intake-to-delivery revalidation"
+      "actual purchases of each monthly plan"
     ],
     "latest_check_date": "2026-11-23",
     "first_creation_without_purchase": {
@@ -425,7 +432,7 @@
     "legacy_post_history": "READABLE_AND_COPYABLE",
     "video_source_credit_not_waived": true
   },
-  "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。現在は手元の動画のアップロードから始められます。X動画URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です。再開は確認後に案内します。",
+  "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。動画ファイルのアップロードまたは対応するX動画URLから始められます。X動画URL取り込みは2026年11月24日に復旧しました。権利・取得条件があります。",
   "current_usage_guidance": {
     "checked_date": "2026-11-22",
     "signup_bonus_credits": 10,
