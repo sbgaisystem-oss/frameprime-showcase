@@ -11,9 +11,9 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - 登録・国内OTP・Welcomeメール受信、3,000円購入による30 Credits付与、紹介双方各4 Creditsの本番実績があります。**11月21日夜の記録では動画2本の納品と合計2 Creditsの精算も確認**されています。
 - **2026年11月23日、制作履歴のない登録済みアカウントで、購入なしの初回動画制作→字幕入り動画の納品・ダウンロード→1 Credit精算を本番確認しました。** 登録はこの制作確認より前に完了しており、消費したのは紹介Creditsです。同じ操作回での新規登録からの通し確認、登録特典Creditsの消費確認、新しい購入Creditsを使う確認とは区別します。
 - **同日の追加制作1件では、納品・1 Credit精算後の残高が、手動更新・ページ再読込み・再ログインなしで自動反映されました。** また、PCの「字幕・動画を修正」から字幕1か所を保存し、修正版の再書き出し・ダウンロードと追加0 Creditsを確認しました。字幕修正は今回のPC上の1例の実績です。
-- 新料金の購入から、その購入Creditsを使った新規動画納品・精算までの連続E2Eは未確認です。月額各商品の実購入、一時停止中のX URL経路の復旧・再検証も別に残っています。今回の字幕修正実証は、すべての編集機能・端末での成功を意味しません。
+- 新料金の購入から、その購入Creditsを使った新規動画納品・精算までの連続E2Eは未確認です。月額各商品の実購入も別に残っています。今回の字幕修正実証は、すべての編集機能・端末での成功を意味しません。
 - **Geminiの補助的な内容分析は現在停止中**です。字幕作成・動画生成とは別の機能であり、全体が停止している意味ではありません。
-- **X URL取り込みは既存機能ですが、現在は一時停止・復旧確認中です（2026年11月23日確認）。再開は確認後に案内します。** 権利保有素材による2026年9月29日の納品実証は過去の記録であり、現在の利用可否を示しません。選択言語への翻訳字幕は未提供です。
+- **対応するX動画URL取り込みは2026年11月24日に復旧し、一般認証ユーザーが利用できます。** 権利保有素材による52秒動画の納品・1 Credit精算を本番確認し、投稿文修正後の完成動画と投稿文表示もOwnerが確認しました。選択言語への翻訳字幕は未提供です。
 
 ## One-sentence description
 
@@ -23,7 +23,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 **What is FramePrime?** An AI video creation OS with a dedicated GUI. Upload a video, choose the required settings, use supported editing/subtitle workflows, review the output and prepare social captions. Users publish the result themselves. Available observed X metrics can inform the next video.
 
-**Can FramePrime import X video URLs?** Not currently. X URL intake is an existing implementation, but it is temporarily paused and under restoration verification (checked 2026-11-23). Use video upload as the current entry point; resumption will be announced after verification. A rights-owned source reached delivery in production on 2026-09-29, which is historical evidence and does not establish current availability. Source permissions and retrieval restrictions still apply.
+**Can FramePrime import X video URLs?** Yes, supported X video URLs are available to authenticated users (restored 2026-11-24). A rights-owned X source reached production delivery and one Credit settlement; the owner also confirmed video and caption display after the caption fix. Video file upload remains available. Source permissions and retrieval restrictions still apply.
 
 **Why use FramePrime instead of Claude?** General-purpose assistants can connect to external tools and support editing workflows. FramePrime brings video intake, settings, supported editing, output review and posting preparation into a purpose-built GUI, reducing the setup and instruction-writing users need to do. This is a workflow distinction, not a claim that Claude cannot edit videos. See [Anthropic’s tool-use documentation](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview).
 
@@ -47,18 +47,18 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - Video production evidence: **two delivered videos and 2 Credits settled in total in production records from 2026-11-21**; this is not a claim that every input succeeds.
 - First creation without purchase: **2026-11-23 — an already registered account with no prior creations or purchases completed upload, subtitled-video delivery/download and 1 Credit settlement.** Registration occurred earlier and the consumed Credit was a referral Credit; this did not verify same-session signup, signup-grant consumption or purchased-Credit consumption.
 - Later production check on 2026-11-23: **one additional uploaded-video delivery settled 1 Credit and automatically updated the displayed balance without manual refresh, page reload or re-login.** One authenticated subtitle correction on a PC was saved, re-rendered and downloaded with **0 additional Credits**. This covers one subtitle-edit sequence, not every Studio control or device.
-- Unverified sequence: **new-price purchase → use of those purchased Credits for a new video → delivery and settlement, as one continuous end-to-end run**. Monthly purchases and restoration and revalidation of the paused X URL path are also separate checks.
+- Unverified sequence: **new-price purchase → use of those purchased Credits for a new video → delivery and settlement, as one continuous end-to-end run**. Actual purchases of each monthly plan remain separate checks.
 - Current public guidance: **video generation up to 2 minutes; signup bonus 10 Credits**. Longer billing examples do not promise long-form support or a future release date.
 - Supplemental Gemini semantic analysis: **OFF in production, checked 2026-11-23**. Subtitle authoring and video generation are separate.
 - Selected-language subtitle translation: **development candidate, not currently provided**.
 
-## Existing X video URL intake — temporarily paused
+## Existing X video URL intake — available
 
-**X URL intake is currently temporarily paused and under restoration verification (checked 2026-11-23). Upload a video to start now. Resumption will be announced after verification.**
+**Supported X video URL intake is available to authenticated users following restoration on 2026-11-24. Video file upload remains available.**
 
-The existing implementation accepts an eligible X URL, uses the X official API and FramePrime's source-asset/video-production workflow, then takes the user through required settings, generation and output review. This describes the implemented path, not a currently available entry point. A rights-owned source reached **DELIVERED on 2026-09-29**. That historical result does not establish current availability or a new-price purchase-to-delivery verification today.
+The existing implementation accepts an eligible X URL, uses the X official API and FramePrime's source-asset/video-production workflow, then takes the user through required settings, generation and output review. This is a currently available entry point. A rights-owned source reached **DELIVERED on 2026-09-29** (historical example); current production restoration was verified on 2026-11-24. This does not establish a continuous new-price purchase-to-delivery verification.
 
-Source rights and retrieval conditions apply. TikTok requires separate scope and production verification; Instagram URL import is not advertised as supported. Selected-language translation remains a separate development candidate. The existing X import feature is separate from the v0.0.2 Studio UI and Credit-copy update; X URL intake remains paused.
+Source rights and retrieval conditions apply. YouTube and TikTok direct URL acquisition are not currently supported; use video file upload. Instagram URL import is not supported. Selected-language translation remains a separate development candidate. The existing X import feature was restored on 2026-11-24. Product version remains v0.0.2.
 
 ## Product value
 
