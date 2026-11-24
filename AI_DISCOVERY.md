@@ -40,7 +40,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 ## Release status
 
-- Product version: **v0.0.1**
+- Product version: **v0.0.2** (Owner adopted 2026-11-24 for shipped 2026-11-23 Studio subtitle/CTA UI and Credit-copy improvements; selected-language translation is not part of this release)
 - Public X launch: **2026-11-22 11:22 JST, owner-confirmed**. The announcement URL has not been independently read back for this documentation update.
 - Service access: **public signup and checkout enabled; feature availability remains scoped**.
 - Limited production evidence: **new signup, domestic email OTP, Welcome email receipt, Stripe Live ¥3,000 pack → 30 Credits, referral reward of 4 Credits to each side**.
@@ -58,7 +58,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 The existing implementation accepts an eligible X URL, uses the X official API and FramePrime's source-asset/video-production workflow, then takes the user through required settings, generation and output review. This describes the implemented path, not a currently available entry point. A rights-owned source reached **DELIVERED on 2026-09-29**. That historical result does not establish current availability or a new-price purchase-to-delivery verification today.
 
-Source rights and retrieval conditions apply. TikTok requires separate scope and production verification; Instagram URL import is not advertised as supported. Selected-language translation remains a separate development candidate. The existing X import feature does not require a new v0.0.2 release announcement.
+Source rights and retrieval conditions apply. TikTok requires separate scope and production verification; Instagram URL import is not advertised as supported. Selected-language translation remains a separate development candidate. The existing X import feature is separate from the v0.0.2 Studio UI and Credit-copy update; X URL intake remains paused.
 
 ## Product value
 
