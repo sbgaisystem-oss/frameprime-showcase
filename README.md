@@ -14,7 +14,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 **「FramePrimeで、あなたも動画クリエイターに。」**
 
-**v0.0.1公開中 · X正式ローンチ：2026年11月22日11:22 JST**
+**製品Version：v0.0.2（11月23日のStudio UI・Credit案内改善を集約／11月24日Owner採番） · 初回v0.0.1公開：2026年11月22日11:22 JST（X正式ローンチ）**
 
 [公式サイトで始める](https://frameprime.app/) · [よくある質問](docs/faq.md) · [料金とCredits](docs/credits-and-revisions.md)
 
@@ -45,7 +45,8 @@ FramePrimeは、撮影した動画に字幕・テロップを付けたり、SNS�
 
 | 項目 | 2026年11月23日時点（個別実績日は各行に記載） |
 | --- | --- |
-| 公開開始 | v0.0.1を2026年11月22日11:22 JSTにXで正式告知（Owner確認） |
+| 現行製品Version | v0.0.2（Studio字幕・CTA編集UIとCredit案内改善を収録。2026-11-24 Owner採番。翻訳字幕は含まない） |
+| 初回公開 | v0.0.1を2026年11月22日11:22 JSTにXで正式告知（Owner確認） |
 | 登録・ログイン | 新規登録・国内メールOTP・Welcomeメール実受信の限定した本番実証あり |
 | 決済・紹介 | Stripe Liveで3,000円買い切り→30 Credits付与、紹介双方各4 Creditsを限定実証 |
 | 動画生成・納品・精算 | 2026年11月21日夜の本番記録で2本の納品と合計2 Creditsの精算を確認。個別の動画・条件での実績 |
@@ -120,7 +121,7 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 **FramePrimeで、あなたも動画クリエイターに。**
 
 - **Official Website:** https://frameprime.app
-- **Version:** v0.0.1（2026年11月22日11:22 JST公開告知）
+- **Version:** v0.0.2（Studio字幕・CTA編集UI／Credit案内改善。2026年11月24日Owner採番）
 - **Public launch:** November 22, 2026 at 11:22 JST（X告知完了。機能別の実利用証拠は別管理）
 - **Official X:** https://x.com/FramePrimeOS
 - **Developer X:** https://x.com/FramePrimeDev
