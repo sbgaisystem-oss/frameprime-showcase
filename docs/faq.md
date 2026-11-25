@@ -112,7 +112,7 @@ FramePrime v0.0.1は2026年11月22日11:22 JSTにXで正式ローンチしたと
 
 ## Jev / JevBox / Cursor / HyperFramesはFramePrimeで何に使われますか？
 
-役割は分かれています。Jevはdecision/evaluation provenance、JevBox-inspired Creative Memoryはsource-grounded retrieval、Cursorはdevelopment tooling、HyperFramesはcode-to-video quality-evaluation lineage / offline-shadow evaluationで利用されます。これらを一括してProduction runtime dependencyとは扱いません。
+役割は分かれています。Jevはdecision/evaluation provenance、JevBox-inspired Creative Memoryはsource-grounded retrieval、Cursorはdevelopment tooling、HyperFramesは一部の本番動画描画経路と、過去の品質評価系譜で利用します。すべての制作経路に必須という意味ではなく、ほかの各技術の役割も区別します。
 
 ## FramePrimeのEvidence-firstとは何ですか？
 
@@ -177,3 +177,9 @@ Current design rationaleは、FramePrime独自のpassword credentialを増やさ
 ## セキュリティ問題を見つけた場合は？
 
 公開Issueに詳細を書かず、[SECURITY.md](../SECURITY.md)の連絡方法を利用してください。
+
+## 制作例・操作手順・対応範囲
+
+[公式の制作ガイド](https://frameprime.app/features/guide/)では、公開済み動画のBefore/After、実フレームの字幕部分拡大、使い方、確認済み形式と本番処理時間の個別計測例を確認できます。現在は入力2分まで、MP4（H.264/AAC）の制作実例あり。全形式や処理時間を保証するものではありません。
+
+買い切りは1,000円／10 Creditsから（税込、自動更新なし）。入力2分以内の新規制作は1 Credit、対応する修正・再書き出しは追加0 Creditsです。動画制作での外部AIへの送信・保存・提供先の公表する学習利用の扱いは[国外移転の説明](https://frameprime.app/legal/foreign-transfer)、個人情報の取り扱いは[プライバシーポリシー](https://frameprime.app/legal/privacy)を参照してください。

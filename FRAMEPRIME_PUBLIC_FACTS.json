@@ -484,5 +484,17 @@
     "boundary": "Optional supplemental content analysis; separate from subtitle authoring and video generation. Its OFF state does not imply those paths are OFF.",
     "design": "read-only, non-blocking, no authoring authority; does not block generation, render or delivery"
   },
-  "semantic_analysis_signals_availability": "DESIGN_SCOPE_CURRENTLY_OFF"
+  "semantic_analysis_signals_availability": "DESIGN_SCOPE_CURRENTLY_OFF",
+  "public_creation_guide": {
+    "url": "https://frameprime.app/features/guide/",
+    "example": {
+      "source": "public AI-avatar demonstration, not customer footage",
+      "before_seconds": 17.72,
+      "after_seconds": 17.73,
+      "width": 1920,
+      "height": 1080,
+      "format": "MP4 (H.264/AAC)"
+    },
+    "scope": "individual published example; no universal format or processing-time guarantee"
+  }
 }

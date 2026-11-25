@@ -16,7 +16,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 **製品Version：v0.0.3（2026年11月25日・動画生成の安定性と字幕品質の改善） · 初回v0.0.1公開：2026年11月22日11:22 JST（X正式ローンチ）**
 
-[公式サイトで始める](https://frameprime.app/) · [よくある質問](docs/faq.md) · [料金とCredits](docs/credits-and-revisions.md)
+[公式サイトで始める](https://frameprime.app/) · [実際の制作例と使い方](https://frameprime.app/features/guide/) · [よくある質問](docs/faq.md) · [料金とCredits](docs/credits-and-revisions.md)
 
 **つくる → 学ぶ → 次を伸ばす。** 制作・字幕・投稿準備に加え、取得できた投稿後の実測結果を次の動画制作へつなげます。
 
@@ -246,7 +246,7 @@ FramePrimeはその先まで扱います。
 - **Jev** — decision / evaluation provenance
 - **JevBox-inspired Creative Memory** — source-grounded retrieval of recipes / QA / failures / finals
 - **Cursor** — development / implementation tooling
-- **HyperFrames** — code-to-video quality-evaluation lineage / offline-shadow evaluation
+- **HyperFrames** — designated video-rendering paths plus historical quality-evaluation lineage; not a mandatory dependency for every workflow
 - **Langfuse** — evaluation observability mirror; non-authoritative
 - **Claude / Codex / GPT** — development, review, or creative workflow participants; not automatically runtime authorities
 
@@ -265,13 +265,16 @@ FramePrimeはその先まで扱います。
 
 ## Original Voice — 実際のBefore／After制作例
 
-<p align="center">
-  <img src="media/ui/frameprime_original_voice_avatar6_before_after_20261122.png" alt="Original Voiceの実例。左は字幕なし元動画、右はFramePrimeで字幕を追加した完成動画" width="100%" />
-</p>
+同じ公開済みAIアバター素材の9秒地点を比較。右の完成動画では映像下部に字幕が追加されています。
 
-同じ約18秒の動画の比較です。**Beforeは字幕なしの元動画、AfterはFramePrimeで字幕を追加した完成動画**です。この画像は公式サイトに掲載されている実際の比較画面です。あらゆる動画編集やSNS投稿が自動完了するという意味ではありません。
+| Before — 元動画 | After — 字幕付き完成動画 |
+| --- | --- |
+| ![元動画の9秒地点](https://frameprime.app/assets/home-cards/frameprime_original_voice_before_9s_v003.jpg) | ![完成動画の9秒地点](https://frameprime.app/assets/home-cards/frameprime_original_voice_after_9s_v003.jpg) |
+| ![元動画下部の拡大](https://frameprime.app/assets/home-cards/frameprime_original_voice_before_9s_detail_v003.jpg) | ![字幕を追加した下部の拡大](https://frameprime.app/assets/home-cards/frameprime_original_voice_after_9s_detail_v003.jpg) |
 
-[公式サイトで比較動画を見る](https://frameprime.app/) · [Studioの修正機能](docs/studio.md) · [Growthの役割](docs/growth.md)
+**実動画：** [Before（17.72秒）](https://frameprime.app/assets/home-cards/frameprime_original_voice_avatar6_before_1080p.mp4) · [After（17.73秒）](https://frameprime.app/assets/home-cards/frameprime_original_voice_avatar6_after_telop_1080.mp4) · [制作例・使い方・実測処理時間](https://frameprime.app/features/guide/)
+
+1920×1080、MP4（H.264/AAC）の実制作例。画像は実際の動画フレームから抽出しました。顧客の利用例や第三者レビューではありません。[作例の詳細](examples/sample-output.md)
 
 ## Studio and Growth — role and maturity
 

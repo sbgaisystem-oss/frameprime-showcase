@@ -21,7 +21,7 @@ FramePrimeでは、動画ファイルのアップロードからAIによる動�
 
 ## 実際のBefore／After｜字幕のない動画から字幕付き動画へ
 
-![Original Voiceで制作した約18秒の動画のBefore／After比較。字幕なしの元動画と、字幕を追加した完成動画](../media/ui/frameprime_original_voice_avatar6_before_after_20261122.png)
+[実際のBefore／After動画・9秒地点の字幕部分の拡大比較を見る](https://frameprime.app/features/guide/#comparison)
 
 **Before：** 字幕のない元動画。
 

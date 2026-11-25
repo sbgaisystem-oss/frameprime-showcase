@@ -51,9 +51,9 @@ Silent last-write-wins is not the intended model for user-visible creative state
 
 ## HyperFrames / external authoring boundary
 
-HyperFrames or another external production environment may exist upstream of FramePrime in a creative workflow.
+HyperFrames participates in designated FramePrime production video-rendering paths. Historical evaluation usage and separate external authoring environments are distinct roles.
 
-That is an allowed workflow, not a required FramePrime core dependency.
+An external authoring environment may also exist upstream; this is an allowed workflow, not a requirement for every FramePrime workflow.
 
 ## Status
 

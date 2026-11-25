@@ -276,7 +276,7 @@ FramePrime uses or has used multiple systems in different layers. They should no
 - **Jev** — typed decision / evaluation provenance
 - **JevBox-inspired Creative Memory** — source-grounded retrieval of prior recipes, QA findings, failures, fixes, and final outputs
 - **Cursor** — development / implementation tooling
-- **HyperFrames** — code-to-video quality-evaluation lineage and benchmark-inspired offline/shadow evaluation
+- **HyperFrames** — designated production video-rendering paths, in addition to historical quality-evaluation lineage and benchmark-inspired offline/shadow evaluation; not mandatory for every workflow
 - **Langfuse** — evaluation observability mirror, non-authoritative
 - **Claude / Codex / GPT** — development, review, or creative-workflow participants; not automatically product runtime authorities
 
@@ -334,3 +334,9 @@ Growth
 ## Public disclosure boundary
 
 Private provider routing, internal prompts, privileged backend/database paths, credentials, customer data, raw evaluation evidence, and detailed recovery procedures are intentionally excluded.
+
+## 制作例・操作手順・対応範囲
+
+[公式の制作ガイド](https://frameprime.app/features/guide/)では、公開済み動画のBefore/After、実フレームの字幕部分拡大、使い方、確認済み形式と本番処理時間の個別計測例を確認できます。現在は入力2分まで、MP4（H.264/AAC）の制作実例あり。全形式や処理時間を保証するものではありません。
+
+買い切りは1,000円／10 Creditsから（税込、自動更新なし）。入力2分以内の新規制作は1 Credit、対応する修正・再書き出しは追加0 Creditsです。動画制作での外部AIへの送信・保存・提供先の公表する学習利用の扱いは[国外移転の説明](https://frameprime.app/legal/foreign-transfer)、個人情報の取り扱いは[プライバシーポリシー](https://frameprime.app/legal/privacy)を参照してください。
