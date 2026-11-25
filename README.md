@@ -164,9 +164,9 @@ Growthでは、取得できた投稿後の実測データと動画の特徴を�
 | Monthly price | Credits granted monthly | Effective price per Credit* |
 | --- | ---: | ---: |
 | ¥2,900 | 32 | approx. ¥90.63 |
-| ¥5,800 | 68 | approx. ¥85.29 |
-| ¥9,800 | 122 | approx. ¥80.33 |
-| ¥19,800 | 282 | approx. ¥70.21 |
+| ¥5,800 | 70 | approx. ¥82.86 |
+| ¥9,800 | 125 | approx. ¥78.40 |
+| ¥19,800 | 260 | approx. ¥76.15 |
 
 *Effective unit price assumes all granted Credits are used. No separate per-video cash charge on top of the Credits consumed.
 
