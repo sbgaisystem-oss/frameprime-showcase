@@ -1,3 +1,11 @@
+# Historical planning snapshot — not current product information
+
+> **HISTORICAL / 2026-11-08 planning branch.** This branch preserves old planning material; PRE-BETA wording and pricing proposals below are not the current FramePrime service. FramePrime publicly launched v0.0.1 on 2026-11-22. As of this notice (2026-11-25), the public version is v0.0.3. For current pricing, availability and production evidence, use the [main branch](https://github.com/sbgaisystem-oss/frameprime-showcase/tree/main), [official site](https://frameprime.app/) and [creation guide](https://frameprime.app/features/guide/).
+>
+> **履歴資料です。** 以下の旧β版・料金計画は現行仕様ではありません。現在の情報は上記の公式サイトとmainを参照してください。元の資料は変更せず保存しています。
+
+---
+
 <p align="center">
   <img src="media/brand/frameprime_header_official_v1.png" alt="Official FramePrime logo" width="720" />
 </p>
