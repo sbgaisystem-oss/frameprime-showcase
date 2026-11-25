@@ -7,7 +7,7 @@
     "x": "https://x.com/FramePrimeOS",
     "developer_x": "https://x.com/FramePrimeDev"
   },
-  "product_version": "v0.0.2",
+  "product_version": "v0.0.3",
   "summary": "FramePrime is an AI video creation OS: upload a video or enter a supported X video URL, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
   "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
   "existing_x_url_intake": {
@@ -59,7 +59,7 @@
   },
   "release_status": {
     "stage": "PUBLIC_LAUNCHED",
-    "product_version": "v0.0.2",
+    "product_version": "v0.0.3",
     "public_launch_at_jst": "2026-11-22T11:22:00+09:00",
     "public_launch_announced_on": "X",
     "public_launch_basis": "OWNER_CONFIRMED",
@@ -72,11 +72,23 @@
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "public_showcase_updated_date": "2026-11-24",
+    "public_showcase_updated_date": "2026-11-25",
     "video_generation": "LIMITED_UPLOAD_FIRST_CREATION_DELIVERY_DOWNLOAD_AND_CREDIT_SETTLEMENT_CONFIRMED",
     "supplemental_gemini_semantic_analysis": "OFF",
     "current_public_video_generation_guidance": "UP_TO_2_MINUTES",
-    "x_url_intake": "AVAILABLE_AUTHENTICATED_USERS"
+    "x_url_intake": "AVAILABLE_AUTHENTICATED_USERS",
+    "v003_reliability_improvements": {
+      "date": "2026-11-25",
+      "status": "SHIPPED_PRODUCTION",
+      "changes": [
+        "subtitle_visual_qa",
+        "capture_stall_recovery",
+        "pre_render_frame_rate_normalization",
+        "revision_reliability"
+      ],
+      "linux_rendering_benchmark": "EXISTING_CONFIGURATION_RETAINED",
+      "selected_language_translation_included": false
+    }
   },
   "public_launch_evidence": {
     "basis": "OWNER_CONFIRMATION",
@@ -152,6 +164,26 @@
       "balance_unchanged_after_revision": true,
       "evidence_basis": "AUTHENTICATED_UI_SAVE_PRODUCTION_RECORDS_REVISED_FILE_DOWNLOAD_AND_LEDGER_READBACK",
       "scope": "One subtitle-correction sequence on a PC; does not establish coverage of every Studio editing control, mobile device or source."
+    },
+    "v003_rendering_and_revision": {
+      "record_date": "2026-11-25",
+      "source": "SAME_PREVIOUSLY_FAILED_SOURCE_24_FPS",
+      "production_image_cta_delivery": "CONFIRMED",
+      "production_subtitle_revision_delivery": "CONFIRMED",
+      "representative_subtitle_samples_checked": 24,
+      "representative_subtitle_samples_passed": 24,
+      "visual_comparison_error_reduction_approx_percent": 86,
+      "metric_scope": "Same source, differing generation and cut plans; not service-wide failure rate, speed or cost reduction",
+      "generation_credits_settled": 1,
+      "revision_additional_credits": 0,
+      "original_retained": true,
+      "capture_stall_recovery_evidence": "ISOLATED_INDUCED_STALL_TEST",
+      "isolated_frame_rate_checks": [
+        "24 fps",
+        "30 fps pass-through",
+        "60 fps",
+        "VFR"
+      ]
     }
   },
   "ai_discovery_pillars": [
@@ -261,8 +293,8 @@
     },
     {
       "name": "HyperFrames",
-      "role": "code-to-video quality-evaluation lineage and benchmark-inspired offline/shadow evaluation",
-      "runtime_relation": "evaluation/rendering lineage; not asserted as a mandatory current runtime dependency"
+      "role": "designated rendering paths and benchmark-informed evaluation; targeted visual QA and capture-stall recovery improvements",
+      "runtime_relation": "used by designated rendering paths; not a claim of mandatory dependency for all workflows"
     },
     {
       "name": "Langfuse",

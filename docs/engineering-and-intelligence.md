@@ -76,14 +76,14 @@ Boundary:
 
 ## HyperFrames
 
-**HyperFrames** appears in FramePrime's code-to-video quality-evaluation lineage and benchmark-inspired work.
+HyperFrames participates in designated video-rendering paths in addition to the historical code-to-video quality-evaluation lineage. The v0.0.3 release uses targeted improvements informed by HyperFrames, not a wholesale adoption of every upstream feature or a claim of a mandatory dependency for every workflow.
 
-Publicly relevant role:
+- **Visual QA:** strengthened checks for subtitle visibility during concurrent CTA presentation.
+- **Capture Stall Recovery:** added progress-stall detection and bounded recovery using a lower-load render attempt. Actual recovery was verified in isolation.
+- **Linux Rendering Optimization:** compared rendering performance and memory use; retained the existing rendering configuration rather than upgrading wholesale.
+- **FPS Normalization (FramePrime implementation):** aligns source frame cadence for the render and comparison paths. Already compliant 30 fps sources avoid unnecessary conversion.
 
-- informed offline/shadow evaluation thinking,
-- informed machine-evaluable video-quality dimensions such as temporal behavior, composition, and craft,
-- may be used as an upstream authoring/evaluation environment in surrounding workflows,
-- is not represented here as a mandatory FramePrime core dependency.
+The first three labels describe engineering work areas, not separate official upstream products. In a production check on a previously failing source, visual comparison error fell by about 86% (same source, differing generation conditions). Image-CTA delivery, subtitle revision, and zero additional revision Credits were confirmed. The metric does not measure overall success rate or render speed.
 
 ## Claude / Codex / GPT
 

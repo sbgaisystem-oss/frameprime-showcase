@@ -15,6 +15,13 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - **Geminiの補助的な内容分析は現在停止中**です。字幕作成・動画生成とは別の機能であり、全体が停止している意味ではありません。
 - **対応するX動画URL取り込みは2026年11月24日に復旧し、一般認証ユーザーが利用できます。** 権利保有素材による52秒動画の納品・1 Credit精算を本番確認し、投稿文修正後の完成動画と投稿文表示もOwnerが確認しました。選択言語への翻訳字幕は未提供です。
 
+## v0.0.3 — Rendering reliability and measured results
+
+- In a production comparison using the same previously failed 24 fps source, the visual comparison error fell by approximately 86%; image-CTA generation and a subtitle revision both completed. Generation and cut plans differed, so this is a case-specific metric, not a service-wide failure-rate, speed or cost improvement.
+- Production verified all 24 representative subtitle samples, delivery, original retention and one additional revised output. The original generation settled one Credit; the revision settled zero additional Credits.
+- Visual QA checks concurrent subtitle/CTA presentation; capture-stall recovery was exercised with an induced stall in isolation. Linux benchmarking informed retention of the existing rendering configuration, not a wholesale renderer upgrade. FramePrime's pre-render normalization improved differing frame-rate handling in isolated 24/60/VFR checks; the 24 fps case was also confirmed in production.
+- These are measured reliability and quality improvements, not guarantees for every input, recovery or device. Translation is not included.
+
 ## One-sentence description
 
 **FramePrime is an AI video creation OS: start by uploading a video, use a dedicated GUI for supported editing and original-language subtitles, and prepare the result for social posting without writing complex prompts.**
@@ -40,7 +47,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 ## Release status
 
-- Product version: **v0.0.2** (Owner adopted 2026-11-24 for shipped 2026-11-23 Studio subtitle/CTA UI and Credit-copy improvements; selected-language translation is not part of this release)
+- Product version: **v0.0.3 (2026-11-25): improved rendering reliability, subtitle visual QA, capture-stall recovery, and frame-rate normalization; selected-language translation remains unreleased**
 - Public X launch: **2026-11-22 11:22 JST, owner-confirmed**. The announcement URL has not been independently read back for this documentation update.
 - Service access: **public signup and checkout enabled; feature availability remains scoped**.
 - Limited production evidence: **new signup, domestic email OTP, Welcome email receipt, Stripe Live ¥3,000 pack → 30 Credits, referral reward of 4 Credits to each side**.
@@ -58,7 +65,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 The existing implementation accepts an eligible X URL, uses the X official API and FramePrime's source-asset/video-production workflow, then takes the user through required settings, generation and output review. This is a currently available entry point. A rights-owned source reached **DELIVERED on 2026-09-29** (historical example); current production restoration was verified on 2026-11-24. This does not establish a continuous new-price purchase-to-delivery verification.
 
-Source rights and retrieval conditions apply. YouTube and TikTok direct URL acquisition are not currently supported; use video file upload. Instagram URL import is not supported. Selected-language translation remains a separate development candidate. The existing X import feature was restored on 2026-11-24. Product version remains v0.0.2.
+Source rights and retrieval conditions apply. YouTube and TikTok direct URL acquisition are not currently supported; use video file upload. Instagram URL import is not supported. Selected-language translation remains a separate development candidate. The existing X import feature was restored on 2026-11-24. Current product version is v0.0.3.
 
 ## Product value
 
