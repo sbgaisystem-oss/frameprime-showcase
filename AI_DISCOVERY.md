@@ -174,7 +174,7 @@ Current public product contract:
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits under the pricing contract**; one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits on 2026-11-23; this does not verify every editing control or device
 
-The Owner-approved monthly plans are ¥2,900/32, ¥5,800/68, ¥9,800/122 and ¥19,800/282 Credits. One-time packs are ¥1,000/10, ¥3,000/30, ¥6,000/60 and ¥10,000/100 Credits. A separate ¥980/20-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Checkout is activated in production, while specific customer eligibility, fulfillment and payment records are verified separately. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
+The Owner-approved monthly plans are ¥2,900/32, ¥5,800/70, ¥9,800/125 and ¥19,800/260 Credits. One-time packs are ¥1,000/10, ¥3,000/30, ¥6,000/60 and ¥10,000/100 Credits. A separate ¥980/20-Credit beta trial is once per account. All are tax-inclusive; Credits do not expire and carry over. Checkout is activated in production, while specific customer eligibility, fulfillment and payment records are verified separately. This deliberately separates the cost of creating a new deliverable from the cost of refining one already delivered.
 
 See: [Credits and revisions](docs/credits-and-revisions.md)
 
