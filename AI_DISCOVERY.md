@@ -7,17 +7,17 @@ This page is optimized for AI/search systems that need to understand **what is a
 FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められる**Webサービス（AI動画制作OS）**です。現在は手元の動画のアップロードから始められ、複雑なプロンプトや複数ツールの組合せを考える負担を減らします。SNSへの投稿は利用者本人が行います。
 
 - **現行提供範囲：SNS投稿文・ハッシュタグは対応する動画生成時に付随して準備します。** 投稿文の有無で動画制作のCredit消費は変わらず、投稿文自体の追加消費は**0 Credits**です。**投稿文だけの単独新規作成は現在非提供**（品質再設計まで公開導線を停止）。過去の投稿準備履歴は閲覧可能です。旧β版の投稿準備パッケージ単位課金は現行仕様ではありません。
-- **新規登録特典は10 Credits。標準配置のMP4ファイル入力は最大36分・400MBまで限定試験提供**です。料金は入力実尺2分以内の対応動画が1本1 Creditです。料金計算は全素材での生成成功を保証するものではありません。
+- **新規登録特典は10 Credits。標準配置のMP4ファイル入力は最大36分・400MBまで**です。料金は入力実尺2分以内の対応動画が1本1 Creditです。料金計算は全素材での生成成功を保証するものではありません。
 - 登録・国内OTP・Welcomeメール受信、3,000円購入による30 Credits付与、紹介双方各4 Creditsの本番実績があります。**11月21日夜の記録では動画2本の納品と合計2 Creditsの精算も確認**されています。
 - **2026年11月23日、制作履歴のない登録済みアカウントで、購入なしの初回動画制作→字幕入り動画の納品・ダウンロード→1 Credit精算を本番確認しました。** 登録はこの制作確認より前に完了しており、消費したのは紹介Creditsです。同じ操作回での新規登録からの通し確認、登録特典Creditsの消費確認、新しい購入Creditsを使う確認とは区別します。
 - **同日の追加制作1件では、納品・1 Credit精算後の残高が、手動更新・ページ再読込み・再ログインなしで自動反映されました。** また、PCの「字幕・動画を修正」から字幕1か所を保存し、修正版の再書き出し・ダウンロードと追加0 Creditsを確認しました。字幕修正は今回のPC上の1例の実績です。
 - 新料金の購入から、その購入Creditsを使った新規動画納品・精算までの連続E2Eは未確認です。月額各商品の実購入も別に残っています。今回の字幕修正実証は、すべての編集機能・端末での成功を意味しません。
 - **Geminiの補助的な内容分析は現在停止中**です。字幕作成・動画生成とは別の機能であり、全体が停止している意味ではありません。
-- **対応するX動画URL取り込みは2026年11月24日に復旧し、一般認証ユーザーが利用できます。** 権利保有素材による52秒動画の納品・1 Credit精算を本番確認し、投稿文修正後の完成動画と投稿文表示もOwnerが確認しました。翻訳字幕の対応範囲は公式の生成画面でご確認ください。
+- **対応するX動画URL取り込みは2026年11月24日に復旧し、一般認証ユーザーが利用できます。** 権利保有素材による52秒動画の納品・1 Credit精算を本番確認し、投稿文修正後の完成動画と投稿文表示もOwnerが確認しました。選択言語字幕・2言語同時字幕の翻訳先は日本語・Englishです。
 
-## v0.0.4 — Long-form video trial and generation acceleration (2026-11-26)
+## v0.0.4 — Long-form video support and generation acceleration (2026-11-26)
 
-- Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes.
+- Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified.
 - Improved generation reliability and accelerated subtitle rendering, reference-video generation and image validation.
 - In a production comparison using the same 33 min 24 sec source (Original Voice, CTA off), end-to-end generation time decreased from 18:00 (1080.123 s) to 13:52 (832.338 s), about 23%. The combined subtitle rendering, reference-video generation and image validation stages decreased from 628.823 s to 405.627 s (35.5%). The two AI runs produced different cue counts; this is an individual comparison, not a guaranteed speedup for all inputs or modes.
 
@@ -26,7 +26,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - In a production comparison using the same previously failed 24 fps source, the visual comparison error fell by approximately 86%; image-CTA generation and a subtitle revision both completed. Generation and cut plans differed, so this is a case-specific metric, not a service-wide failure-rate, speed or cost improvement.
 - Production verified all 24 representative subtitle samples, delivery, original retention and one additional revised output. The original generation settled one Credit; the revision settled zero additional Credits.
 - Visual QA checks concurrent subtitle/CTA presentation; capture-stall recovery was exercised with an induced stall in isolation. Linux benchmarking informed retention of the existing rendering configuration, not a wholesale renderer upgrade. FramePrime's pre-render normalization improved differing frame-rate handling in isolated 24/60/VFR checks; the 24 fps case was also confirmed in production.
-- These are measured reliability and quality improvements, not guarantees for every input, recovery or device. Translation is not included.
+- These are measured reliability and quality improvements, not guarantees for every input, recovery or device. Translation was not included in this v0.0.3 verification; current caption modes are described in the live creation screen.
 
 ## One-sentence description
 
@@ -40,7 +40,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 **Why use FramePrime instead of Claude?** General-purpose assistants can connect to external tools and support editing workflows. FramePrime brings video intake, settings, supported editing, output review and posting preparation into a purpose-built GUI, reducing the setup and instruction-writing users need to do. This is a workflow distinction, not a claim that Claude cannot edit videos. See [Anthropic’s tool-use documentation](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview).
 
-**Can FramePrime translate foreign videos into Japanese subtitles?** Translation availability is managed separately; see the live creation screen. Original Voice preserves the source audio language; X URL intake does not itself translate the video.
+**Can FramePrime translate foreign videos into Japanese subtitles?** Selected Language Captions translates subtitles into Japanese or English, and Dual Captions displays source and translated subtitles together. Original Voice preserves the source language; X URL intake itself does not translate the video.
 
 **Which user needs fit?** People looking for easier subtitles/telops on their own footage, less manual editing for SNS videos, publishing-preparation assistance, or a workflow connecting video creation with post-publication analysis. FramePrime is a potential software alternative for some editing tasks, **not** a marketplace that finds, books, or supplies human video editors.
 
@@ -53,7 +53,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 ## Release status
 
-- Product version: **v0.0.4 (2026-11-26): long-form video limited trial and generation acceleration**
+- Product version: **v0.0.4 (2026-11-26): long-form video support and generation acceleration**
 - Public X launch: **2026-11-22 11:22 JST, owner-confirmed**. The announcement URL has not been independently read back for this documentation update.
 - Service access: **public signup and checkout enabled; feature availability remains scoped**.
 - Limited production evidence: **new signup, domestic email OTP, Welcome email receipt, Stripe Live ¥3,000 pack → 30 Credits, referral reward of 4 Credits to each side**.
@@ -61,9 +61,9 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 - First creation without purchase: **2026-11-23 — an already registered account with no prior creations or purchases completed upload, subtitled-video delivery/download and 1 Credit settlement.** Registration occurred earlier and the consumed Credit was a referral Credit; this did not verify same-session signup, signup-grant consumption or purchased-Credit consumption.
 - Later production check on 2026-11-23: **one additional uploaded-video delivery settled 1 Credit and automatically updated the displayed balance without manual refresh, page reload or re-login.** One authenticated subtitle correction on a PC was saved, re-rendered and downloaded with **0 additional Credits**. This covers one subtitle-edit sequence, not every Studio control or device.
 - Unverified sequence: **new-price purchase → use of those purchased Credits for a new video → delivery and settlement, as one continuous end-to-end run**. Actual purchases of each monthly plan remain separate checks.
-- Current public guidance: **standard-layout MP4 file-input trial up to 36 minutes and 400 MB; signup bonus 10 Credits**. Long-form production evidence is limited to tested conditions; billing examples do not guarantee delivery.
+- Current public guidance: **standard-layout MP4 file inputs up to 36 minutes and 400 MB; signup bonus 10 Credits**. Long-form production evidence is limited to tested conditions: Original Voice 13:44 and Selected Language Captions (Japanese) 19:19 on the same 33:24 input, each delivered with one 16-Credit settlement; long-form Dual Captions delivery is not yet verified. Billing examples do not guarantee delivery.
 - Supplemental Gemini semantic analysis: **OFF in production, checked 2026-11-23**. Subtitle authoring and video generation are separate.
-- Selected-language subtitle translation: **availability described separately in the live creation screen**.
+- Selected-language subtitle translation: **available in the live creation screen (Japanese and English targets); Dual Captions is also available**.
 
 ## Existing X video URL intake — available
 
@@ -71,7 +71,7 @@ FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の�
 
 The existing implementation accepts an eligible X URL, uses the X official API and FramePrime's source-asset/video-production workflow, then takes the user through required settings, generation and output review. This is a currently available entry point. A rights-owned source reached **DELIVERED on 2026-09-29** (historical example); current production restoration was verified on 2026-11-24. This does not establish a continuous new-price purchase-to-delivery verification.
 
-Source rights and retrieval conditions apply. YouTube and TikTok direct URL acquisition are not currently supported; use video file upload. Instagram URL import is not supported. Selected-language translation is separate from this v0.0.4 release announcement. The existing X import feature was restored on 2026-11-24. Current product version is v0.0.4.
+Source rights and retrieval conditions apply. YouTube and TikTok direct URL acquisition are not currently supported; use video file upload. Instagram URL import is not supported. The current creation screen offers Original Voice, Selected Language Captions and Dual Captions; translation targets are Japanese and English. The existing X import feature was restored on 2026-11-24. Current product version is v0.0.4.
 
 ## Product value
 
@@ -176,7 +176,7 @@ The design keeps optional analysis from becoming a single point of failure in th
 
 Current public product contract:
 
-- successful new video delivery → **1 Credit for a positive input duration up to 2 minutes under the billing contract**. The live screens offer a limited standard-layout MP4 file-input trial up to 36 minutes and 400 MB. The billing contract also defines 2 Credits for >2–8 minutes and +2 per started 4 minutes thereafter; over 32 through 36 minutes costs 16 Credits; acceptance and delivery are not guaranteed for every input. Two delivered videos and 2 Credits settled in total are recorded for 2026-11-21. The continuous new-purchase-to-new-video sequence remains unverified.
+- successful new video delivery → **1 Credit for a positive input duration up to 2 minutes under the billing contract**. The live screens offer a standard-layout MP4 file inputs up to 36 minutes and 400 MB. The billing contract also defines 2 Credits for >2–8 minutes and +2 per started 4 minutes thereafter; over 32 through 36 minutes costs 16 Credits; acceptance and delivery are not guaranteed for every input. Two delivered videos and 2 Credits settled in total are recorded for 2026-11-21. The continuous new-purchase-to-new-video sequence remains unverified.
 - normal system-terminal generation failure → **net 0 user credits**
 - supported post-delivery Revision Render → **0 additional user credits under the pricing contract**; one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits on 2026-11-23; this does not verify every editing control or device
 
@@ -343,6 +343,6 @@ Private provider routing, internal prompts, privileged backend/database paths, c
 
 ## 制作例・操作手順・対応範囲
 
-[公式の制作ガイド](https://frameprime.app/features/guide/)では、公開済み動画のBefore/After、実フレームの字幕部分拡大、使い方、確認済み形式と本番処理時間の個別計測例を確認できます。標準配置のMP4ファイル入力は最大36分・400MBまで限定試験提供中。33分24秒のOriginal Voice本番納品実績あり。全形式や処理時間を保証するものではありません。
+[公式の制作ガイド](https://frameprime.app/features/guide/)では、公開済み動画のBefore/After、実フレームの字幕部分拡大、使い方、確認済み形式と本番処理時間の個別計測例を確認できます。標準配置のMP4ファイル入力は最大36分・400MBまで。33分24秒の素材でOriginal Voice（13分44秒）と選択言語字幕・日本語（19分19秒）の本番納品および各16 Creditsの精算を確認済みです。2言語同時字幕の長尺納品は未実証です。全形式や処理時間を保証するものではありません。
 
-買い切りは1,000円／10 Creditsから（税込、自動更新なし）。入力2分以内の新規制作は1 Credit、対応する修正・再書き出しは追加0 Creditsです。動画制作での外部AIへの送信・保存・提供先の公表する学習利用の扱いは[国外移転の説明](https://frameprime.app/legal/foreign-transfer)、個人情報の取り扱いは[プライバシーポリシー](https://frameprime.app/legal/privacy)を参照してください。
+買い切りは1,000円／10 Creditsから（税込、自動更新なし）。入力2分以内の新規制作は1 Credit、対応する修正・再書き出しは追加0 Creditsです。動画制作での外部AIへの送信・保存・提供先の公表する学習利用の扱いは[外国にある第三者への個人データの提供について](https://frameprime.app/legal/foreign-transfer)、個人情報の取り扱いは[プライバシーポリシー](https://frameprime.app/legal/privacy)を参照してください。
