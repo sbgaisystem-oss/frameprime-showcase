@@ -1,5 +1,12 @@
 # Engineering and Intelligence Ecosystem
 
+## v0.0.4 — Long-form video trial and generation acceleration (2026-11-26)
+
+- Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes.
+- Improved generation reliability and accelerated subtitle rendering, reference-video generation and image validation.
+- In a production comparison using the same 33 min 24 sec source (Original Voice, CTA off), end-to-end generation time decreased from 18:00 (1080.123 s) to 13:52 (832.338 s), about 23%. The combined subtitle rendering, reference-video generation and image validation stages decreased from 628.823 s to 405.627 s (35.5%). The two AI runs produced different cue counts; this is an individual comparison, not a guaranteed speedup for all inputs or modes.
+
+
 FramePrime uses multiple systems across product runtime, decision provenance, evaluation, development, and creative-memory workflows.
 
 The important design rule is:

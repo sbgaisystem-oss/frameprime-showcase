@@ -7,9 +7,9 @@
     "x": "https://x.com/FramePrimeOS",
     "developer_x": "https://x.com/FramePrimeDev"
   },
-  "product_version": "v0.0.3",
+  "product_version": "v0.0.4",
   "summary": "FramePrime is an AI video creation OS: upload a video or enter a supported X video URL, select settings in a dedicated GUI, use supported editing and original-language subtitles, review the result and prepare social posting without writing complex prompts.",
-  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Selected-language translation is not currently provided.",
+  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Translation availability is described separately in the live creation screen.",
   "existing_x_url_intake": {
     "status": "EXISTING_FEATURE",
     "scope": "supported X video URLs for sources the user owns or has permission to use",
@@ -53,13 +53,13 @@
     }
   },
   "selected_language_translation": {
-    "status": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
+    "status": "SEPARATE_PHASED_AVAILABILITY_SEE_LIVE_CREATION_SCREEN",
     "scope": "selected-language translation subtitles, including the proposed foreign-language video to Japanese subtitle use case",
     "release_version": "NOT_ASSIGNED_PENDING_FORMAL_RELEASE_AND_PRODUCTION_VERIFICATION"
   },
   "release_status": {
     "stage": "PUBLIC_LAUNCHED",
-    "product_version": "v0.0.3",
+    "product_version": "v0.0.4",
     "public_launch_at_jst": "2026-11-22T11:22:00+09:00",
     "public_launch_announced_on": "X",
     "public_launch_basis": "OWNER_CONFIRMED",
@@ -67,15 +67,15 @@
     "signup": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
     "checkout": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
     "new_price_purchase_to_new_video_delivery_and_credit_settlement": "NOT_YET_VERIFIED_AS_ONE_CONTINUOUS_E2E",
-    "selected_language_translation": "DEVELOPMENT_CANDIDATE_NOT_CURRENTLY_PROVIDED",
+    "selected_language_translation": "SEPARATE_PHASED_AVAILABILITY_SEE_LIVE_CREATION_SCREEN",
     "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "public_showcase_updated_date": "2026-11-25",
+    "public_showcase_updated_date": "2026-11-26",
     "video_generation": "LIMITED_UPLOAD_FIRST_CREATION_DELIVERY_DOWNLOAD_AND_CREDIT_SETTLEMENT_CONFIRMED",
     "supplemental_gemini_semantic_analysis": "OFF",
-    "current_public_video_generation_guidance": "UP_TO_2_MINUTES",
+    "current_public_video_generation_guidance": "LIMITED_STANDARD_MP4_FILE_INPUT_TRIAL_UP_TO_36_MINUTES_400_MB",
     "x_url_intake": "AVAILABLE_AUTHENTICATED_USERS",
     "v003_reliability_improvements": {
       "date": "2026-11-25",
@@ -88,6 +88,30 @@
       ],
       "linux_rendering_benchmark": "EXISTING_CONFIGURATION_RETAINED",
       "selected_language_translation_included": false
+    },
+    "v004_longform_and_acceleration": {
+      "date": "2026-11-26",
+      "status": "SHIPPED_PRODUCTION_LIMITED_TRIAL",
+      "scope": "Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes.",
+      "source_duration_seconds": 2004.011,
+      "verified_mode": "ORIGINAL_VOICE",
+      "cta_enabled": false,
+      "source_resolution": "1280x720",
+      "before_total_seconds": 1080.123,
+      "after_total_seconds": 832.338,
+      "total_reduction_percent_approx": 23,
+      "before_three_stages_seconds": 628.823,
+      "after_three_stages_seconds": 405.627,
+      "three_stage_reduction_percent": 35.5,
+      "stages": [
+        "subtitle_rendering",
+        "reference_video_generation",
+        "image_validation"
+      ],
+      "delivered": true,
+      "credits_settled": 16,
+      "comparison_limitation": "In a production comparison using the same 33 min 24 sec source (Original Voice, CTA off), end-to-end generation time decreased from 18:00 (1080.123 s) to 13:52 (832.338 s), about 23%. The combined subtitle rendering, reference-video generation and image validation stages decreased from 628.823 s to 405.627 s (35.5%). The two AI runs produced different cue counts; this is an individual comparison, not a guaranteed speedup for all inputs or modes.",
+      "translation_modes_release_announcement_included": false
     }
   },
   "public_launch_evidence": {
@@ -221,7 +245,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Current public guidance describes video generation up to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Longer duration billing calculations do not establish current long-form support or a future release date. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract. On 2026-11-23, one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits; this does not verify every editing control or device.",
+      "claim": "Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Over 32 through 36 minutes costs 16 Credits; billing does not guarantee acceptance or delivery. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract. On 2026-11-23, one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits; this does not verify every editing control or device.",
       "availability": "PRODUCTION_CREDIT_CONTRACT_LIMITED_PURCHASE_CONFIRMED_FULL_SEQUENCE_UNVERIFIED"
     },
     {
@@ -391,7 +415,7 @@
     "social_post_text_regeneration_credits": 0,
     "hashtags_and_publishing_preparation_credits": 0,
     "social_text_billing_note": "SNS posting copy and hashtags are currently prepared as an optional part of supported video generation. Adding or omitting posting copy does not change the video generation Credit charge; the posting copy itself costs 0 additional Credits. Standalone new posting-text creation is not publicly offered. Legacy posting preparation history remains viewable. No promise of independently available free text regeneration.",
-    "new_generation": "Current public guidance: video generation up to 2 minutes. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). These longer calculations do not establish current long-form support or a future release date. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
+    "new_generation": "Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). Over 32 through 36 minutes costs 16 Credits; billing does not guarantee acceptance or delivery. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
     "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
@@ -466,14 +490,18 @@
   },
   "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。動画ファイルのアップロードまたは対応するX動画URLから始められます。X動画URL取り込みは2026年11月24日に復旧しました。権利・取得条件があります。",
   "current_usage_guidance": {
-    "checked_date": "2026-11-22",
+    "checked_date": "2026-11-26",
     "signup_bonus_credits": 10,
-    "basis": "CURRENT_PUBLIC_UI_GUIDANCE",
-    "scope": "Current public screens state support for video generation up to 2 minutes.",
+    "basis": "CURRENT_PUBLIC_UI_LIMITED_TRIAL_AND_ORIGINAL_VOICE_PRODUCTION_EVIDENCE",
+    "scope": "Limited paid trial: standard-layout MP4 file uploads up to 36 minutes and 400 MB (previously 2 minutes). Long-form production evidence is for Original Voice; free translation preview and embedded-caption avoidance remain limited to 2 minutes.",
     "longer_duration_pricing_is_support_promise": false,
-    "long_form_release_date": "NOT_COMMITTED",
-    "video_generation_duration_guidance_seconds": 120,
-    "billing_credits_for_positive_input_duration_up_to_2_minutes": 1
+    "long_form_release_date": "2026-11-26_LIMITED_TRIAL",
+    "video_generation_duration_guidance_seconds": 2160,
+    "billing_credits_for_positive_input_duration_up_to_2_minutes": 1,
+    "limited_trial_mp4_max_file_size_mb": 400,
+    "free_preview_max_duration_seconds": 120,
+    "embedded_caption_avoidance_max_duration_seconds": 120,
+    "verified_original_voice_input_seconds": 2004.011
   },
   "supplemental_semantic_analysis": {
     "name": "Gemini Video Analysis V2",

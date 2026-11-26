@@ -1,10 +1,12 @@
 # 料金・Credits・完成後の修正
 
-**現行製品Version：v0.0.3（2026-11-25）。** v0.0.2のStudio・Credit案内改善を維持し、今回の安定性改善後も実ユーザーの通常生成1 Credit、字幕Revision追加0 Creditsを本番で確認しました。動画生成に付随するSNS投稿文・ハッシュタグは追加0 Credits。料金・消費ルールは変更していません。選択言語字幕翻訳は未提供です。
+**現行製品Version：v0.0.4（2026-11-26）。** 従来2分までだった動画生成を最大36分・400MBへ拡張（標準配置のMP4ファイル入力・限定試験提供）。 33分24秒のOriginal Voiceで本番納品・16 Credits精算を確認。無料翻訳プレビュー・焼き込み字幕回避は2分以内です。
+
+v0.0.2のStudio・Credit案内改善を維持し、今回の安定性改善後も実ユーザーの通常生成1 Credit、字幕Revision追加0 Creditsを本番で確認しました。動画生成に付随するSNS投稿文・ハッシュタグは追加0 Credits。料金・消費ルールは変更していません。翻訳字幕の機能案内は本アップデートと分けて扱います。
 
 FramePrimeでは、**新しい動画を制作する料金**と、**完成した動画を対応範囲で修正する料金**を分けています。
 
-**現在の公開画面の案内は「2分までの動画生成」です。料金は入力実尺2分以内の対応動画が1本1 Creditです。新規登録特典は10 Creditsで、同条件の10本分の制作Creditに相当します。** すべての素材で制作成功を保証する意味ではありません。2分を超える料金計算は、現在の長尺対応や今後の提供時期を示すものではありません。
+**標準配置のMP4ファイル入力を最大36分・400MBまで限定試験提供しています。料金は入力実尺2分以内の対応動画が1本1 Creditです。新規登録特典は10 Creditsで、同条件の10本分の制作Creditに相当します。** すべての素材で制作成功を保証する意味ではありません。長尺試験は標準配置のMP4に限り、生成成功を保証するものではありません。
 
 ## 現在の料金制度と本番確認の範囲
 
@@ -30,7 +32,7 @@ FramePrimeでは、**新しい動画を制作する料金**と、**完成した�
 
 A successfully delivered Original Voice generation consumes:
 
-**現在の案内は「2分までの動画生成」です。料金は正の入力実尺2分以内なら1 Creditです。** 料金契約上は、2分超〜8分＝2 Credits、8分超は開始した4分ごとに2 Credits追加（32分＝14 Credits）と定義されています。2分超の値は計算ルールの説明であり、現在の受付・制作・納品範囲や将来の対応予定ではありません。
+**標準配置のMP4ファイル入力は最大36分・400MBまで限定試験提供です。料金は正の入力実尺2分以内なら1 Creditです。** 料金契約上は、2分超〜8分＝2 Credits、8分超は開始した4分ごとに2 Credits追加（32分＝14 Credits）と定義されています。32分超〜36分以内は16 Creditsです。長尺試験の受付条件と、全素材の制作・納品保証は区別します。
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
@@ -80,9 +82,9 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 
 **Availability note:** FramePrime v0.0.1 publicly launched on 2026-11-22 at 11:22 JST, as confirmed by the owner. The catalog and limited payment evidence above do not establish successful purchases of every plan or completion of the new-price purchase-to-video-delivery-and-settlement sequence.
 
-## 入力尺による料金計算例（長尺対応の案内ではありません）
+## 入力尺による料金計算例（36分までの限定試験提供）
 
-**現在の案内は「2分までの動画生成」です。** 下表の2分を超える行は料金制度上の参考計算であり、利用可能な動画尺や今後の提供時期を示しません。
+**標準配置のMP4ファイル入力は最大36分・400MBまで限定試験提供です。** 下表は料金計算例です。36分・400MBを超える動画は限定試験の対象外です。
 
 | Input video length | Credits | One-time-pack equivalent (¥100/Credit) |
 | --- | ---: | ---: |
@@ -93,8 +95,9 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 | 20 minutes | 8 | ¥800 |
 | 30 minutes | 14 | ¥1,400 |
 | 32 minutes | 14 | ¥1,400 |
+| 36 minutes | 16 | ¥1,600 |
 
-2分を超える計算例を、現在の長尺対応と読み替えないでください。新料金移行後にも個別動画の納品・精算実績はありますが、新購入から新しい動画への連続E2Eや長尺対応の実証とは別です。
+長尺試験の受付条件を満たすことと、制作成功の保証は別です。新料金移行後にも個別動画の納品・精算実績はありますが、新購入から新しい動画への連続E2Eとは別です。33分24秒のOriginal Voiceは本番納品・16 Credits精算を確認済みです。
 
 ## Why this matters
 
@@ -102,7 +105,7 @@ The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → Public guidance: video generation up to 2 minutes. Billing: 1 Credit for a positive input duration up to 2 minutes; longer billing calculations do not establish long-form support
+  → Public guidance: limited standard-layout MP4 file-input trial up to 36 minutes / 400 MB. Billing: 1 Credit for a positive input duration up to 2 minutes; over 32 through 36 minutes = 16 Credits
 
 Supported revision of delivered result
   → 0 additional user credits
