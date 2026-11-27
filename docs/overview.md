@@ -52,7 +52,7 @@ FramePrimeは、AIが書いた説明文そのものよりSource / Feature / Obse
 
 ### Growth
 
-投稿結果と動画側Evidenceを確認し、次回の改善点を整理する場所です。**Core V1はProduction、全体maturityはACTIVE_EXPANSION**で、provider/API coverageは拡張途中です。
+投稿結果と動画側Evidenceを確認し次回の改善点を整理する場所です。**Core V1はProductionです。全体maturityはACTIVE_EXPANSION**でprovider/API coverageは拡張途中です。公開できる利用実績はまだなく修正内容や投稿結果を学んで次の制作へ反映する仕組みは開発中です。
 
 詳細 → [Growth](growth.md)
 

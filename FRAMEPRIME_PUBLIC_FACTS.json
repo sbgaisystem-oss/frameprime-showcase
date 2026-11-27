@@ -208,6 +208,34 @@
         "60 fps",
         "VFR"
       ]
+    },
+    "signup_grant_consumption": {
+      "record_dates": [
+        "2026-11-23",
+        "2026-11-24"
+      ],
+      "result": "FIVE_DELIVERIES_EACH_SETTLING_ONE_CREDIT_FROM_THE_SIGNUP_GRANT_CONFIRMED",
+      "accounts": 1,
+      "delivered_videos": 5,
+      "credits_settled": 5,
+      "consumed_credit_type": "SIGNUP_GRANT",
+      "same_session_new_signup_e2e_verified": false,
+      "purchased_credit_lot_consumed": false,
+      "scope": "One identity-verified account that had received the standard 10-Credit signup grant; not five users, not a success rate for every input."
+    },
+    "short_form_three_caption_modes": {
+      "record_date": "2026-11-26",
+      "modes": [
+        "ORIGINAL_VOICE",
+        "SELECTED_LANGUAGE_JA",
+        "DUAL_CAPTIONS"
+      ],
+      "input_duration_seconds_approx": "8-10",
+      "source_resolution": "640x360",
+      "result": "NEW_GENERATION_AND_DELIVERY_CONFIRMED_ONE_CREDIT_BALANCE_DECREASE_EACH",
+      "accept_to_delivery_seconds_approx": "30-44",
+      "short_form_revision_selected_and_dual": "REVISED_OUTPUT_DELIVERED_ZERO_ADDITIONAL_CREDITS",
+      "scope": "Individual short-form cases run by the operator in production; long-form Dual Captions delivery remains unverified."
     }
   },
   "ai_discovery_pillars": [
@@ -368,8 +396,12 @@
         "cross-platform adapter coverage is not complete",
         "Supplemental Gemini semantic analysis is currently OFF",
         "Personal learning requires sufficient matched videos and observed post results",
-        "Illustrative demonstration-screen metrics are not customer outcomes or proof of performance uplift"
-      ]
+        "Illustrative demonstration-screen metrics are not customer outcomes or proof of performance uplift",
+        "No published customer outcomes or aggregate Growth results yet",
+        "Learning from the user's own revisions and post results to improve the next video is under development and is not a current capability"
+      ],
+      "published_customer_outcomes": "NONE_YET",
+      "self_improvement_from_user_revisions_and_results": "UNDER_DEVELOPMENT_NOT_CURRENT"
     },
     "original_voice_before_after": {
       "asset": "media/ui/frameprime_original_voice_avatar6_before_after_20261122.png",
@@ -517,7 +549,12 @@
         "credits": 16
       },
       "dual_longform_delivery": "NOT_VERIFIED",
-      "scope": "Individual measured production cases; no guarantee for every input."
+      "scope": "Individual measured production cases; no guarantee for every input.",
+      "dual_longform_attempt": {
+        "date": "2026-11-26",
+        "result": "NOT_DELIVERED",
+        "credits_consumed": 0
+      }
     }
   },
   "supplemental_semantic_analysis": {
@@ -541,5 +578,30 @@
       "format": "MP4 (H.264/AAC)"
     },
     "scope": "individual published example; no universal format or processing-time guarantee"
+  },
+  "positioning": {
+    "added_date": "2026-11-27",
+    "what_it_is": "AI video creation OS: upload a video or paste a supported X video URL, pick a caption mode and destination, and get a captioned finished video plus social post copy prepared in a dedicated GUI. The basic flow needs no prompt writing and no timeline editing. Users review the output and publish it themselves.",
+    "compared_with_general_video_editors": "Editors such as CapCut, Vrew or Premiere Pro are for hands-on, fine-grained editing and many include automatic captions and other AI features. FramePrime is for getting from a source video to a captioned video and posting preparation in few steps. They can be used together.",
+    "compared_with_general_ai_assistants": "Assistants can write captions and post copy and can process video through tools or code. FramePrime brings intake, generation, output review, supported revision and posting preparation into one dedicated screen.",
+    "comparison_is_superiority_claim": false,
+    "replaces_general_purpose_editor": false,
+    "good_fit": [
+      "people who want captioned videos for social posting without learning an editor or writing prompts",
+      "people who want Japanese/English translated or dual captions",
+      "people who want to spend less time per post"
+    ],
+    "not_a_fit": [
+      "detailed manual editing such as free-form cuts, music and effects",
+      "automatic posting to social platforms",
+      "direct URL import from YouTube, TikTok or Instagram",
+      "sources longer than 36 minutes or larger than 400 MB",
+      "detailed editing on a phone only (Studio is PC-only)",
+      "footage the user has no right to use"
+    ],
+    "pricing_shape": "Credit-based: monthly plans from JPY 2,900 / 32 Credits and one-time packs from JPY 1,000 / 10 Credits; 10 Credits on signup; a source of up to 2 minutes costs 1 Credit.",
+    "third_party_reviews": "NOT_YET_AVAILABLE",
+    "general_user_usage_statistics": "NOT_YET_PUBLISHED",
+    "track_record": "docs/track-record.md"
   }
 }
