@@ -9,7 +9,7 @@
   },
   "product_version": "v0.0.4",
   "summary": "FramePrime is an AI video creation OS: upload a video or enter a supported X video URL, select settings in a dedicated GUI, use supported editing and original-language, selected-language or dual captions, review the result and prepare social posting without writing complex prompts.",
-  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Current caption modes are Original Voice, Selected Language Captions and Dual Captions; Japanese and English are the translation targets.",
+  "product_value": "A dedicated GUI connects video upload, supported video editing and subtitles, output review and social posting preparation, reducing the need to assemble complex prompts or multiple tools. Supported X video URL intake is available to authenticated users. Available observed X post results can inform later videos. Current caption modes are Original Voice, Selected Language Captions and Dual Captions; Japanese, English and Korean are the translation targets.",
   "existing_x_url_intake": {
     "status": "EXISTING_FEATURE",
     "scope": "supported X video URLs for sources the user owns or has permission to use",
@@ -34,7 +34,7 @@
     ],
     "other_platforms": {
       "youtube": "DIRECT_ACQUISITION_NOT_SUPPORTED_USE_FILE_UPLOAD",
-      "tiktok": "DIRECT_ACQUISITION_NOT_SUPPORTED_USE_FILE_UPLOAD",
+      "tiktok": "DIRECT_ACQUISITION_NOT_SUPPORTED_OFFICIAL_SAVE_GUIDANCE_THEN_FILE_UPLOAD",
       "instagram": "URL_IMPORT_NOT_SUPPORTED"
     },
     "original_voice_subtitles": "SOURCE_AUDIO_LANGUAGE_PRESERVED_NO_TRANSLATION",
@@ -53,9 +53,39 @@
     }
   },
   "selected_language_translation": {
-    "status": "AVAILABLE_JAPANESE_AND_ENGLISH_TARGETS",
-    "scope": "Selected Language Captions and Dual Captions; Japanese and English targets, original audio retained.",
-    "release_version": "AVAILABLE_IN_CURRENT_V0_0_4_UI"
+    "status": "AVAILABLE_JAPANESE_ENGLISH_KOREAN_TARGETS",
+    "scope": "Selected Language Captions targets Japanese, English and Korean. Paid Dual Captions offers three ordered upper/lower pairs: English + Korean, English + Japanese (default), and Korean + Japanese. Audio is retained; if the source language is outside the pair, both tracks are translated. The separate original-plus-translated free preview remains limited to 2 minutes and 0 Credits.",
+    "release_version": "AVAILABLE_IN_CURRENT_V0_0_4_UI",
+    "targets": [
+      "ja",
+      "en",
+      "ko"
+    ],
+    "paid_dual_ordered_pairs": [
+      [
+        "en",
+        "ko"
+      ],
+      [
+        "en",
+        "ja"
+      ],
+      [
+        "ko",
+        "ja"
+      ]
+    ],
+    "paid_dual_default": [
+      "en",
+      "ja"
+    ],
+    "source_audio_retained": true,
+    "free_preview_max_duration_seconds": 120,
+    "free_preview_credits": 0,
+    "paid_dual_colors": {
+      "upper": "yellow",
+      "lower": "white"
+    }
   },
   "release_status": {
     "stage": "PUBLIC_LAUNCHED",
@@ -67,15 +97,15 @@
     "signup": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
     "checkout": "ENABLED_WITH_LIMITED_PRODUCTION_EVIDENCE",
     "new_price_purchase_to_new_video_delivery_and_credit_settlement": "NOT_YET_VERIFIED_AS_ONE_CONTINUOUS_E2E",
-    "selected_language_translation": "AVAILABLE_JAPANESE_AND_ENGLISH_TARGETS",
+    "selected_language_translation": "AVAILABLE_JAPANESE_ENGLISH_KOREAN_TARGETS",
     "public_repository_role": "PUBLIC_DOCUMENTATION_AUTHORITY",
     "repository_publication_means_formal_service_launch": false,
     "formal_prelaunch_security_audit": "COMPLETED_PASS_CRITICAL_HIGH_0",
     "formal_prelaunch_security_audit_completed_date": "2026-10-12",
-    "public_showcase_updated_date": "2026-11-27",
+    "public_showcase_updated_date": "2026-11-28",
     "video_generation": "LIMITED_UPLOAD_FIRST_CREATION_DELIVERY_DOWNLOAD_AND_CREDIT_SETTLEMENT_CONFIRMED",
     "supplemental_gemini_semantic_analysis": "OFF",
-    "current_public_video_generation_guidance": "STANDARD_MP4_FILE_INPUT_UP_TO_36_MINUTES_400_MB",
+    "current_public_video_generation_guidance": "STANDARD_MP4_FILE_INPUT_UP_TO_270_MINUTES_400_MB_EXTENDED_LENGTH_PILOT_OVER_36",
     "x_url_intake": "AVAILABLE_AUTHENTICATED_USERS",
     "v003_reliability_improvements": {
       "date": "2026-11-25",
@@ -92,7 +122,7 @@
     "v004_longform_and_acceleration": {
       "date": "2026-11-26",
       "status": "SHIPPED_PRODUCTION",
-      "scope": "Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified.",
+      "scope": "Historical 2026-11-26 scope: standard-layout MP4 file input up to 36 minutes and 400 MB; the individual Original Voice speedup and 33:24 deliveries remain historical measured evidence. See current_usage_guidance and current_os_features for later production extensions.",
       "source_duration_seconds": 2004.011,
       "verified_mode": "ORIGINAL_VOICE",
       "cta_enabled": false,
@@ -112,7 +142,8 @@
       "credits_settled": 16,
       "comparison_limitation": "In a production comparison using the same 33 min 24 sec source (Original Voice, CTA off), end-to-end generation time decreased from 18:00 (1080.123 s) to 13:52 (832.338 s), about 23%. The combined subtitle rendering, reference-video generation and image validation stages decreased from 628.823 s to 405.627 s (35.5%). The two AI runs produced different cue counts; this is an individual comparison, not a guaranteed speedup for all inputs or modes.",
       "translation_modes_release_announcement_included": false
-    }
+    },
+    "current_os_facts_date": "2026-11-28"
   },
   "public_launch_evidence": {
     "basis": "OWNER_CONFIRMATION",
@@ -142,7 +173,7 @@
     "additional_unverified_checks": [
       "actual purchases of each monthly plan"
     ],
-    "latest_check_date": "2026-11-23",
+    "latest_check_date": "2026-11-28",
     "first_creation_without_purchase": {
       "record_date": "2026-11-23",
       "result": "UPLOAD_TO_SUBTITLED_VIDEO_DELIVERY_DOWNLOAD_AND_ONE_CREDIT_SETTLEMENT_CONFIRMED",
@@ -187,7 +218,7 @@
       "additional_credits_consumed": 0,
       "balance_unchanged_after_revision": true,
       "evidence_basis": "AUTHENTICATED_UI_SAVE_PRODUCTION_RECORDS_REVISED_FILE_DOWNLOAD_AND_LEDGER_READBACK",
-      "scope": "One subtitle-correction sequence on a PC; does not establish coverage of every Studio editing control, mobile device or source."
+      "scope": "Historical PC check on 2026-11-23. Retention at that time differs from the current latest-output replacement workflow."
     },
     "v003_rendering_and_revision": {
       "record_date": "2026-11-25",
@@ -235,7 +266,34 @@
       "result": "NEW_GENERATION_AND_DELIVERY_CONFIRMED_ONE_CREDIT_BALANCE_DECREASE_EACH",
       "accept_to_delivery_seconds_approx": "30-44",
       "short_form_revision_selected_and_dual": "REVISED_OUTPUT_DELIVERED_ZERO_ADDITIONAL_CREDITS",
-      "scope": "Individual short-form cases run by the operator in production; long-form Dual Captions delivery remains unverified."
+      "scope": "Individual short-form operator-run production checks on 2026-11-26. Subsequent 59:51 English + Japanese Dual delivery verified separately on 2026-11-28."
+    },
+    "longform_revision_2026_11_28": {
+      "source_duration_display": "59:51",
+      "caption_mode": "DUAL_EN_JA",
+      "cue_count": 883,
+      "full_render_output_reservation_to_ready_seconds": 946.871806,
+      "first_differential_seconds": 226.01493,
+      "cached_differential_seconds": 109.913943,
+      "cached_reduction_percent": 88.3918876553813,
+      "cached_reencoded_seconds": 26.966666666666665,
+      "cached_reused_video_frame_percent": 99.24914612414612,
+      "unchanged_video_packets_match": true,
+      "audio_packets_match": true,
+      "additional_credits_each": 0,
+      "source_retained": true,
+      "previous_completed_output_retired_after_ready": true,
+      "measurement_scope": "OUTPUT_RESERVATION_TO_READY",
+      "comparison_limitation": "Same work; changed positions/content differ. Full render changed two texts and two timings; each differential check changed only two texts. Individual operator-run production checks, not a universal guarantee.",
+      "scope": "Qualifying small selected/dual caption changes only; other cases use full render."
+    },
+    "selected_longform_acceleration_2026_11_28": {
+      "input_duration_display": "59:51",
+      "before_active_processing_display": "36:18",
+      "after_active_processing_display": "19:13",
+      "reduction_percent_approx": 47,
+      "measurement_scope": "ACTIVE_PROCESSING_EXCLUDING_WAIT",
+      "scope": "Operator-run individual production comparison; not a speed guarantee."
     }
   },
   "ai_discovery_pillars": [
@@ -273,7 +331,7 @@
     {
       "id": "credit_creation_revision",
       "title": "Duration-based creation credits, zero-additional-credit revision",
-      "claim": "Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Over 32 through 36 minutes costs 16 Credits; billing does not guarantee acceptance or delivery. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract. On 2026-11-23, one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits; this does not verify every editing control or device.",
+      "claim": "Standard-layout MP4 file inputs are accepted up to 270 minutes and 400 MB (over 36 minutes is an extended-length pilot) for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; On 2026-11-28, operator-run production checks delivered Selected Language Captions (Japanese) and English + Japanese Dual Captions on the same 59:51, 720p input, 883 captions and 28 Credits settled for each. Under the billing contract, a positive input duration up to 2 minutes uses 1 Credit per successful new delivery. Over 32 through 36 minutes costs 16 Credits; billing does not guarantee acceptance or delivery. Existing 2026-11-21 production records show two delivered videos and 2 Credits settled in total. A limited 2026-11-22 check confirmed a JPY 3,000 one-time purchase, 30 purchased Credits and 4 referral Credits each. A separate 2026-11-23 first creation without purchase on an already registered account reached subtitled-video delivery/download and 1 Credit settlement from referral Credits. Signup-grant and purchased-Credit consumption were not tested. The continuous new-purchase-to-new-video sequence is unverified. Normal system-terminal failure nets 0 Credits; supported post-delivery Revision Render has a 0-additional-Credit contract. On 2026-11-23, one authenticated subtitle correction on a PC was saved, re-rendered and downloaded with 0 additional Credits; this does not verify every editing control or device.",
       "availability": "PRODUCTION_CREDIT_CONTRACT_LIMITED_PURCHASE_CONFIRMED_FULL_SEQUENCE_UNVERIFIED"
     },
     {
@@ -384,7 +442,7 @@
       ],
       "includes_supported_revision_render": true,
       "general_purpose_nle": false,
-      "authenticated_revision_save_rerender_and_credit_e2e": "LIMITED_PC_SUBTITLE_CORRECTION_SEQUENCE_CONFIRMED_OTHER_STUDIO_CONTROLS_NOT_COVERED"
+      "authenticated_revision_save_rerender_and_credit_e2e": "PC_SHORT_AND_59M51S_DUAL_REVISION_PRODUCTION_CONFIRMED_OTHER_CONTROLS_AND_SOURCES_NOT_FULLY_VERIFIED"
     },
     "growth": {
       "purpose": "organize what happened, why it may have happened, and what to change next using observed KPI and video-side evidence",
@@ -410,6 +468,11 @@
       "source": "official_public_site",
       "evidence_type": "live_site_screenshot",
       "not_evidence_of_general_availability": true
+    },
+    "mobile_subtitle_revision": {
+      "availability": "SEPARATE_SIMPLIFIED_MOBILE_WEB_ROUTE",
+      "full_studio_available": false,
+      "scope": "Supported subtitle editing and revision, not all PC Studio features; physical-phone and other long-form cases are not fully verified."
     }
   },
   "security_auth_posture": {
@@ -447,7 +510,7 @@
     "social_post_text_regeneration_credits": 0,
     "hashtags_and_publishing_preparation_credits": 0,
     "social_text_billing_note": "SNS posting copy and hashtags are currently prepared as an optional part of supported video generation. Adding or omitting posting copy does not change the video generation Credit charge; the posting copy itself costs 0 additional Credits. Standalone new posting-text creation is not publicly offered. Legacy posting preparation history remains viewable. No promise of independently available free text regeneration.",
-    "new_generation": "Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). Over 32 through 36 minutes costs 16 Credits; billing does not guarantee acceptance or delivery. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
+    "new_generation": "Standard-layout MP4 file inputs are accepted up to 270 minutes and 400 MB (over 36 minutes is an extended-length pilot) for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; On 2026-11-28, operator-run production checks delivered Selected Language Captions (Japanese) and English + Japanese Dual Captions on the same 59:51, 720p input, 883 captions and 28 Credits settled for each. Under the billing contract, a positive input source duration up to 2 minutes uses 1 Credit. Billing rules applied on 2026-11-21 also define 2 Credits for >2 through 8 minutes and +2 per started 4 minutes thereafter (32 minutes = 14 Credits). Over 32 through 36 minutes costs 16 Credits and 270 minutes costs 134 Credits; billing does not guarantee acceptance or delivery. Individual video delivery and settlement have production evidence; the continuous new-purchase-to-new-video sequence remains unverified.",
     "target_production_status": "INTEGER_CREDITS_APPLIED_SIGNUP_CHECKOUT_ENABLED_LIMITED_PURCHASE_REFERRAL_CONFIRMED_FULL_SEQUENCE_UNVERIFIED",
     "system_terminal_failure": "net 0 credits under normal refund/release contract",
     "supported_post_delivery_revision": "0 additional credits",
@@ -514,21 +577,28 @@
     "signup_bonus_credits": 10,
     "referral_reward_each_credits": 4,
     "referral_budget_credits": 800,
-    "revision_verification": "ONE_AUTHENTICATED_PC_SUBTITLE_SAVE_RERENDER_DOWNLOAD_ZERO_ADDITIONAL_CREDIT_SEQUENCE_CONFIRMED_2026_11_23",
+    "revision_verification": "SHORT_AND_59M51S_DUAL_OPERATOR_PRODUCTION_REVISION_ZERO_ADDITIONAL_CREDITS_CONFIRMED",
     "social_text_current_availability": "VIDEO_GENERATION_ATTACHED_ONLY",
     "standalone_post_text_creation": "NOT_PUBLICLY_OFFERED_PENDING_QUALITY_REDESIGN",
     "legacy_post_history": "READABLE_AND_COPYABLE",
-    "video_source_credit_not_waived": true
+    "video_source_credit_not_waived": true,
+    "no_expiration_scope": "CURRENT_NEW_PLAN_CREDITS; legacy Founder monthly 20-Credit grant expires at next billing-period start.",
+    "legacy_founder_monthly": {
+      "credits_per_billing_period": 20,
+      "expires_at": "NEXT_BILLING_PERIOD_START",
+      "carry_over": false,
+      "existing_contract_unchanged": true
+    }
   },
   "summary_ja": "FramePrimeは、動画の取り込みからAI編集・字幕・SNS投稿文の準備までを、専用画面で進められるWebサービス（AI動画制作OS）です。動画ファイルのアップロードまたは対応するX動画URLから始められます。X動画URL取り込みは2026年11月24日に復旧しました。権利・取得条件があります。",
   "current_usage_guidance": {
-    "checked_date": "2026-11-27",
+    "checked_date": "2026-11-28",
     "signup_bonus_credits": 10,
-    "basis": "CURRENT_PUBLIC_UI_ORIGINAL_AND_SELECTED_LANGUAGE_LONGFORM_PRODUCTION_EVIDENCE",
-    "scope": "Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified.",
+    "basis": "CURRENT_PUBLIC_UI_AND_OPERATOR_RUN_PRODUCTION_EVIDENCE",
+    "scope": "Standard-layout MP4 input up to 270 minutes and 400 MB (over 36 minutes: extended-length pilot), Original Voice, Selected Language Captions and Dual Captions. The configured completed-output/revision storage limit is 5 GB per file, distinct from the 400 MB input limit. Actual deliveries near 5 GB and at the full 270-minute limit are not yet verified. On 2026-11-28, operator-run production checks delivered Selected Language Captions (Japanese) and English + Japanese Dual Captions on the same 59:51, 720p input, 883 captions and 28 Credits settled for each. Free translation preview and embedded-caption avoidance remain limited to 2 minutes.",
     "longer_duration_pricing_is_support_promise": false,
     "long_form_release_date": "2026-11-26",
-    "video_generation_duration_guidance_seconds": 2160,
+    "video_generation_duration_guidance_seconds": 16200,
     "billing_credits_for_positive_input_duration_up_to_2_minutes": 1,
     "limited_trial_mp4_max_file_size_mb": 400,
     "free_preview_max_duration_seconds": 120,
@@ -536,6 +606,32 @@
     "verified_original_voice_input_seconds": 2004.011,
     "standard_mp4_max_file_size_mb": 400,
     "longform_latest_delivery_evidence": {
+      "date": "2026-11-28",
+      "evidence_class": "OPERATOR_RUN_PRODUCTION_CHECK",
+      "input_duration_display": "59:51",
+      "source_resolution": "1280x720",
+      "subtitle_count_each": 883,
+      "selected_language_ja": {
+        "accept_to_delivery_display": "22:07",
+        "active_processing_display": "19:13",
+        "credits": 28,
+        "delivered": true
+      },
+      "dual_en_ja": {
+        "accept_to_delivery_display": "23:10",
+        "active_processing_display": "23:02",
+        "credits": 28,
+        "delivered": true
+      },
+      "dual_longform_delivery": "VERIFIED_ENGLISH_JAPANESE_59M51S",
+      "scope": "Individual measured cases, not every pair, source or duration. The 2026-11-26 failed Dual attempt is preserved as historical evidence.",
+      "input_duration_seconds_approx": 3591
+    },
+    "extended_length_pilot_over_seconds": 2160,
+    "completed_output_max_file_size_bytes": 5000000000,
+    "standard_mp4_input_max_file_size_bytes": 400000000,
+    "full_270_minute_and_near_5gb_delivery_verified": false,
+    "longform_2026_11_26_historical_evidence": {
       "date": "2026-11-26",
       "input_duration_seconds": 2004.011,
       "source_resolution": "1280x720",
@@ -555,7 +651,8 @@
         "result": "NOT_DELIVERED",
         "credits_consumed": 0
       }
-    }
+    },
+    "billing_credits_at_270_minutes": 134
   },
   "supplemental_semantic_analysis": {
     "name": "Gemini Video Analysis V2",
@@ -588,14 +685,14 @@
     "replaces_general_purpose_editor": false,
     "good_fit": [
       "people who want captioned videos for social posting without learning an editor or writing prompts",
-      "people who want Japanese/English translated or dual captions",
+      "people who want Japanese, English or Korean translated captions or supported dual captions",
       "people who want to spend less time per post"
     ],
     "not_a_fit": [
       "detailed manual editing such as free-form cuts, music and effects",
       "automatic posting to social platforms",
       "direct URL import from YouTube, TikTok or Instagram",
-      "sources longer than 36 minutes or larger than 400 MB",
+      "sources longer than 270 minutes or larger than 400 MB",
       "detailed editing on a phone only (Studio is PC-only)",
       "footage the user has no right to use"
     ],
@@ -603,5 +700,35 @@
     "third_party_reviews": "NOT_YET_AVAILABLE",
     "general_user_usage_statistics": "NOT_YET_PUBLISHED",
     "track_record": "docs/track-record.md"
+  },
+  "current_os_features": {
+    "checked_date": "2026-11-28",
+    "product_version": "v0.0.4",
+    "max_standard_mp4_input_duration_seconds": 16200,
+    "input_size_limit_bytes": 400000000,
+    "completed_output_size_limit_bytes": 5000000000,
+    "size_limits_are_configuration_not_delivery_guarantee": true,
+    "library_limits": {
+      "standard_one_time_founder_2900_5800": 30,
+      "eligible_paid_period_9800_19800": 50
+    },
+    "pin_limits": {
+      "standard_founder": 5,
+      "monthly_2900_5800": 10,
+      "monthly_9800_19800": 20
+    },
+    "character_sheet_limits": {
+      "standard": 1,
+      "founder_monthly_2900_5800": 5,
+      "monthly_9800_19800": 10
+    },
+    "revision_retention": "The current supported revision workflow keeps the source video and the latest completed output; the previous completed version is retired only after the replacement is successfully delivered. Download an earlier completed version before replacing it if needed. Older coexistence examples describe the behavior at the time.",
+    "library_retention": "Library limits are 30 works for standard/one-time/legacy Founder beta and active JPY 2,900/5,800 monthly plans; 50 for eligible paid-period JPY 9,800/19,800 monthly plans. Pin limits are 5 for standard/one-time/Founder beta, 10 for active JPY 2,900/5,800 plans and 20 for active JPY 9,800/19,800 plans; Character Sheet limits are 1 for standard, 5 for Founder beta and 2,900/5,800 plans, 10 for 9,800/19,800 plans. At the normal limit, the oldest eligible unpinned work is retired after successful new delivery, not on failed generation. Pinned or actively edited works are protected; large over-limit or downgrade cases may require confirmation.",
+    "shared_context_terminology": "DEPLOYED_ADMIN_EDITING_ONLY_NEW_GENERATION_E2E_OPEN",
+    "generation_reserved_credit_display": "DEPLOYED_NEW_GENERATION_E2E_OPEN",
+    "editing_media_access_renewal": "DEPLOYED_ISOLATED_TESTED_LIVE_ELAPSED_TEST_OPEN",
+    "dark_mode_pricing_legal_ui": "DEPLOYED_OWNER_VISUAL_ACCEPTANCE",
+    "differential_revision": "DEPLOYED_59M51S_EN_JA_OPERATOR_PRODUCTION_VERIFIED",
+    "scope": "The configured completed-output/revision storage limit is 5 GB per file, distinct from the 400 MB input limit. Actual deliveries near 5 GB and at the full 270-minute limit are not yet verified. These are operator-run production checks, not independent reviews, customer outcomes or aggregate success rates."
   }
 }

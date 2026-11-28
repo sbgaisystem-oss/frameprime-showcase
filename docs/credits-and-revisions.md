@@ -1,12 +1,12 @@
 # 料金・Credits・完成後の修正
 
-**現行製品Version：v0.0.4（2026-11-26）。** 動画生成は最大36分・400MBまで（標準配置のMP4ファイル入力）。 33分24秒の素材でOriginal Voice（13分44秒）と選択言語字幕・日本語（19分19秒）の本番納品および各16 Creditsの精算を確認済みです。2言語同時字幕の長尺納品は未実証です。無料翻訳プレビュー・焼き込み字幕回避は2分以内です。
+**現行製品Version：v0.0.4（2026-11-26）。** 動画生成は最大270分・400MBまで（標準配置のMP4ファイル入力、36分超は長尺試験提供）。 33分24秒の素材でOriginal Voice（13分44秒）と選択言語字幕・日本語（19分19秒）の本番納品および各16 Creditsの精算を確認済みです。2026年11月28日には同一59分51秒・720p素材で選択言語字幕（日本語）と英日2言語同時字幕の本番納品および各28 Creditsの精算を確認しました。各883字幕。無料翻訳プレビュー・焼き込み字幕回避は2分以内です。
 
 v0.0.2のStudio・Credit案内改善を維持し、今回の安定性改善後も実ユーザーの通常生成1 Credit、字幕Revision追加0 Creditsを本番で確認しました。動画生成に付随するSNS投稿文・ハッシュタグは追加0 Credits。料金・消費ルールは変更していません。翻訳字幕の機能案内は本アップデートと分けて扱います。
 
 FramePrimeでは、**新しい動画を制作する料金**と、**完成した動画を対応範囲で修正する料金**を分けています。
 
-**標準配置のMP4ファイル入力は最大36分・400MBまでです。料金は入力実尺2分以内の対応動画が1本1 Creditです。新規登録特典は10 Creditsで、同条件の10本分の制作Creditに相当します。** すべての素材で制作成功を保証する意味ではありません。長尺動画は標準配置のMP4に限り、生成成功を保証するものではありません。
+**標準配置のMP4ファイル入力は最大270分・400MBまで（36分超は長尺試験提供）です。料金は入力実尺2分以内の対応動画が1本1 Creditです。新規登録特典は10 Creditsで、同条件の10本分の制作Creditに相当します。** すべての素材で制作成功を保証する意味ではありません。長尺動画は標準配置のMP4に限り、生成成功を保証するものではありません。
 
 ## 現在の料金制度と本番確認の範囲
 
@@ -14,9 +14,21 @@ FramePrimeでは、**新しい動画を制作する料金**と、**完成した�
 
 **2026年11月23日、制作履歴のない登録済みアカウントで、購入なしの初回動画制作→字幕入り動画の納品・ダウンロード→1 Credit精算を本番確認しました。** 登録はこの制作確認より前に完了しており、消費したのは紹介Creditsです。同じ操作回での新規登録からの通し確認、登録特典Creditsの消費確認、新しい購入Creditsを使う確認とは区別します。
 
-**同日、認証済み利用者がPCの「字幕・動画を修正」から字幕1か所を保存し、修正版の再書き出し・ダウンロードと追加0 Creditsを本番確認しました。** 元の納品動画は保持され、修正前後の残高は同じでした。字幕修正1例の実績で、すべての編集種類・端末を検証したものではありません。
+**同日、認証済み利用者がPCの「字幕・動画を修正」から字幕1か所を保存し、修正版の再書き出し・ダウンロードと追加0 Creditsを本番確認しました。** この当時の検証では元の納品動画も保持され、修正前後の残高は同じでした。現在の保持条件は下記のとおりです。字幕修正1例の実績で、すべての編集種類・端末を検証したものではありません。
 
 未確認の範囲には、新料金購入→その購入Creditsを使った新規動画納品→精算を一続きに確認する経路が含まれます。月額各商品の実購入も別に残っています。個別の成功実績を、すべての素材・商品・条件での成功保証に拡張しません。
+
+## 現行の保存・修正条件（2026-11-28）
+
+完成動画・修正版の保存上限は1ファイル5GB（入力は400MB）。5GBは設定上限であり、その容量付近や270分全尺の実納品を確認済みとするものではありません。
+
+現行の通常の修正版出力は元動画と最新の完成動画を保持し、新しい修正版が正常に納品された後に旧完成版を整理します。以前の完成版が必要な場合は出力前に保存してください。過去の修正版共存例は当時の仕様です。
+
+ライブラリは通常・買い切り・旧Founder β・月額2,900/5,800円が30作品、有効な支払済み期間の月額9,800/19,800円が50作品。固定作品枠は通常/旧Founder βが5、有効な支払済み期間の月額2,900/5,800円が10、月額9,800/19,800円が20。Character Sheet枠は通常1、旧Founder βと月額2,900/5,800円は5、月額9,800/19,800円は10。通常の上限到達時は新規動画の正常納品後に古い未固定作品を整理します。固定・編集中の作品を保護し、生成失敗時は旧作品を削除しません。既存の大量超過やプラン変更時には確認が必要な場合があります。
+
+同じ59分51秒・883字幕の英日Dual作品で、従来の全尺再出力15分46.9秒、差分初回3分46.0秒（76.1%短縮）、文字配置キャッシュ利用1分49.9秒（88.4%短縮）を本番確認。出力予約から納品READYまで。各回の修正箇所・内容は異なり、従来は文章2件・時刻2件、差分各回は文章2件のみ。キャッシュ利用時は変更区間約27秒のみ再描画、未変更映像99.25%の圧縮データと音声全体の一致を確認しました。対応条件内の少数字幕修正が対象で、条件外は従来の全尺描画です。速度保証ではありません。
+
+個別の自社本番検証であり、一般顧客・第三者による利用実績や全素材の成功率ではありません。
 
 ## 投稿文は、Creditを気にせず作成できます
 
@@ -32,7 +44,7 @@ FramePrimeでは、**新しい動画を制作する料金**と、**完成した�
 
 A successfully delivered Original Voice generation consumes:
 
-**標準配置のMP4ファイル入力は最大36分・400MBまでです。料金は正の入力実尺2分以内なら1 Creditです。** 料金契約上は、2分超〜8分＝2 Credits、8分超は開始した4分ごとに2 Credits追加（32分＝14 Credits）と定義されています。32分超〜36分以内は16 Creditsです。長尺動画の受付条件と、全素材の制作・納品保証は区別します。
+**標準配置のMP4ファイル入力は最大270分・400MBまで（36分超は長尺試験提供）です。料金は正の入力実尺2分以内なら1 Creditです。** 料金契約上は、2分超〜8分＝2 Credits、8分超は開始した4分ごとに2 Credits追加（32分＝14 Credits）と定義されています。32分超〜36分以内は16 Credits、最大270分は134 Creditsです。長尺動画の受付条件と、全素材の制作・納品保証は区別します。
 
 The generation path uses a reservation / settlement model so the system can distinguish a successful delivery from a terminal failure.
 
@@ -54,16 +66,18 @@ This means a user can refine the delivered result through the supported revision
 
 ## 購入プランと利用条件
 
-Monthly and one-time credit plans are part of the approved product contract. All amounts are tax-inclusive JPY. Credits do not expire; unused balances carry over even after subscription cancellation. The following prices are the current adopted catalog with live checkout activated; availability, eligibility, successful payment and completed new-video delivery are separately verified.
+Monthly and one-time credit plans are part of the approved product contract. All amounts are tax-inclusive JPY. Current new-plan Credits do not expire; unused balances carry over even after subscription cancellation. The existing legacy Founder monthly grant expires at the next billing-period start. The following prices are the current adopted catalog with live checkout activated; availability, eligibility, successful payment and completed new-video delivery are separately verified.
 
 ### 月額プラン（税込）
 
-| Monthly price | Credits granted monthly | Effective price per Credit* |
-| --- | ---: | ---: |
-| ¥2,900 | 32 | approx. ¥90.63 |
-| ¥5,800 | 70 | approx. ¥82.86 |
-| ¥9,800 | 125 | approx. ¥78.40 |
-| ¥19,800 | 260 | approx. ¥76.15 |
+| 月額（税込） | 毎月のCredits | キャラクターシート | ライブラリ保存 | 固定作品 | 1 Creditあたり* |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| ¥2,900 | 32 | 5枠 | 30作品 | 10枠 | 約¥90.63 |
+| ¥5,800 | 70 | 5枠 | 30作品 | 10枠 | 約¥82.86 |
+| ¥9,800 | 125 | **10枠** | **50作品** | **20枠** | 約¥78.40 |
+| ¥19,800 | 260 | **10枠** | **50作品** | **20枠** | 約¥76.15 |
+
+月額プランの特典は有効な支払済み契約期間中に適用されます。通常・買い切りではキャラクターシート1枠、ライブラリ30作品、固定5枠です。旧Founder βの既存契約は別条件です。
 
 *Effective unit price assumes all granted Credits are used. No separate per-video cash charge on top of the Credits consumed.
 
@@ -78,13 +92,13 @@ Monthly and one-time credit plans are part of the approved product contract. All
 
 One-time packs do not auto-renew. Separately, the **¥980 beta trial pack grants 20 Credits, one purchase per account, without automatic renewal**. Existing legacy ¥980/month Founder subscriptions are distinct and are not silently converted.
 
-Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. Signup bonus = 10 Credits; qualifying referral rewards = 4 Credits for each side; referral budget = 800 Credits. These denominations are applied in the Production financial DB. Signup and checkout are enabled; the limited 2026-11-22 check confirmed the purchased Credits and both referral rewards. Individual consent and eligibility still apply. The complete new-price purchase → new video delivery → Credit settlement sequence remains unverified. The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
+Current new-plan Credits have **no expiration** and unused balances **carry over**, including after subscription cancellation. The existing legacy Founder monthly grant expires at the next billing-period start. Signup bonus = 10 Credits; qualifying referral rewards = 4 Credits for each side; referral budget = 800 Credits. These denominations are applied in the Production financial DB. Signup and checkout are enabled; the limited 2026-11-22 check confirmed the purchased Credits and both referral rewards. Individual consent and eligibility still apply. The complete new-price purchase → new video delivery → Credit settlement sequence remains unverified. The nominal consumption order is referral → subscription → signup bonus → purchased Credits; actual availability and functionality are subject to the current launch status.
 
 **Availability note:** FramePrime v0.0.1 publicly launched on 2026-11-22 at 11:22 JST, as confirmed by the owner. The catalog and limited payment evidence above do not establish successful purchases of every plan or completion of the new-price purchase-to-video-delivery-and-settlement sequence.
 
-## 入力尺による料金計算例（36分まで）
+## 入力尺による料金計算例（270分まで）
 
-**標準配置のMP4ファイル入力は最大36分・400MBまでです。** 下表は料金計算例です。36分・400MBを超える動画は通常生成の対象外です。
+**標準配置のMP4ファイル入力は最大270分・400MBまで（36分超は長尺試験提供）です。** 下表は料金計算例です。270分または入力400MBを超える動画は受付対象外です。36分超は長尺試験提供です。
 
 | Input video length | Credits | One-time-pack equivalent (¥100/Credit) |
 | --- | ---: | ---: |
@@ -96,8 +110,11 @@ Credits have **no expiration** and unused balances **carry over**, including aft
 | 30 minutes | 14 | ¥1,400 |
 | 32 minutes | 14 | ¥1,400 |
 | 36 minutes | 16 | ¥1,600 |
+| 60 minutes | 28 | ¥2,800 |
+| 120 minutes | 58 | ¥5,800 |
+| 270 minutes | 134 | ¥13,400 |
 
-長尺動画の受付条件を満たすことと、制作成功の保証は別です。新料金移行後にも個別動画の納品・精算実績はありますが、新購入から新しい動画への連続E2Eとは別です。33分24秒の素材でOriginal Voice（13分44秒）と選択言語字幕・日本語（19分19秒）の本番納品および各16 Creditsの精算を確認済みです。2言語同時字幕の長尺納品は未実証です。
+長尺動画の受付条件を満たすことと、制作成功の保証は別です。新料金移行後にも個別動画の納品・精算実績はありますが、新購入から新しい動画への連続E2Eとは別です。33分24秒の素材でOriginal Voice（13分44秒）と選択言語字幕・日本語（19分19秒）の本番納品および各16 Creditsの精算を確認済みです。2026年11月28日には同一59分51秒・720p素材で選択言語字幕（日本語）と英日2言語同時字幕の本番納品および各28 Creditsの精算を確認しました。各883字幕。
 
 ## Why this matters
 
@@ -105,7 +122,7 @@ The model is intended to avoid penalizing iterative refinement.
 
 ```text
 New creation
-  → Public guidance: standard-layout MP4 file inputs up to 36 minutes / 400 MB. Billing: 1 Credit for a positive input duration up to 2 minutes; over 32 through 36 minutes = 16 Credits
+  → Public guidance: standard-layout MP4 file inputs up to 270 minutes / 400 MB (over 36 minutes is an extended-length pilot). Billing: 1 Credit for a positive input duration up to 2 minutes; over 32 through 36 minutes = 16 Credits; 270 minutes = 134 Credits
 
 Supported revision of delivered result
   → 0 additional user credits

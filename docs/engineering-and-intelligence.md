@@ -1,8 +1,26 @@
 # Engineering and Intelligence Ecosystem
 
+## Production processing update — 2026-11-28
+
+The configured completed-output/revision storage limit is 5 GB per file, distinct from the 400 MB input limit. Actual deliveries near 5 GB and at the full 270-minute limit are not yet verified.
+
+On 2026-11-28, operator-run production checks delivered Selected Language Captions (Japanese) and English + Japanese Dual Captions on the same 59:51, 720p input, 883 captions and 28 Credits settled for each.
+
+On the same 59:51 source, Selected Language Captions (Japanese) active processing time, excluding queue/waiting, decreased from 36:18 to 19:13 (about 47%). Receipt-to-delivery was 22:07 for the later selected-language run and 23:10 for the English + Japanese Dual run. These are individual cases.
+
+On the same 59:51 English + Japanese Dual Captions work with 883 captions, operator-run production revision checks took 946.872 s (15:46.9) using full rendering, 226.015 s (3:46.0; 76.1% less) for the first differential render and 109.914 s (1:49.9; 88.4% less) using the layout cache, measured from output reservation to READY. Changed positions and edits differ: the full-render check changed two texts and two timings; each patch check changed only two texts. In the cached case about 27 seconds of video were re-encoded; unchanged compressed video packets (99.25% of frames) and all audio packets matched. Only qualifying small caption changes use the patch path; other cases use full rendering. These are individual measurements, not a speed guarantee.
+
+The current supported revision workflow keeps the source video and the latest completed output; the previous completed version is retired only after the replacement is successfully delivered. Download an earlier completed version before replacing it if needed. Older coexistence examples describe the behavior at the time.
+
+Context-aware shared terminology normalization, per-video reserved-Credit display during creation, media access renewal during long editing, and dark-mode/price-card/legal-page readability improvements are deployed. Dictionary editing is administrative; the latest dictionary and in-progress Credit display still need a new-generation end-to-end check, and timed media renewal still needs a live elapsed-time check.
+
+These are operator-run production checks, not independent reviews, customer outcomes or aggregate success rates.
+
 ## v0.0.4 — Long-form video support and generation acceleration (2026-11-26)
 
-- Standard-layout MP4 file inputs are accepted up to 36 minutes and 400 MB for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input; long-form Dual Captions delivery remains unverified.
+Initial release history (36-minute input guidance at release); the updated acceptance and delivery evidence below reflects the current OS as of 2026-11-28.
+
+- Standard-layout MP4 file inputs are accepted up to 270 minutes and 400 MB (over 36 minutes is an extended-length pilot) for Original Voice, Selected Language Captions and Dual Captions, subject to source and processing requirements. Free translation preview and embedded-caption avoidance remain limited to 2 minutes. Production delivery and 16-Credit settlement were verified for Original Voice and Selected Language Captions (Japanese) on the same 33:24 input. On 2026-11-28, operator-run production checks delivered Selected Language Captions (Japanese) and English + Japanese Dual Captions on the same 59:51, 720p input, 883 captions and 28 Credits settled for each.
 - Improved generation reliability and accelerated subtitle rendering, reference-video generation and image validation.
 - In a production comparison using the same 33 min 24 sec source (Original Voice, CTA off), end-to-end generation time decreased from 18:00 (1080.123 s) to 13:52 (832.338 s), about 23%. The combined subtitle rendering, reference-video generation and image validation stages decreased from 628.823 s to 405.627 s (35.5%). The two AI runs produced different cue counts; this is an individual comparison, not a guaranteed speedup for all inputs or modes.
 
